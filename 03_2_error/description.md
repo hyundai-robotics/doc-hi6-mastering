@@ -3,12 +3,11 @@
 ### 3.2.1 에러 화면
 - 마스터링 동작 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
-<br>
 
 <div>
 <img src="../03_2_error/img/kor/02_err_tcp_connect.PNG" height="320vh">
-<img src="../03_2_error/img/kor/01_err_motor_on.PNG" height="320vh">
-</div>
+<img src="../03_2_error/img/kor/01_err_motor_on.PNG" height="320vh"><br>
+Fig 3-2. 에러 상태 표시 이미지 </div>
 
 <br>
 <br>
