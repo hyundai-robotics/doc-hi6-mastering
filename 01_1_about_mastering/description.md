@@ -24,6 +24,6 @@
   최종 V홈으로 탐지된 곳이 기계적 원점으로 보정됩니다.
 
 <div>
-<img src="../00_img/12_mastering_concept.PNG" width="70%"><br>
+<img src="../00_img/12_mastering_concept.PNG" width="70%">
 Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중 V홈 탐지(우측)
 </div>
