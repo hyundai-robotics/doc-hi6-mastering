@@ -4,8 +4,8 @@
 ### 2.1.1 접촉식 센서 구성품
 - **센서 및 전원 어댑터** 
 <div>
-<img src="../00_img/02_sensor.PNG" height="250vh">
-<img src="../00_img/03_communication_module.PNG" height="250vh">
+<img src="../_assets/02_sensor.PNG" height="250vh">
+<img src="../_assets/03_communication_module.PNG" height="250vh">
 </div>
 Fig 2-1. 마스터링 센서와 통신 모듈
 <br>
@@ -14,8 +14,8 @@ Fig 2-1. 마스터링 센서와 통신 모듈
 
 - **케이블**   
 <div>
-<img src="../00_img/04_power_adapter.PNG" height="250vh">
-<img src="../00_img/05_lan_cable.PNG" height="250vh"></div>
+<img src="../_assets/04_power_adapter.PNG" height="250vh">
+<img src="../_assets/05_lan_cable.PNG" height="250vh"></div>
 Fig 2-2. 전원 어댑터와 이더넷 케이블
 <br>
 

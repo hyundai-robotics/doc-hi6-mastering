@@ -50,8 +50,8 @@
   - 오른쪽 칸 : 마스터링 이후의 인코더 오프셋 수치
 
 <div>
-<img src="../03_1_mastering_step/img/kor/01_standby.png" height="320vh">
-<img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" height="320vh"><br>
+<img src="../_assets/13_standby_kor.png" height="320vh">
+<img src="../_assets/14_mastering_end_kor.PNG" height="320vh"><br>
 Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a.대기 화면(좌측 이미지)
 &nbsp;&nbsp;&nbsp;&nbsp;
 b. 마스터링 종료 화면(우측 이미지)

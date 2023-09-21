@@ -30,6 +30,6 @@
 - `V홈`을 지나면서 달라지는 센서 값을 기준으로 `V홈`의 중앙 지점을 파악합니다.
 - 파악이 완료되면, 해당 중앙 지점을 기준으로 인코더 오프셋을 진행하여 원점 보정을 진행합니다.
 <div>
-<img src="../00_img/00_mastering_Vdent_render.png" height="320vh">
-<img src="../00_img/01_mastering_real_picture.png" height="320vh"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+<img src="../_assets/00_mastering_Vdent_render.png" height="320vh">
+<img src="../_assets/01_mastering_real_picture.png" height="320vh"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
 </div>

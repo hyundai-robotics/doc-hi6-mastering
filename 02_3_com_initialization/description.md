@@ -14,13 +14,13 @@
 
 - app 및 대기 화면 
 <div>
-<img src="../00_img/10_mastering_app.PNG" height="350vh"><br>
+<img src="../_assets/10_mastering_app.PNG" height="350vh"><br>
 Fig 2-5. 마스터링 App 화면
 <br>
 
 - 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
 
-<img src="../00_img/11_standbymode.PNG" height="350vh"><br>
+<img src="../_assets/11_standbymode.PNG" height="350vh"><br>
 Fig 2-6. 마스터링 대기 화면
 </div>
 
