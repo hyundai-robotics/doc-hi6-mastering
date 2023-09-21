@@ -22,6 +22,6 @@
 - 해당 문서는 접촉식 센서를 기반으로 마스터링을 진행합니다. <br>
   센서가 시작점을 기준으로 -1.5 도에서 +1.5 도로 움직이면서 V홈을 탐지합니다. <br>
   최종 V홈으로 탐지된 곳이 기계적 원점으로 보정됩니다.<div>
-<img src="../_assets/12_mastering_concept.PNG" width="70%">
+<img src="../_assets/12_mastering_concept.PNG" height="320vh"><br>
 Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중 V홈 탐지(우측)
 </div>
