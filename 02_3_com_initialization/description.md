@@ -14,12 +14,12 @@
 
 - app 및 대기 화면 
 <div>
-<img src="../00_img/10_mastering_app.PNG" height="340vh">
-<img src="../00_img/11_standbymode.PNG" height="340vh"><br>
+<img src="../00_img/10_mastering_app.PNG" height="280vh">
+<img src="../00_img/11_standbymode.PNG" height="280vh"><br>
 Fig 2-5. 마스터링 App 및 대기 화면
-</div>
-응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
+</div><br>
 
+- 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
 - `IP 주소` : 마스터링 키트의 IP 주소를 입력합니다.
 - `포트 번호` : 마스터링 키트의 포트 번호를 입력합니다.
 - `축 번호` : 마스터링을 수행할 대상 축을 설정합니다.
