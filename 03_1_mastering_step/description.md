@@ -52,9 +52,9 @@
 <div>
 <img src="../03_1_mastering_step/img/kor/01_standby.png" height="320vh">
 <img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" height="320vh"><br>
-Fig 3-1. a.대기 화면
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-b. 마스터링 종료 화면
+Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a.대기 화면(좌측 이미지)
+&nbsp;&nbsp;&nbsp;&nbsp;
+b. 마스터링 종료 화면(우측 이미지)
 </div>
 
 <br>
