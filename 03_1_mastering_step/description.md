@@ -48,9 +48,12 @@
   - 왼쪽 칸 : 마스터링 이전의 인코더 오프셋 수치
   - 오른쪽 칸 : 마스터링 이후의 인코더 오프셋 수치
 
-
+<div>
 <img src="../03_1_mastering_step/img/kor/01_standby.PNG" width="48%">
 <img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" width="48%">
+</div>
+
+<br>
 
 - 참고) 마스터링 결과 값을 인코더 값으로 보여주는 이유
   - 마스터링 결과 비교시, 각도 차이를 보여주는 것이 직관적이나, 0.01 이하의 변화는 측정이 불가합니다. 

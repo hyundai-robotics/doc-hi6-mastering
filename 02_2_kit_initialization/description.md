@@ -5,16 +5,18 @@
 ### 2.2.1. 접촉식 센서 초기화
 - **초기화는 <u>체결 전 하나의 축에 대해서 한번만</u> 진행하면 됩니다.** 
 
+<br>
+
 - !!! 주의 !!! 
 <br> - 체결 후, 센서의 측정값이 Fig 2-3.a 처럼 `음수`가 나오면 마스터링 진행이 불가합니다.
 <br> - 따라서, Fig 2-3.a 와 같이 `센서를 들고 있는 상태`에서 `프리셋 버튼`을 눌러 주시기 바랍니다.
 <br> - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2-3.c 처럼 양수 값이 측정되는지 확인합니다.
 <br> - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
-<br>
+<br><div>
 <img src="../00_img/06_preset.PNG" width="34%">
 <img src="../00_img/09_preset_pressed.PNG" width="34%">
-<img src="../00_img/07_pressed.PNG" width="30.6%">
-<br>Fig 2-3. a. 센서를 들었을 때 측정되는 음의 수치 
+<img src="../00_img/07_pressed.PNG" width="30.6%"></div>
+Fig 2-3. a. 센서를 들었을 때 측정되는 음의 수치 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. preset 버튼을 누르는 장면
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,10 +35,10 @@ c. 센서를 들었을 때 측정되는 음의 수치
 <img src="../00_img/08_ip_configuration.PNG" width="50%">
 <br>Fig 2-4. 마스터링 컨트롤러 설정 프로그램([DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB))
 <br>
-<br>-	`Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
-<br>-	`IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
-<br>-	`IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
-<br>-	`IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
+<br> `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
+<br> `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
+<br> `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
+<br> `IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
 
 <br>
 <br>

@@ -5,17 +5,20 @@
 
 ### 2.1.1 접촉식 센서 구성품
 - **센서 및 전원 어댑터** 
-<br>
+<br><div>
 <img src="../00_img/02_sensor.PNG" width="30%">
-<img src="../00_img/03_communication_module.PNG" width="30%">
-<br>Fig 2-1. 마스터링 센서와 통신 모듈
+<img src="../00_img/03_communication_module.PNG" width="30%"></div>
+Fig 2-1. 마스터링 센서와 통신 모듈
+<br>
 
 <br>
 
 - **케이블**   
+<br><div>
 <img src="../00_img/04_power_adapter.PNG" width="28%">
-<img src="../00_img/05_lan_cable.PNG" width="30%">
-<br>Fig 2-2. 전원 어댑터와 이더넷 케이블
+<img src="../00_img/05_lan_cable.PNG" width="30%"></div>
+Fig 2-2. 전원 어댑터와 이더넷 케이블
+<br>
 
 <br>
 
@@ -29,8 +32,8 @@
 - 센서 연결을 Fig2-1 의 우측 사진과 같이 연결하면 됩니다.
 - 마스터링 키트는 하기와 같은 인터페이스 사양을 가지고 있습니다.
 
-|||
-|----|----|
+|속성|내용|
+|:----:|:----|
 |센서 타입| 접촉식 센서 |
 |통신 지원| Ethernet(TCP/IP) |
 |통신 주기| 5 msec |

@@ -4,9 +4,10 @@
 - 마스터링 동작 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_MOTOR_ON_CHK`에러, `ERROR_TCP_CONNECT`에러
 <br>
+<div>
 <img src="../03_2_error/img/kor/01_err_motor_on.PNG" width="48%">
 <img src="../03_2_error/img/kor/02_err_tcp_connect.PNG" width="48%">
-
+</div>
 
 <br>
 <br>
