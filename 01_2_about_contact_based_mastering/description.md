@@ -32,5 +32,6 @@
 <div>
 <img src="../00_img/00_mastering_Vdent_render.png" width="30%">
 <img src="../00_img/01_mastering_real_picture.png" width="24.7%">
+
 Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
 </div>
