@@ -10,13 +10,13 @@
 <div>
 <img src="../00_img/06_preset.PNG" height="200vh">
 <img src="../00_img/09_preset_pressed.PNG" height="200vh">
-<img src="../00_img/07_pressed.PNG" height="200vh">
-</div>
+<img src="../00_img/07_pressed.PNG" height="200vh"><br>
 Fig 2-3. a. 센서를 들었을 때의 음의 수치 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. preset 버튼을 누르는 장면
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 c. 센서를 눌렀을 때 양의 수치
+</div>
 
 <br>
 <br>
