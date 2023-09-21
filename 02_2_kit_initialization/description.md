@@ -28,9 +28,9 @@ c. 센서를 눌렀을 때 양의 수치
 - 별도의 PC와 마스터링 컨트롤러를 연결한 뒤 해당 프로그램을 통해 통신 IP주소와 포트 번호를 설정할 수 있습니다.
 - 해당 프로그램은 회원가입 후 사용하실 수 있습니다.
 - 통신 설정 후 [Fig 2-1의 통신 모듈](../02_1_kit_description/description.md)과 같이 마스터링 통신 모듈과 Hi6 제어기를 이더넷 케이블로 연결합니다.
-<div>
 
-<img src="../_assets/08_ip_configuration.PNG" height="300vh"><br>
+<div>
+<img src="../_assets/08_ip_configuration.PNG" height="300vh">
 
 Fig 2-4. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
 <br>- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
