@@ -6,7 +6,7 @@
 ### 2.1.1 접촉식 센서 구성품
 - **센서 및 전원 어댑터** 
 <div>
-<img src="../00_img/02_sensor.PNG" 
+<img src="../00_img/02_sensor.PNG" height="250vh">
 <img src="../00_img/03_communication_module.PNG" height="250vh">
 </div>
 Fig 2-1. 마스터링 센서와 통신 모듈
