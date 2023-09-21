@@ -12,15 +12,16 @@
 <br> - 따라서, Fig 2-3.a 와 같이 `센서를 들고 있는 상태`에서 `프리셋 버튼`을 눌러 주시기 바랍니다.
 <br> - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2-3.c 처럼 양수 값이 측정되는지 확인합니다.
 <br> - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
-<br><div>
-<img src="../00_img/06_preset.PNG" width="34%">
-<img src="../00_img/09_preset_pressed.PNG" width="34%">
-<img src="../00_img/07_pressed.PNG" width="30.6%"></div>
-Fig 2-3. a. 센서를 들었을 때 측정되는 음의 수치 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div>
+<img src="../00_img/06_preset.PNG" height="200vh">
+<img src="../00_img/09_preset_pressed.PNG" height="200vh">
+<img src="../00_img/07_pressed.PNG" height="200vh">
+</div>
+Fig 2-3. a. 센서를 들었을 때의 음의 수치 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. preset 버튼을 누르는 장면
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-c. 센서를 들었을 때 측정되는 음의 수치
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+c. 센서를 눌렀을 때 양의 수치
 
 <br>
 <br>

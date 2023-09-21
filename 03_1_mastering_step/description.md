@@ -49,8 +49,8 @@
   - 오른쪽 칸 : 마스터링 이후의 인코더 오프셋 수치
 
 <div>
-<img src="../03_1_mastering_step/img/kor/01_standby.PNG" width="48%">
-<img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" width="48%">
+<img src="../03_1_mastering_step/img/kor/01_standby.PNG" height="320vh">
+<img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" height="320vh">
 </div>
 
 <br>
