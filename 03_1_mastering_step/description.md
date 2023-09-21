@@ -44,12 +44,14 @@
 <br>
 
 ### 3.1.4 수행 결과 - 이미지
+
 - `인코더 오프셋(이전/이후)`에는 인코더 오프셋 값(`bit`)이 표기됩니다.
   - 왼쪽 칸 : 마스터링 이전의 인코더 오프셋 수치
   - 오른쪽 칸 : 마스터링 이후의 인코더 오프셋 수치
+<br>
 
 <div>
-<img src="../03_1_mastering_step/img/kor/01_standby.PNG" height="320vh">
+<img src="../03_1_mastering_step/img/kor/01_standby.png" height="320vh">
 <img src="../03_1_mastering_step/img/kor/02_mastering_end.PNG" height="320vh">
 </div>
 
