@@ -1,12 +1,7 @@
 ## 2.2 초기 설정 및 연결
 ---
-<br>
-
 ### 2.2.1. 접촉식 센서 초기화
 - **초기화는 <u>체결 전 하나의 축에 대해서 한번만</u> 진행하면 됩니다.** 
-
-<br>
-
 - !!! 주의 !!! 
 <br> - 체결 후, 센서의 측정값이 Fig 2-3.a 처럼 `음수`가 나오면 마스터링 진행이 불가합니다.
 <br> - 따라서, Fig 2-3.a 와 같이 `센서를 들고 있는 상태`에서 `프리셋 버튼`을 눌러 주시기 바랍니다.
@@ -32,14 +27,16 @@ c. 센서를 눌렀을 때 양의 수치
 - 별도의 PC와 마스터링 컨트롤러를 연결한 뒤 해당 프로그램을 통해 통신 IP주소와 포트 번호를 설정할 수 있습니다.
 - 해당 프로그램은 회원가입 후 사용하실 수 있습니다.
 - 통신 설정 후 [Fig 2-1의 통신 모듈](../02_1_kit_description/description.md)과 같이 마스터링 통신 모듈과 Hi6 제어기를 이더넷 케이블로 연결합니다.
-<br>
-<img src="../00_img/08_ip_configuration.PNG" width="50%">
-<br>Fig 2-4. 마스터링 컨트롤러 설정 프로그램([DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB))
-<br>
-<br> `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
-<br> `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
-<br> `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
-<br> `IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
+<div>
+<img src="../00_img/08_ip_configuration.PNG" width="50%"><br>
+
+Fig 2-4. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+</div>
+
+<br>- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
+<br>- `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
+<br>- `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
+<br>- `IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
 
 <br>
 <br>
