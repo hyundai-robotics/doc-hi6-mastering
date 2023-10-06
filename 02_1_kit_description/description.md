@@ -1,41 +1,44 @@
-# 2. 시스템 구성 및 설정
-## 2.1 마스터링 키트 구성
+# 2. System configuration
+## 2.1 Mastering Kit
 ---
-### 2.1.1 접촉식 센서 구성품
-- **센서 및 전원 어댑터** 
+### 2.1.1 Contact sensor components
+- **Sensor & Power adapter** 
 <div>
 <img src="../_assets/02_sensor.PNG" height="250vh">
 <img src="../_assets/03_communication_module.PNG" height="250vh">
 </div>
-Fig 2-1. 마스터링 센서와 통신 모듈
+Fig 2-1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
 <br>
 
 <br>
 
-- **케이블**   
+- **Cable**   
 <div>
 <img src="../_assets/04_power_adapter.PNG" height="250vh">
 <img src="../_assets/05_lan_cable.PNG" height="250vh"></div>
-Fig 2-2. 전원 어댑터와 이더넷 케이블
+Fig 2-2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 
 <br>
 
-- **소프트웨어**
-<br>본 패키지에는 마스터링 기능 APP 과 컨트롤러 설정 프로그램이 포함되어있습니다.
+- **S/W**
+<br>This package includes a mastering App and a controller setup program.
 
 <br>
+
+### 2.1.2 Contact sensor connections
+- Connect the sensor as shown in the photo on the Fig 2-1 b.
+
 <br>
 
-### 2.1.2 접촉식 센서 연결 및 사양
-- 센서 연결을 Fig2-1 의 우측 사진과 같이 연결하면 됩니다.
-- 마스터링 키트는 하기와 같은 인터페이스 사양을 가지고 있습니다.
+### 2.1.3 Specifications
+- The mastering kit has the interface specifications below.
 
-|속성|내용|
+|feature|detail|
 |:----:|:----|
-|센서 타입| 접촉식 센서 |
-|통신 지원| Ethernet(TCP/IP) |
-|통신 주기| 5 msec |
+|Sensor Type| Digital contact |
+|Protocol| Ethernet(TCP/IP) |
+|Cycle| 5 msec |
 
 <br>
 <br>

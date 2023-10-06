@@ -5,8 +5,8 @@
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
 <div>
-<img src="../_assets/15_err_motor_on_kor.PNG" height="320vh">
-<img src="../_assets/16_err_tcp_connect_kor.PNG" height="320vh"><br>
+<img src="../_assets/15_err_motor_on_eng.PNG" height="320vh">
+<img src="../_assets/16_err_tcp_connect_eng.PNG" height="320vh"><br>
 Fig 3-2. 에러 상태 표시 이미지 </div>
 
 <br>
