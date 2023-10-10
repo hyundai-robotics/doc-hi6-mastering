@@ -5,8 +5,8 @@
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
 <div>
-<img src="../_assets/15_err_motor_on_eng.PNG" height="320vh">
-<img src="../_assets/16_err_tcp_connect_eng.PNG" height="320vh"><br>
+<img src="../_assets/15_err_motor_on_eng.png" height="320vh">
+<img src="../_assets/16_err_tcp_connect_eng.png" height="320vh"><br>
 Fig 3-2. The example image for error status </div>
 
 <br>
