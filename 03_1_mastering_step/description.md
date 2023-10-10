@@ -52,7 +52,7 @@
 
 <div>
 <img src="../_assets/13_standby_eng.png" height="320vh">
-<img src="../_assets/14_mastering_end_eng.PNG" height="320vh"><br>
+<img src="../_assets/14_mastering_end_eng.png" height="320vh"><br>
 Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
 &nbsp;&nbsp;&nbsp;&nbsp;
 b. Mastering complete image
