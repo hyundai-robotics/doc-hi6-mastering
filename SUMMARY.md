@@ -1,5 +1,5 @@
 # Table of contents
-* [0. Copyright](README.md)
+* [0. Copyright](/README.md)
 * [1. Introduction](/01_about/README.md)
   * [1.1 About Robot Mastering](/01_about/01_1_about_mastering.md)
   * [1.2 Contact sensor-based robot mastering](/01_about/01_2_about_contact_based_mastering.md) 

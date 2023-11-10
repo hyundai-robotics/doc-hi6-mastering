@@ -1,4 +1,4 @@
-### 1. Hi6 마스터링 개요
+### 1 Introduction
 
 - 1.1 About Robot Mastering
     - 1.1.1 About Robot Mastering
