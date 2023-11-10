@@ -27,7 +27,7 @@ c. Positive value when sensor is pressed
 - **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
 - In the case of above, you can set the ip configure by using personal computer.
 - Following membership registration, you are able to use this program.
-- After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../02_1_kit_description/description.md).
+- After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](https://hrbook-hrc.web.app/#/view/doc-hi6-mastering/english/02_about_kit/02_1_kit_description).
 
 <div>
 <img src="../_assets/08_ip_configuration.PNG" height="350vh">

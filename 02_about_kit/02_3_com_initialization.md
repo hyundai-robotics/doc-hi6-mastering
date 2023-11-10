@@ -33,5 +33,5 @@ Fig 2-6. Mastering standby mode image
 
 - How to save mastering IP and port number settings
 <br> - 1) Enter the preset ip, port. - 
-[2.2.2. Communication settings for contact sensor](../02_2_kit_initialization/description.md/#222-communication-settings-for-contact-sensor)
+[2.2.2. Communication settings for contact sensor](https://hrbook-hrc.web.app/#/view/doc-hi6-mastering/english/02_about_kit/02_2_kit_initialization)
 <br> - 2) Save the configuration through the `shift` + `OK` to the hi6 controller.

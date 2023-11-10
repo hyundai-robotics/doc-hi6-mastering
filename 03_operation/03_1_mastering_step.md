@@ -11,7 +11,7 @@
 <br>
 
 ### 3.1.2 Operation process - summary
-1. In [Standby mode](../02_3_com_initialization/description.md/#231-app-setting-configuration), enter the joint number then press the '`shift + OK`' for saving configuration.
+1. In [Standby mode](https://hrbook-hrc.web.app/#/view/doc-hi6-mastering/english/02_about_kit/02_3_com_initialization), enter the joint number then press the '`shift + OK`' for saving configuration.
 2. Click the '`1.Go to the enc offset`' button.
 3. After step 2., click the '`2.Start mastering`' button.
 4. After step 3., enter the next target joint number, do step 2. again.

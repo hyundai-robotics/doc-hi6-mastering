@@ -1,7 +1,7 @@
 # 1.1 Introduction
 - This manual covers the robot mastering function.
 - This guidebook is predicated on fundamental understanding robot functioning. 
-- Please click the following [link](https://hrbook-hrc.web.app/#/) for details on setting up and using the Hi6 robot controller.
+- Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/README) for details on setting up and using the Hi6 robot controller.
 
 <br>
 
