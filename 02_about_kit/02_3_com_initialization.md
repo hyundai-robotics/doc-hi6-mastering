@@ -34,5 +34,5 @@ Fig 2-6. 마스터링 대기 화면
 - 마스터링 IP 및 포트 번호 설정 저장 방법
 <br>- 1) Fig 2-5. 와 같이, 마스터링 키트의 ip, port, 축 번호를 입력합니다.
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[2.2.2. 접촉식 센서 통신 설정](../02_2_kit_initialization/description.md/#222-접촉식-센서-통신-설정)에서 설정한 ip 및 port 를 입력합니다.
+[2.2.2. 접촉식 센서 통신 설정](/02_about_kit/02_2_kit_initialization.md#222-접촉식-센서-통신-설정)에서 설정한 ip 및 port 를 입력합니다.
 <br>- `shift` + `확인` 클릭을 통해 설정 값을 제어기에 저장 및 업데이트 합니다.
