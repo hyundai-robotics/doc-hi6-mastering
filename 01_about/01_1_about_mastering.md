@@ -1,11 +1,11 @@
-# 1. Introduction
+# 1.1 Introduction
 - This manual covers the robot mastering function.
 - This guidebook is predicated on fundamental understanding robot functioning. 
 - Please click the following [link](https://hrbook-hrc.web.app/#/) for details on setting up and using the Hi6 robot controller.
 
 <br>
 
-### 1.1 About Robot Mastering
+### 1.1.1 About Robot Mastering
 
 - The robot's mechanical origin could vary if situations like axis distortion or drive source replacement take occurred during shipping or in the field. The mastering function is required at this time.
 - The mastering function is used to improve the precision of robot motion and repair the mechanical origin.
