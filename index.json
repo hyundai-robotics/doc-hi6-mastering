@@ -1,0 +1,57 @@
+﻿[
+	{
+		"link": "README.md",
+		"char_ofs": 0,
+		"byte_ofs": 0
+	},
+	{
+		"link": "01_intro/README.md",
+		"char_ofs": 255,
+		"byte_ofs": 497
+	},
+	{
+		"link": "01_intro/1-about_mastering/README.md",
+		"char_ofs": 543,
+		"byte_ofs": 993
+	},
+	{
+		"link": "01_intro/2-about_contact_based_mastering/README.md",
+		"char_ofs": 1011,
+		"byte_ofs": 1918
+	},
+	{
+		"link": "02_about_kit/README.md",
+		"char_ofs": 1896,
+		"byte_ofs": 3573
+	},
+	{
+		"link": "02_about_kit/1-kit_description/README.md",
+		"char_ofs": 2317,
+		"byte_ofs": 4281
+	},
+	{
+		"link": "02_about_kit/2-kit_initialization/README.md",
+		"char_ofs": 3121,
+		"byte_ofs": 5447
+	},
+	{
+		"link": "02_about_kit/3-com_initialization/README.md",
+		"char_ofs": 4857,
+		"byte_ofs": 8153
+	},
+	{
+		"link": "03_operation/README.md",
+		"char_ofs": 6262,
+		"byte_ofs": 10717
+	},
+	{
+		"link": "03_operation/1-mastering_step/README.md",
+		"char_ofs": 6632,
+		"byte_ofs": 11349
+	},
+	{
+		"link": "03_operation/2-error/README.md",
+		"char_ofs": 8617,
+		"byte_ofs": 15118
+	}
+]
