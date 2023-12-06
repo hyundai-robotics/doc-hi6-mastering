@@ -8,9 +8,9 @@
 <br> - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
     <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height:20vh">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh"><br>
+    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 20vw">
+    <img src="../../_assets/09_preset_pressed.PNG" style="max-height:20vh; max-width: 20vw">
+    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 18.1vw"><br>
     Fig 2-3. a. 센서를 들었을 때의 음의 수치 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. preset 버튼을 누르는 장면
