@@ -30,6 +30,6 @@
 - 파악이 완료되면, 해당 중앙 지점을 기준으로 인코더 오프셋을 진행하여 원점 보정을 진행합니다.
 
     <div>
-    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 25vh;">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 25vh;"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh;">
+    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh;"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
     </div>
