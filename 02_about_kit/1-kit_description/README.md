@@ -14,8 +14,8 @@
 
 - **케이블**   
     <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 16vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17vw"></div>
+    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 16vh; max-width: 16vw">
+    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 16vh; max-width: 17vw"></div>
     Fig 2-2. 전원 어댑터와 이더넷 케이블
     <br>
 
