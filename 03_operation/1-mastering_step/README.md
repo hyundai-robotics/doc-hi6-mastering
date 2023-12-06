@@ -45,8 +45,8 @@
 ### 3.1.4 동작 결과 - 이미지
 
 <div>
-<img src="../../_assets/13_standby_kor.png" height="320vh">
-<img src="../../_assets/14_mastering_end_kor.PNG" height="320vh"><br>
+<img src="../../_assets/13_standby_kor.png" style="max-height: 30vh; max-width: 35vw">
+<img src="../../_assets/14_mastering_end_kor.PNG" style="max-height: 30vh; max-width: 35vw"><br>
 Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a.대기 화면(좌측 이미지)
 &nbsp;&nbsp;&nbsp;&nbsp;
 b. 마스터링 종료 화면(우측 이미지)
