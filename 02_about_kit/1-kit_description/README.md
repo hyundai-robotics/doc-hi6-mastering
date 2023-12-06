@@ -4,8 +4,8 @@
 
 - **센서 및 전원 어댑터** 
     <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 20vh;">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 20vh;">
+    <img src="../../_assets/02_sensor.PNG" style="max-height: 20vh; max-width: 16vw">
+    <img src="../../_assets/03_communication_module.PNG" style="max-height: 20vh; max-width: 25vw">
     </div>
     Fig 2-1. 마스터링 센서와 통신 모듈
     <br>
@@ -14,8 +14,8 @@
 
 - **케이블**   
     <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh;">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh;"></div>
+    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 20vw">
+    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 20vw"></div>
     Fig 2-2. 전원 어댑터와 이더넷 케이블
     <br>
 
