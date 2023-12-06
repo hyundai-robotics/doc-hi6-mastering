@@ -1,7 +1,6 @@
-## 1.2 Contact sensor-based robot mastering
----
-- This user manual contains information on the contact sensor-based robot mastering function. 
-- More accurate corrections are possible by using the corresponding digital contact sensor.
+## 1.2 Contact sensor-based robot mastering 
+This user manual contains information on the `contact sensor-based` robot mastering function.  
+More accurate corrections are possible by using the corresponding `digital contact sensor`.
 
 <br>
 
@@ -19,17 +18,17 @@
 <br>
 
 ### 1.2.3. Operating concept
-- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin.
+- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))
 
 <br>
 
 ### 1.2.4. Operating description
-- Contact sensors are attached in the following manner (Fig 1-1)
-<div>
-<img src="../_assets/00_mastering_Vdent_render.png" height="250vh">
-<img src="../_assets/01_mastering_real_picture.png" height="250vh"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
-</div>
+- Contact sensors are attached in the following manner 
 
+    <div>
+    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 19vh;">
+    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 19vh;"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
+    </div>
 <br>
 
 - The sensor moves up and down or side to side passing through the `V-groove`.

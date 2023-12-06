@@ -1,6 +1,4 @@
-# 3. Mastering operation
 ## 3.1. Environment & process
----
 ### 3.1.1 Environment
 - Before mastering is performed, the mastering kit must be installed near the `V-groove`.
 <br>Otherwise, an `'ERROR_VAL_THRESHOLD'` error may be returned.
@@ -11,7 +9,7 @@
 <br>
 
 ### 3.1.2 Operation process - summary
-1. In [Standby mode](https://hrbook-hrc.web.app/#/view/doc-hi6-mastering/english/02_about_kit/02_3_com_initialization), enter the joint number then press the '`shift + OK`' for saving configuration.
+1. In [Standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number then press the '`shift + OK`' for saving configuration.
 2. Click the '`1.Go to the enc offset`' button.
 3. After step 2., click the '`2.Start mastering`' button.
 4. After step 3., enter the next target joint number, do step 2. again.
@@ -47,16 +45,16 @@
 ### 3.1.4 Results - image
 
 - The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
-  - Left block : `Pre`-encoder offset value `before mastering`.
-  - Right block : `Post`-encoder offset value `after mastering`.
+  - `Left block` : `Pre`-encoder offset value `before mastering`.  
+  - `Right block` : `Post`-encoder offset value `after mastering`.  
 
-<div>
-<img src="../_assets/13_standby_eng.png" height="320vh">
-<img src="../_assets/14_mastering_end_eng.png" height="320vh"><br>
-Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
-&nbsp;&nbsp;&nbsp;&nbsp;
-b. Mastering complete image
-</div>
+      <div>
+      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh">
+      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh"><br>
+      Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      b. Mastering complete image
+      </div>
 
 <br>
 <br>
