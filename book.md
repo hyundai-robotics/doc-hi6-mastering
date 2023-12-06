@@ -15,12 +15,12 @@ This manual covers the robot mastering function.
 This guidebook is predicated on fundamental understanding robot functioning.  
 Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/README) for details on setting up and using the Hi6 robot controller.
 
-- [1.1 About Robot Mastering](../01_about/1-about_mastering/README.md)
+- [1.1 About Robot Mastering](../01_intro/1-about_mastering/README.md)
     - 1.1.1 About Robot Mastering
 
 <br>
 
-- [1.2 Contact sensor-based robot mastering](../01_about/2-about_contact_based_mastering/README.md)
+- [1.2 Contact sensor-based robot mastering](../01_intro/2-about_contact_based_mastering/README.md)
     - 1.2.1. Mastering equipment
     - 1.2.2. Operating mode
     - 1.2.3. Operating concept
@@ -32,7 +32,7 @@ Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-oper
 - A digital contact sensor is used to operate the mastering in this manual.<br>
   The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
   The detected V-groove position is corrected to the mechanical origin.<div>
-<img src="../../_assets/12_mastering_concept_eng.PNG" height="250vh"><br>
+<img src="../../_assets/12_mastering_concept_eng.PNG" style="max-height: 25vh; max-width: 38.5vw"><br>
 Fig 1-1. a. Starting point(axis distortion status), 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. V-groove detection during mastering
@@ -64,8 +64,8 @@ More accurate corrections are possible by using the corresponding `digital conta
 - Contact sensors are attached in the following manner 
 
     <div>
-    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 19vh;">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 19vh;"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
+    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
+    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
     </div>
 <br>
 
@@ -95,8 +95,8 @@ More accurate corrections are possible by using the corresponding `digital conta
 - **Sensor & Power adapter** 
 
     <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh;">
+    <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
+    <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
     </div>
     Fig 2-1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
 <br>
@@ -105,8 +105,8 @@ More accurate corrections are possible by using the corresponding `digital conta
 
 - **Cable**   
     <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh;">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh;"></div>
+    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 15.9vw">
+    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17.02vw"></div>
     Fig 2-2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 
@@ -144,9 +144,9 @@ Keep in mind
 4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
 
     <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh;">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh;">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh;"><br>
+    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 22.2vw">
+    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh; max-width: 22vw">
+    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 20vw"><br>
     Fig 2-3. a. Negative value when holding the sensor 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. when pressing the preset button
@@ -165,7 +165,7 @@ Keep in mind
 - After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../1-kit_description/README.md).
 
     <div>
-    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh;">
+    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
     Fig 2-4. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
     <br>- `Network Adaptor` : Network adaptor info for connected computer.
@@ -203,12 +203,12 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
 - `Standby mode`
 
-    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh;"><br>
+    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
     Fig 2-5. Mastering app image  
 
 - If you do not see the mastering APP in the application program, just reboot the TP.
 
-    <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh;"><br>
+    <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
     Fig 2-6. Mastering `standby mode` image  
 
     - `IP Address` : Enter the ip address of the mastering communicator.  
@@ -287,8 +287,8 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
   - `Right block` : `Post`-encoder offset value `after mastering`.  
 
       <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh"><br>
+      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 34vw">
+      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 34vw"><br>
       Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
       &nbsp;&nbsp;&nbsp;&nbsp;
       b. Mastering complete image
@@ -310,8 +310,8 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
     <div>
-    <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 28vh">
-    <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 28vh"><br>
+    <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 28vh; max-width: 32vw">
+    <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 28vh; max-width: 32vw"><br>
     Fig 3-2. The example image for error status 
     </div>
 
