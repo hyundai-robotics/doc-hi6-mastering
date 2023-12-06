@@ -29,12 +29,12 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
 - `Standby mode`
 
-    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh;"><br>
+    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
     Fig 2-5. Mastering app image  
 
 - If you do not see the mastering APP in the application program, just reboot the TP.
 
-    <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh;"><br>
+    <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
     Fig 2-6. Mastering `standby mode` image  
 
     - `IP Address` : Enter the ip address of the mastering communicator.  

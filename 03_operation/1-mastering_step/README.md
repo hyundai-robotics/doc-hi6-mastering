@@ -49,8 +49,8 @@
   - `Right block` : `Post`-encoder offset value `after mastering`.  
 
       <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh"><br>
+      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 34vw">
+      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 34vw"><br>
       Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
       &nbsp;&nbsp;&nbsp;&nbsp;
       b. Mastering complete image
