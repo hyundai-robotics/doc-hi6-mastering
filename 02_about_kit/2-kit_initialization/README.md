@@ -29,7 +29,7 @@
 - 통신 설정 후 [Fig 2-1의 통신 모듈](../../02_about_kit/1-kit_description/README.md)과 같이 마스터링 통신 모듈과 Hi6 제어기를 이더넷 케이블로 연결합니다.
 
     <div>
-    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 38vh;">
+    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 38vh; max-width: 43vw">
 
     Fig 2-4. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
     <br>- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
