@@ -26,8 +26,8 @@ More accurate corrections are possible by using the corresponding `digital conta
 - Contact sensors are attached in the following manner 
 
     <div>
-    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 19vh;">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 19vh;"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
+    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
+    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
     </div>
 <br>
 
