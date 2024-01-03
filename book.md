@@ -65,10 +65,9 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 - 센서가 `V홈`(아래 그림의 파인 부분)을 상하 또는 좌우로 지나갑니다.
 - `V홈`을 지나면서 달라지는 센서 값을 기준으로 `V홈`의 중앙 지점을 파악합니다.
 - 파악이 완료되면, 해당 중앙 지점을 기준으로 인코더 오프셋을 진행하여 원점 보정을 진행합니다.
-
     <div>
-    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 25vh;">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 25vh;"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+    <img src="./_assets/00_mastering_Vdent_render.png" style="max-height: 25vh;">
+    <img src="./_assets/01_mastering_real_picture.png" style="max-height: 25vh;"><br>Fig 1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
     </div># 2. 마스터링 키트 구성 및 설정
 
 접촉식 마스터링에 사용되는 키트에 대한 설명을 진행합니다.  
@@ -92,8 +91,8 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 
 - **센서 및 전원 어댑터** 
     <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 25vh;">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 25vh;">
+    <img src="./_assets/02_sensor.PNG" style="max-height: 25vh;">
+    <img src="./_assets/03_communication_module.PNG" style="max-height: 25vh;">
     </div>
     Fig 2-1. 마스터링 센서와 통신 모듈
     <br>
