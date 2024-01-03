@@ -1,7 +1,9 @@
 ## 3.1. Environment & process
 ### 3.1.1 Environment
-- Before mastering is performed, the mastering kit must be installed near the `V-groove`.
-<br>Otherwise, an `'ERROR_VAL_THRESHOLD'` error may be returned.
+{% hint style="warning" %}
+**Before starting mastering, `the tip of mastering sensor` should be nearby `V-groove`.  
+Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
+{% endhint %}
 - Operates only in manual mode and motor on.
 - Please holding the enable switch until the operation ends.
 
