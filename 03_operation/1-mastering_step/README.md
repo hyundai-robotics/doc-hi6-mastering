@@ -1,7 +1,7 @@
 ## 3.1. Environment & process
 ### 3.1.1 Environment
 {% hint style="warning" %}
-**Before starting mastering, `the tip of mastering sensor` should be nearby `V-groove`.  
+**Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
 Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
 {% endhint %}
 - Operates only in manual mode and motor on.
