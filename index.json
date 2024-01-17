@@ -12,46 +12,46 @@
 	{
 		"link": "01_intro/1-about_mastering/README.md",
 		"char_ofs": 543,
-		"byte_ofs": 993
+		"byte_ofs": 996
 	},
 	{
 		"link": "01_intro/2-about_contact_based_mastering/README.md",
 		"char_ofs": 1040,
-		"byte_ofs": 1961
+		"byte_ofs": 1967
 	},
 	{
 		"link": "02_about_kit/README.md",
 		"char_ofs": 3317,
-		"byte_ofs": 6336
+		"byte_ofs": 6345
 	},
 	{
 		"link": "02_about_kit/1-kit_description/README.md",
 		"char_ofs": 3738,
-		"byte_ofs": 7044
+		"byte_ofs": 7056
 	},
 	{
 		"link": "02_about_kit/2-kit_initialization/README.md",
 		"char_ofs": 4606,
-		"byte_ofs": 8274
+		"byte_ofs": 8289
 	},
 	{
 		"link": "02_about_kit/3-com_initialization/README.md",
 		"char_ofs": 6407,
-		"byte_ofs": 11045
+		"byte_ofs": 11063
 	},
 	{
 		"link": "03_operation/README.md",
 		"char_ofs": 7844,
-		"byte_ofs": 13641
+		"byte_ofs": 13662
 	},
 	{
 		"link": "03_operation/1-mastering_step/README.md",
 		"char_ofs": 8214,
-		"byte_ofs": 14273
+		"byte_ofs": 14297
 	},
 	{
 		"link": "03_operation/2-error/README.md",
-		"char_ofs": 12264,
-		"byte_ofs": 21863
+		"char_ofs": 12281,
+		"byte_ofs": 21908
 	}
 ]
