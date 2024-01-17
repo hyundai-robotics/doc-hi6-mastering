@@ -22,15 +22,28 @@ More accurate corrections are possible by using the corresponding `digital conta
 
 <br>
 
-### 1.2.4. Operating description
-- Contact sensors are attached in the following manner 
+### 1.2.4. Full mastering process
 
-    <div>
+**1. Set encoder offset by eye**  
+- 1-a) The user jogs with TP based on the V groove or the scale bar mounted on the robot (reference point setting).
+- 1-b) Perform encoder offset correction for the visually adjusted position for each axis.
+- The way of Encoder offset correction )  
+  TP > system > Engineer mode (R: 314) > 3: Robot paramter > 4: Encoder offset > Click the `Corrected encoder` value of current axis > Click the `Reset one` button
+
+<br>
+
+**2. Attach the contact sensor**  
+- <div>
     <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
     <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
     </div>
+
 <br>
 
+**3. Mastering-based encoder offset correction**
+- 3-a) After completing step 1, enter the mastering plugin and click the `1. Go to the enc offset` button.
+- 3-b) Visually check whether the robot is nearby the V groove. Then click the `2. Start mastering` button.
+- 3-c) Start mastering
 - The sensor moves up and down or side to side passing through the `V-groove`.
 - Based on the sensor value that varies as it goes through the `V-groove`, the central location of the groove is determined.
 - After identification, encoder offset is performed to correct the origin based on the center point.
