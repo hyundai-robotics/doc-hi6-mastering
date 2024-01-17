@@ -46,12 +46,12 @@
 	},
 	{
 		"link": "03_operation/1-mastering_step/README.md",
-		"char_ofs": 8220,
-		"byte_ofs": 14305
+		"char_ofs": 8225,
+		"byte_ofs": 14311
 	},
 	{
 		"link": "03_operation/2-error/README.md",
-		"char_ofs": 12290,
-		"byte_ofs": 21920
+		"char_ofs": 12295,
+		"byte_ofs": 21926
 	}
 ]
