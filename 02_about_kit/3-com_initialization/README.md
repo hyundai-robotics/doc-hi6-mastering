@@ -25,12 +25,12 @@
 - `대기 화면` 
     
     <img src="../../_assets/10_mastering_app.PNG" style="max-height: 30vh; max-width: 42vw"><br>
-    Fig 2-5. 마스터링 App 화면
+    Fig 2.3-1. 마스터링 App 화면
 
 - 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
 
     <img src="../../_assets/11_standbymode.PNG" style="max-height: 30vh; max-width: 42vw"><br>
-    Fig 2-6. 마스터링 대기 화면
+    Fig 2.3-2. 마스터링 대기 화면
 
 
     * `IP 주소` : 마스터링 키트의 IP 주소를 입력합니다.
@@ -44,6 +44,6 @@
 
 - 마스터링 IP 및 포트 번호 설정 저장 방법
     1) Fig 2-6. 처럼 마스터링 키트의 ip, port, 축 번호를 입력합니다.  
-    ([2.2.2. 접촉식 센서 통신 설정](../2-kit_initialization/README.md)에서 설정한 ip 및 port 를 입력합니다.)
+    ([2.2 센서 초기 설정 및 연결](../2-kit_initialization/README.md)에서 설정한 ip 및 port 를 입력합니다.)
 
     2) `shift` + `확인` 클릭을 통해 설정 값을 제어기에 저장 및 업데이트 합니다.

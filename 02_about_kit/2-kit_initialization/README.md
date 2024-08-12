@@ -11,7 +11,7 @@
     <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 20vw">
     <img src="../../_assets/09_preset_pressed.PNG" style="max-height:20vh; max-width: 20vw">
     <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 18.1vw"><br>
-    Fig 2-3. a. 센서를 들었을 때의 음의 수치 
+    Fig 2.2-1. a. 센서를 들었을 때의 음의 수치 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. preset 버튼을 누르는 장면
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -31,7 +31,7 @@
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 38vh; max-width: 43vw">
 
-    Fig 2-4. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+    Fig 2.2-2. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
     <br>- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
     <br>- `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
     <br>- `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소

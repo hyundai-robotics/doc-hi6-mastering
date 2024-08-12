@@ -21,37 +21,37 @@
 	},
 	{
 		"link": "02_about_kit/README.md",
-		"char_ofs": 3418,
-		"byte_ofs": 6571
+		"char_ofs": 3175,
+		"byte_ofs": 5829
 	},
 	{
 		"link": "02_about_kit/1-kit_description/README.md",
-		"char_ofs": 3845,
-		"byte_ofs": 7290
+		"char_ofs": 3611,
+		"byte_ofs": 6557
 	},
 	{
 		"link": "02_about_kit/2-kit_initialization/README.md",
-		"char_ofs": 4713,
-		"byte_ofs": 8523
+		"char_ofs": 4483,
+		"byte_ofs": 7794
 	},
 	{
 		"link": "02_about_kit/3-com_initialization/README.md",
-		"char_ofs": 6514,
-		"byte_ofs": 11297
+		"char_ofs": 6288,
+		"byte_ofs": 10572
 	},
 	{
 		"link": "03_operation/README.md",
-		"char_ofs": 7951,
-		"byte_ofs": 13896
+		"char_ofs": 7727,
+		"byte_ofs": 13173
 	},
 	{
 		"link": "03_operation/1-mastering_step/README.md",
-		"char_ofs": 8326,
-		"byte_ofs": 14537
+		"char_ofs": 8102,
+		"byte_ofs": 13814
 	},
 	{
 		"link": "03_operation/2-error/README.md",
-		"char_ofs": 13042,
-		"byte_ofs": 23483
+		"char_ofs": 12690,
+		"byte_ofs": 22268
 	}
 ]

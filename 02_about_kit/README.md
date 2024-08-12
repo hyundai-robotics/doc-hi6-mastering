@@ -9,7 +9,7 @@
 
 <br>
 
-- [2.2 초기 설정 및 연결](../02_about_kit/2-kit_initialization/)
+- [2.2 초기 설정 및 연결](../02_about_kit/2-kit_initialization/README.md)
   - 2.2.1 접촉식 센서 초기화
   - 2.2.2 접촉식 센서 통신 설정
 
