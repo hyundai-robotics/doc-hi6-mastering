@@ -10,13 +10,11 @@ The mastering function was developed through Hi6 SDK, and this app must be insta
 
 - `Install location` for hi6 controller  
     - /ata0:2/lib/hi6/apps/mastering
-
 - `Install method`  
     1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
     2) After an ethernet connection, transfer the source code using FTP transmission.  
     3) After saving the source code to the USB, connect to the TP.  
     4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-
 - ❗ `Installation precautions` ❗  
     1) To use the mastering APP after installation, the controller must be restarted.  
     2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
