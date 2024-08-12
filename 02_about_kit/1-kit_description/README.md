@@ -6,7 +6,7 @@
     <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
     <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
     </div>
-    Fig 2-1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
+    Fig 2.1.1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
 <br>
 
 <br>
@@ -15,7 +15,7 @@
     <div>
     <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 15.9vw">
     <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17.02vw"></div>
-    Fig 2-2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
+    Fig 2.1.2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 
 <br>

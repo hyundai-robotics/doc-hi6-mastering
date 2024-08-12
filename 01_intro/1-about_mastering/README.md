@@ -10,7 +10,7 @@ The mastering is required at this time.
   The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
   The detected V-groove position is corrected to the mechanical origin.<div>
 <img src="../../_assets/12_mastering_concept_eng.PNG" style="max-height: 25vh; max-width: 38.5vw"><br>
-Fig 1-1. a. Starting point(axis distortion status), 
+Fig 1.1. a. Starting point(axis distortion status), 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. V-groove detection during mastering
 </div>

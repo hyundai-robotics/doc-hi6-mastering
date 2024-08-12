@@ -7,7 +7,7 @@
     <div>
     <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 28vh; max-width: 32vw">
     <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 28vh; max-width: 32vw"><br>
-    Fig 3-2. The example image for error status 
+    Fig 3.2.1. The example image for error status 
     </div>
 
 <br>

@@ -13,7 +13,7 @@ Keep in mind
     <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 22.2vw">
     <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh; max-width: 22vw">
     <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 20vw"><br>
-    Fig 2-3. a. Negative value when holding the sensor 
+    Fig 2.2.1. a. Negative value when holding the sensor 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. when pressing the preset button
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,7 +33,7 @@ Keep in mind
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
-    Fig 2-4. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+    Fig 2.2.2. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
     <br>- `Network Adaptor` : Network adaptor info for connected computer.
     <br>- `IP Search Range` : Searching for the connected device's IP address.
     <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device

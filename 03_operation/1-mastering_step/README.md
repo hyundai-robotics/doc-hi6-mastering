@@ -54,7 +54,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     (5) Mount the sensor on the joint entered in (2).  
         <div>
         <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering sensor installation image (left: render image, right: real image)
+        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
         </div>
     (6) Make sure the sensor tip is near the V groove.  
         &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
@@ -104,7 +104,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
       <div>
       <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 34vw">
       <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 34vw"><br>
-      Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
+      Fig 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
       &nbsp;&nbsp;&nbsp;&nbsp;
       b. Mastering complete image
       </div>
