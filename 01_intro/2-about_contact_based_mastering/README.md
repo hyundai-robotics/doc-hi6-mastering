@@ -1,6 +1,6 @@
 ## 1.2 Contact sensor-based robot mastering 
 This user manual contains information on the `contact sensor-based` robot mastering function.  
-More accurate corrections are possible by using the corresponding `digital contact sensor`.
+More accurate corrections are possible by using this sensor.    
 
 <br>
 
@@ -18,52 +18,60 @@ More accurate corrections are possible by using the corresponding `digital conta
 <br>
 
 ### 1.2.3. Operating concept
-- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))
+- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))  
+- After scanning the `V-groove`, a new encoder offset will be set relative to the detected vector of `V-groove`.  
+- Then calculate the `Corrected encoder` value.  
 
 <br>
 
-### 1.2.4. Full mastering process
-
-**1. Set encoder offset by eye**  
-- 1-a) The user jogs with TP based on the V groove or the scale bar mounted on the robot (reference point setting).
-- 1-b) Perform encoder offset correction for the visually adjusted position for each axis.
-- The way of Encoder offset correction )  
-  TP > system > Engineer mode (R: 314) > 3: Robot parameter > 4: Encoder offset > Click the `Corrected encoder` value of current axis > Click the `Reset one` button
+### 1.2.4. Overall Process  
+1. Encoder offset correction - by direct teaching  
+    1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
+    1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
+    - Enter the encoder offset setup page  
+    &rightarrow; `TP` > Enter the `Engineer Mode` (R-Button + 314) > `System` > `3: Robot parameter` > `4: Encoder offset`  
+    - Proceed with encoder offset initialization  
+        (1) When resetting individual joint:  
+        → Click `Corrrected encoder` value of the corresponding joint > Click `Reset one` > `Shift + OK` > `OK`   
+        (2) When resetting all joint:  
+        → Click `Reset all` > `Shift + OK` > `OK`  
 
 <br>
 
-**2. Attach the contact sensor**  
-- <div>
+2. Attaching the contact sensor    
+    <div>
     <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
+    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering sensor installation image (left: render image, right: real image)
     </div>
 
 <br>
 
-**3. Mastering-based encoder offset correction**
-- 3-a) After completing step 1, enter the mastering plugin and click the `1. Go to the enc offset` button.
-- 3-b) Visually check whether the robot is nearby the V groove. Then click the `2. Start mastering` button.
-- 3-c) Start mastering
-    > c.1) Move `start-point`: Set `-1.5 degrees` as the start-point and move based on the initial position.  
-    > c.2) Setting the `end-point`: Set the end point `+3.0 degrees` based on the start-point as the destination point.  
-    > c.3) `Forward` scan: Scan in the direction `start point -> end point`.  
-    > c.4) `Reverse` scan: Scan in the direction `end point -> Start point`.  
-    > c.5) `Encoder offset correction`: Encoder offset is corrected based on encoder bit of the V-groove detected after scanning.  
-    > c.6) `Move to encoder offset`: Move to the newly set encoder offset position (V-groove).  
-- 3-d) Saving the corrected encoder offset data to the Hi6COM.  
-    > d.1) TP > Engineer mode (R: 314) > system > 3: Robot parameter > 4: Encoder offset  
-    > d.2) Click the shift + `OK` button > `OK` button
-    > !caution! If this process is omitted, the encoder offset value will disappear when the Hi6COM is rebooted.  
+3. Encoder offset correction - by using plugin  
+    (1) After completing the steps in 1, enter the mastering plugin  
+        &rightarrow; `TP` > `system` > `4: Application parameter` > `Mastering`  
+    (2) Enter the joint number in `Joint Number` > Click `Confirm`  
+    (3) Re-enter the mastering plugin to make sure the joint settings are correct.  
+    (4) If it's okay, `motor on` > `enable switch on` > Click `Go to the enc offset`.    
+        &rightarrow; Move to the origin position of the previously set.  
+    (5) Mount the sensor on the joint entered in (2).  
+    (6) Make sure the sensor tip is near the V groove.  
+        &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
+    (7) 2. Click the `2. Start Mastering`.    
+    (8) When mastering is complete, click `OK`.  
+    (9) Remove the sensor.  
+    (10) If there are additional joint to mastering, proceed again from (1).  
+
 
 <br>
 
-**4. Check whether encoder offset is corrected after mastering**
-- Mastering is the process of recalibrating the current encoder value based on `0x400000` and updating the encoder offset value.
-- 따라서 전 축 마스터링 완료 후 엔코더 오프셋 값들로 이동했을 때 하기 두 가지를 확인하면 됩니다.
-    1. `현재 엔코더` 값이 `0x400000` 인지 확인.
-    2. `엔코더 오프셋` 값이, `마스터링 된 후의 값`인지 확인.
-- 확인 과정    
-a.1) TP > 엔지니어모드 진입(R: 314) > 2: 시스템 > 3: 로봇 파라미터 > 4: 엔코더 옵셋  
-a.2) `로봇이동` 클릭   
-a.3) `보정된 엔코더`의 값들이 `마스터링 된 후의 엔코더 오프셋` 값들인지 확인.  
-a.4) 그 때의 현재 엔코더 값이 `0x400000` 값으로 설정되어있는지 확인.
+4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
+    - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
+
+<br>
+
+5. Check whether encoder offset is corrected after mastering.  
+    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset`  
+    - Please check whether the encoder offset value updated through mastering is the same as the `Corrected encoder` value.  
+    - Check whether the `Current encoder` value for each axis is `0x400000`.  
+
