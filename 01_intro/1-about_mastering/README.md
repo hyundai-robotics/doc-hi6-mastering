@@ -1,7 +1,11 @@
 ## 1.1 About Robot Mastering
 
-- The robot's mechanical origin could vary if situations like axis distortion or drive source replacement take occurred during shipping or in the field. The mastering function is required at this time.
-- The mastering function is used to improve the precision of robot motion and repair the mechanical origin.
+- The robot's mechanical origin could vary if situations like axis distortion or  
+drive source replacement take occurred during shipping or in the field.  
+The mastering is required at this time.  
+
+- The mastering is used to improve the precision of robot motion and repair the mechanical origin.  
+
 - A digital contact sensor is used to operate the mastering in this manual.<br>
   The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
   The detected V-groove position is corrected to the mechanical origin.<div>
