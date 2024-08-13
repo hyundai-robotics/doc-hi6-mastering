@@ -27,18 +27,22 @@ Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-oper
     - 1.2.4. Operating description
 ## 1.1 About Robot Mastering
 
-- The robot's mechanical origin could vary if situations like axis distortion or drive source replacement take occurred during shipping or in the field. The mastering function is required at this time.
-- The mastering function is used to improve the precision of robot motion and repair the mechanical origin.
+- The robot's mechanical origin could vary if situations like axis distortion or  
+drive source replacement take occurred during shipping or in the field.  
+The mastering is required at this time.  
+
+- The mastering is used to improve the precision of robot motion and repair the mechanical origin.  
+
 - A digital contact sensor is used to operate the mastering in this manual.<br>
   The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
   The detected V-groove position is corrected to the mechanical origin.<div>
 <img src="../../_assets/12_mastering_concept_eng.PNG" style="max-height: 25vh; max-width: 38.5vw"><br>
-Fig 1-1. a. Starting point(axis distortion status), 
+Fig 1.1. a. Starting point(axis distortion status), 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. V-groove detection during mastering
 </div>## 1.2 Contact sensor-based robot mastering 
 This user manual contains information on the `contact sensor-based` robot mastering function.  
-More accurate corrections are possible by using the corresponding `digital contact sensor`.
+More accurate corrections are possible by using this sensor.    
 
 <br>
 
@@ -56,22 +60,28 @@ More accurate corrections are possible by using the corresponding `digital conta
 <br>
 
 ### 1.2.3. Operating concept
-- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))
+- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))  
+- After scanning the `V-groove`, a new encoder offset will be set relative to the detected vector of `V-groove`.  
+- Then calculate the `Corrected encoder` value.  
 
 <br>
 
-### 1.2.4. Operating description
-- Contact sensors are attached in the following manner 
-
-    <div>
-    <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
-    <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 1-2. Mastering kit installation example (left: render image, right: real image)
-    </div>
-<br>
-
-- The sensor moves up and down or side to side passing through the `V-groove`.
-- Based on the sensor value that varies as it goes through the `V-groove`, the central location of the groove is determined.
-- After identification, encoder offset is performed to correct the origin based on the center point.
+### 1.2.4. Overall Process  
+1. Enter `engineer mode`    
+2. Encoder offset correction - by direct teaching  
+3. Encoder offset correction - by using plugin  
+    (1) Enter the mastering plugin.  
+    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
+    (3) Re-entry into the mastering plug-in.   
+    (4) Click `1.Go to the enc offset` button.  
+    (5) Mount the sensor on the joint.    
+    (6) Make sure the end of the sensor is near the `V-groove`.  
+    (7) Click the `2.Start mastering` button.  
+    (8) Click `OK` when finished.  
+    (9) Please remove the sensor.  
+    (10) If there are additional axes that need to be mastered, proceed again from (1).  
+4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+5. Check whether encoder offset is corrected after mastering.  
 
 # 2. System configuration
 
@@ -98,7 +108,7 @@ More accurate corrections are possible by using the corresponding `digital conta
     <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
     <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
     </div>
-    Fig 2-1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
+    Fig 2.1.1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
 <br>
 
 <br>
@@ -107,7 +117,7 @@ More accurate corrections are possible by using the corresponding `digital conta
     <div>
     <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 15.9vw">
     <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17.02vw"></div>
-    Fig 2-2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
+    Fig 2.1.2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 
 <br>
@@ -147,7 +157,7 @@ Keep in mind
     <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 22.2vw">
     <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh; max-width: 22vw">
     <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 20vw"><br>
-    Fig 2-3. a. Negative value when holding the sensor 
+    Fig 2.2.1. a. Negative value when holding the sensor 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. when pressing the preset button
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -167,7 +177,7 @@ Keep in mind
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
-    Fig 2-4. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+    Fig 2.2.2. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
     <br>- `Network Adaptor` : Network adaptor info for connected computer.
     <br>- `IP Search Range` : Searching for the connected device's IP address.
     <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
@@ -183,15 +193,15 @@ Mastering can be performed correctly only when you understand the conditions and
 The mastering function was developed through Hi6 SDK, and this app must be installed on the Hi6 controller to use it.  
 
 - `Install location` for hi6 controller  
-/ata0:2/lib/hi6/apps/mastering
-
+    - /ata0:2/lib/hi6/apps/mastering
 - `Install method`  
-1) After an ethernet connection, transfer the source code using FTP transmission.  
-2) After saving the source code to the USB, connect to the TP. Then copy and paste the source code utilizing TP's `5: File Management` function.
-
-- `Installation precautions`  
-To use the mastering APP after installation, the controller must be restarted.  
-Reboot the TP if you still don't see the mastering APP in the application program after doing so.
+    1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
+    2) After an ethernet connection, transfer the source code using FTP transmission.  
+    3) After saving the source code to the USB, connect to the TP.  
+    4) Then copy and paste the source code utilizing TP's `5: File Management` function.
+- ❗ `Installation precautions` ❗  
+    1) To use the mastering APP after installation, the controller must be restarted.  
+    2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
 
 <br>
 
@@ -204,12 +214,12 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 - `Standby mode`
 
     <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
-    Fig 2-5. Mastering app image  
+    Fig 2.3.1. Mastering app image  
 
 - If you do not see the mastering APP in the application program, just reboot the TP.
 
     <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
-    Fig 2-6. Mastering `standby mode` image  
+    Fig 2.3.2. Mastering `standby mode` image  
 
     - `IP Address` : Enter the ip address of the mastering communicator.  
     - `Port Number` : Enter the port number of the mastering communicator.  
@@ -238,8 +248,10 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
   - 3.2.1 Error Image
   - 3.2.2 Summary of Errors## 3.1. Environment & process
 ### 3.1.1 Environment
-- Before mastering is performed, the mastering kit must be installed near the `V-groove`.
-<br>Otherwise, an `'ERROR_VAL_THRESHOLD'` error may be returned.
+{% hint style="warning" %}
+**Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
+Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
+{% endhint %}
 - Operates only in manual mode and motor on.
 - Please holding the enable switch until the operation ends.
 
@@ -247,20 +259,76 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 <br>
 
 ### 3.1.2 Operation process - summary
-1. In [Standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number then press the '`shift + OK`' for saving configuration.
-2. Click the '`1.Go to the enc offset`' button.
-3. After step 2., click the '`2.Start mastering`' button.
-4. After step 3., enter the next target joint number, do step 2. again.
-5. After completing the mastering process for all joints, save the corrected encoder offset values using the procedures listed below.
-   - `home` > `supervisor mode(R button + 314)` > `system` > `3: Robot parameter` > `4: Encoder offset` > `shift + OK` > `OK`
-
+1. Enter `engineer mode`    
+2. Encoder offset correction - by direct teaching  
+3. Encoder offset correction - by using plugin  
+    (1) Enter the mastering plugin.  
+    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
+    (3) Re-entry into the mastering plug-in.   
+    (4) Click `1.Go to the enc offset` button.  
+    (5) Mount the sensor on the joint.    
+    (6) Make sure the end of the sensor is near the `V-groove`.  
+    (7) Click the `2.Start mastering` button.  
+    (8) Click `OK` when finished.  
+    (9) Please remove the sensor.  
+    (10) If there are additional axes that need to be mastered, proceed again from (1).  
+4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+5. Check whether encoder offset is corrected after mastering.  
+    
 <br>
 <br>
 
 ### 3.1.3 Operation process - Details
-- Each joint follows below procedures.
-- Procedure status will be displayed on the mastering status block.
-  
+1. Encoder offset correction - by direct teaching  
+    1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
+    1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
+    - Enter the encoder offset setup page  
+    &rightarrow; `TP` > Enter the `Engineer Mode` (R-Button + 314) > `System` > `3: Robot parameter` > `4: Encoder offset`  
+    - Proceed with encoder offset initialization  
+        (1) When resetting individual joint:  
+        → Click `Corrrected encoder` value of the corresponding joint > Click `Reset one` > `Shift + OK` > `OK`   
+        (2) When resetting all joint:  
+        → Click `Reset all` > `Shift + OK` > `OK`  
+
+<br>
+
+2. Encoder offset correction - by using plugin  
+    (1) After completing the steps in 1, enter the mastering plugin  
+        &rightarrow; `TP` > `system` > `4: Application parameter` > `Mastering`  
+    (2) Enter the joint number in `Joint Number` > Click `Confirm`  
+    (3) Re-enter the mastering plugin to make sure the joint settings are correct.  
+    (4) If it's okay, `motor on` > `enable switch on` > Click `Go to the enc offset`.    
+        &rightarrow; Move to the origin position of the previously set.  
+    (5) Mount the sensor on the joint entered in (2).  
+        <div>
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
+        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
+        </div>
+    (6) Make sure the sensor tip is near the V groove.  
+        &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
+    (7) 2. Click the `2. Start Mastering`.    
+    (8) When mastering is complete, click `OK`.  
+    (9) Remove the sensor.  
+    (10) If there are additional joint to mastering, proceed again from (1).  
+
+
+<br>
+
+3. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
+    - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
+
+<br>
+
+4. Check whether encoder offset is corrected after mastering.  
+    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset`  
+    - Please check whether the encoder offset value updated through mastering is the same as the `Corrected encoder` value.  
+    - Check whether the `Current encoder` value for each axis is `0x400000`.  
+
+<br>
+<br>
+
+### 3.1.4 Test Process - Status Bar Log
 |Order|Mastering status|Contents|
 |:---:|:---:|:---|
 |(1)|Standby|Initial image when entering the mastering app.|
@@ -272,15 +340,10 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 |(7)|apply corrected enc offset.|The state of moving to the modified origin after mastering is completed.|
 |(8)|mastering end.|The state of mastering is finished.|
 
-- After completing (1) to (8) for current joint, enter the next joint number then press the '`shift + OK`' to update joint info.
-- After updating the joint status, repeat the steps from (2) to (8) above.
-- After completing the mastering process for all joints, save the corrected encoder offset values using the procedures listed below.
-   - `home` > `supervisor mode(R button + 314)` > `system` > `3: Robot parameter` > `4: Encoder offset` > `shift + OK` > `OK`
-
 <br>
 <br>
 
-### 3.1.4 Results - image
+### 3.1.5 Results - image
 
 - The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
   - `Left block` : `Pre`-encoder offset value `before mastering`.  
@@ -289,7 +352,7 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
       <div>
       <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 34vw">
       <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 34vw"><br>
-      Fig 3-1.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
+      Fig 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
       &nbsp;&nbsp;&nbsp;&nbsp;
       b. Mastering complete image
       </div>
@@ -297,7 +360,7 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 <br>
 <br>
 
-### 3.1.5 Reference
+### 3.1.6 Reference
 - The reason of using `bit` for display encoder offset values.
   - It is intuitive to display angle differences when comparing mastery results, however changes of smaller than 0.01 cannot be assessed.
   - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.
@@ -312,7 +375,7 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
     <div>
     <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 28vh; max-width: 32vw">
     <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 28vh; max-width: 32vw"><br>
-    Fig 3-2. The example image for error status 
+    Fig 3.2.1. The example image for error status 
     </div>
 
 <br>
