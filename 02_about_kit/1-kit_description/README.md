@@ -13,8 +13,8 @@
 
 - **Cable**   
     <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 15.9vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17.02vw"></div>
+    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 30vh; max-width: 35.9vw">
+    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 30vh; max-width: 37.02vw"></div>
     Fig 2.1.2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 

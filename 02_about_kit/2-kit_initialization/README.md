@@ -10,9 +10,9 @@ Keep in mind
 4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
 
     <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 22.2vw">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh; max-width: 22vw">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 20vw"><br>
+    <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 32.2vw">
+    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 30vh; max-width: 32vw">
+    <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 30vw"><br>
     Fig 2.2.1. a. Negative value when holding the sensor 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. when pressing the preset button
