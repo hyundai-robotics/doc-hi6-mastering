@@ -26,12 +26,12 @@
 
 - `대기 화면` 
     
-    <img src="../../_assets/10_mastering_app.PNG" style="max-height: 30vh; max-width: 42vw"><br>
+    <img src="../../_assets/10_mastering_app.PNG" style="max-width: 60vw"><br>
     Fig 2.3-1. 마스터링 App 화면
 
 - 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
 
-    <img src="../../_assets/11_standbymode.PNG" style="max-height: 30vh; max-width: 42vw"><br>
+    <img src="../../_assets/11_standbymode.PNG" style="max-width: 60vw"><br>
     Fig 2.3-2. 마스터링 대기 화면
 
 
@@ -39,7 +39,7 @@
     * `포트 번호` : 마스터링 키트의 포트 번호를 입력합니다.
     * `축 번호` : 마스터링을 수행할 대상 축을 설정합니다.
     * `마스터링 진행 상태` : 마스터링 수행 시 상태를 표시합니다.
-    * `인코더 오프셋(이전 / 이후)` : 마스터링 수행 전 후의 현재 축의 인코더 오프셋 값(`bit`)을 보여줍니다.
+    * `엔코더 오프셋(이전 / 이후)` : 마스터링 수행 전 후의 현재 축의 엔코더 오프셋 값(`bit`)을 보여줍니다.
     <br>
 
 <br>
