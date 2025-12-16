@@ -66,8 +66,8 @@
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
+        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
         </div>
     (7) `2. 마스터링 시작` 버튼을 클릭합니다.  
     (8) 마스터링 완료 시 `확인` 클릭합니다.    
@@ -110,8 +110,8 @@
 ### 3.1.5 시험 결과 - 이미지
 
 <div>
-<img src="../../_assets/13_standby_kor.png" style="max-height: 30vh; max-width: 35vw">
-<img src="../../_assets/14_mastering_end_kor.PNG" style="max-height: 30vh; max-width: 35vw"><br>
+<img src="../../_assets/13_standby_kor.png" style="max-height: 30vh; max-width: 40vw">
+<img src="../../_assets/14_mastering_end_kor.PNG" style="max-height: 30vh; max-width: 40vw"><br>
 Fig 3.1-2.&nbsp;&nbsp;&nbsp;&nbsp;a.대기 화면(좌측 이미지)
 &nbsp;&nbsp;&nbsp;&nbsp;
 b. 마스터링 종료 화면(우측 이미지)
