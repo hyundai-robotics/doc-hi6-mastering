@@ -66,9 +66,8 @@
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 25vh; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 25vh; ">
-        <img src="../../_assets/17_real_sensor_data.png" style="max-height: 25vh;">
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 24vh; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 24vh; ">
         <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
         </div>
     (7) `2. 마스터링 시작` 버튼을 클릭합니다.  
