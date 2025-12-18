@@ -26,7 +26,7 @@
 - **<u>보안 프로그램이 적용된 사내 노트북이나 데스크탑은 IP Search 가 되지 않습니다</u>**
 - 별도의 PC와 마스터링 컨트롤러를 연결한 뒤 해당 프로그램을 통해 통신 IP주소와 포트 번호를 설정할 수 있습니다.
 - 해당 프로그램은 회원가입 후 사용하실 수 있습니다.
-- 통신 설정 후 [Fig 2-1의 통신 모듈](../../02_about_kit/1-kit_description/README.md)과 같이 마스터링 통신 모듈과 Hi6 제어기를 이더넷 케이블로 연결합니다.
+- 통신 설정 후 [Fig 2-1의 통신 모듈](../../02_about_kit/1-kit_description/README.md)과 같이 마스터링 통신 모듈과 ${cont_model} 제어기를 이더넷 케이블로 연결합니다.
 
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 38vh; max-width: 43vw">
