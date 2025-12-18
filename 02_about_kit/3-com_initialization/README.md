@@ -6,9 +6,9 @@ Mastering can be performed correctly only when you understand the conditions and
 <br>
 
 ### 2.3.1 Install Mastering app
-The mastering function was developed through Hi6 SDK, and this app must be installed on the Hi6 controller to use it.  
+The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
 
-- `Install location` for hi6 controller  
+- `Install location` for ${cont_model} controller  
     - /ata0:2/lib/hi6/apps/mastering
 - `Install method`  
     1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
@@ -48,4 +48,4 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 - How to save mastering IP and port number settings  
     1) Enter the preset ip, port. - 
     [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
-    2) Save the configuration through the `shift` + `OK` to the hi6 controller.
+    2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.

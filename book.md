@@ -1,9 +1,9 @@
-﻿# Hi6 Mastering Function Manual
+﻿# ${cont_model} Mastering Function Manual
 
 {% hint style="warning" %} 
-The information provided in this product manual is the property of Hyundai Robotics.
+The information provided in this product manual is the property of HD Hyundai Robotics.
 
-It cannot be reproduced or redistributed in part or whole without written consent from Hyundai Robotics, and it cannot be provided to third parties or used for other purposes.
+It cannot be reproduced or redistributed in part or whole without written consent from HD Hyundai Robotics, and it cannot be provided to third parties or used for other purposes.
 
 The manual can change without prior notification.
 
@@ -13,7 +13,7 @@ The manual can change without prior notification.
 
 This manual covers the robot mastering function.  
 This guidebook is predicated on fundamental understanding robot functioning.  
-Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/README) for details on setting up and using the Hi6 robot controller.
+Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-${cont_model}-tp630/README) for details on setting up and using the ${cont_model} robot controller.
 
 - [1.1 About Robot Mastering](../01_intro/1-about_mastering/README.md)
     - 1.1.1 About Robot Mastering
@@ -27,20 +27,27 @@ Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-oper
     - 1.2.4. Operating description
 ## 1.1 About Robot Mastering
 
-- The robot's mechanical origin could vary if situations like axis distortion or  
-drive source replacement take occurred during shipping or in the field.  
-The mastering is required at this time.  
+- Mastering is a function used to improve robot motion accuracy by compensating for the mechanical zero (home) position of each axis.
+- When the mechanical zero position is defined for the first time, mastering must be performed.
 
-- The mastering is used to improve the precision of robot motion and repair the mechanical origin.  
+- After initial mastering, the mechanical zero position may change due to <br>
+  factors such as axis twisting, replacement of drive components, or mechanical wear.
+- In such cases, mastering must be performed again to restore accurate motion control.
+
+- Mastering vs. Calibration
+    - Mastering is the process of establishing the mechanical zero position that serves as the reference for coordinate calculations.
+    - Calibration is the process of correcting positional errors while maintaining the established mechanical zero reference.
+    - Calibration must always be performed after mastering has been completed.
 
 - A digital contact sensor is used to operate the mastering in this manual.<br>
   The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
-  The detected V-groove position is corrected to the mechanical origin.<div>
-<img src="../../_assets/12_mastering_concept_eng.PNG" style="max-height: 25vh; max-width: 38.5vw"><br>
+  The detected V-groove position is corrected to the mechanical origin.<br><div>
+<img src="../../_assets/12_mastering_concept_eng.PNG" style="max-width: 60vw"><br>
 Fig 1.1. a. Starting point(axis distortion status), 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. V-groove detection during mastering
-</div>## 1.2 Contact sensor-based robot mastering 
+</div>
+## 1.2 Contact sensor-based robot mastering 
 This user manual contains information on the `contact sensor-based` robot mastering function.  
 More accurate corrections are possible by using this sensor.    
 
@@ -48,7 +55,7 @@ More accurate corrections are possible by using this sensor.
 
 ### 1.2.1. Mastering equipment
 - **Robot** <br>- where Mastering device will be connected
-- **Hi6 robot controller** <br>- where Mastering-App will be installed
+- **${cont_model} robot controller** <br>- where Mastering-App will be installed
 - **Mastering kit** <br>- Power + Sensor + Communication module
 
 <br>
@@ -115,8 +122,8 @@ More accurate corrections are possible by using this sensor.
 
 - **Cable**   
     <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 20vh; max-width: 15.9vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 20vh; max-width: 17.02vw"></div>
+    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 30vh; max-width: 35.9vw">
+    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 30vh; max-width: 37.02vw"></div>
     Fig 2.1.2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
 <br>
 
@@ -142,7 +149,8 @@ This package includes a mastering App and a controller setup program.
     |`Cycle`| `5 msec` |
 
 <br>
-<br>## 2.2 Initial setup and Connection
+<br>
+## 2.2 Initial setup and Connection
 ### 2.2.1. Contact sensor initialization
 **Initialization only needs to be done <u>once for one axis before fixing.</u>**   
 
@@ -154,9 +162,9 @@ Keep in mind
 4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
 
     <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 20vh; max-width: 22.2vw">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 20vh; max-width: 22vw">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 20vh; max-width: 20vw"><br>
+    <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 32.2vw">
+    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 30vh; max-width: 32vw">
+    <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 30vw"><br>
     Fig 2.2.1. a. Negative value when holding the sensor 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     b. when pressing the preset button
@@ -182,7 +190,8 @@ Keep in mind
     <br>- `IP Search Range` : Searching for the connected device's IP address.
     <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
     <br>- `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
-    </div>## 2.3 Mastering app configuration
+    </div>
+## 2.3 Mastering app configuration
 Once the mastering APP installation is successfully completed, the mastering function can be performed.  
 After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
 Mastering can be performed correctly only when you understand the conditions and contents of the movement.  
@@ -190,9 +199,9 @@ Mastering can be performed correctly only when you understand the conditions and
 <br>
 
 ### 2.3.1 Install Mastering app
-The mastering function was developed through Hi6 SDK, and this app must be installed on the Hi6 controller to use it.  
+The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
 
-- `Install location` for hi6 controller  
+- `Install location` for ${cont_model} controller  
     - /ata0:2/lib/hi6/apps/mastering
 - `Install method`  
     1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
@@ -213,12 +222,12 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
 - `Standby mode`
 
-    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
+    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-width: 60vw"><br>
     Fig 2.3.1. Mastering app image  
 
 - If you do not see the mastering APP in the application program, just reboot the TP.
 
-    <img src="../../_assets/11_standbymode_eng.PNG" style="max-height: 30vh; max-width: 39vw"><br>
+    <img src="../../_assets/11_standbymode_eng.PNG" style="max-width: 60vw"><br>
     Fig 2.3.2. Mastering `standby mode` image  
 
     - `IP Address` : Enter the ip address of the mastering communicator.  
@@ -232,7 +241,7 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 - How to save mastering IP and port number settings  
     1) Enter the preset ip, port. - 
     [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
-    2) Save the configuration through the `shift` + `OK` to the hi6 controller.
+    2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
 ### 3. Mastering operation
 
 - [3.1. Environment & process](./1-mastering_step/README.md)
@@ -301,8 +310,8 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
         &rightarrow; Move to the origin position of the previously set.  
     (5) Mount the sensor on the joint entered in (2).  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 20vh; max-width: 15vw">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 20vh; max-width: 12.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
+        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
         </div>
     (6) Make sure the sensor tip is near the V groove.  
         &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
@@ -350,8 +359,8 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
   - `Right block` : `Post`-encoder offset value `after mastering`.  
 
       <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 34vw">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 34vw"><br>
+      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 40vw">
+      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
       Fig 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
       &nbsp;&nbsp;&nbsp;&nbsp;
       b. Mastering complete image
@@ -373,8 +382,8 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
     <div>
-    <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 28vh; max-width: 32vw">
-    <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 28vh; max-width: 32vw"><br>
+    <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 30vh; max-width: 40vw">
+    <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
     Fig 3.2.1. The example image for error status 
     </div>
 

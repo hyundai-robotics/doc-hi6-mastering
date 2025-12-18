@@ -6,7 +6,7 @@ More accurate corrections are possible by using this sensor.
 
 ### 1.2.1. Mastering equipment
 - **Robot** <br>- where Mastering device will be connected
-- **Hi6 robot controller** <br>- where Mastering-App will be installed
+- **${cont_model} robot controller** <br>- where Mastering-App will be installed
 - **Mastering kit** <br>- Power + Sensor + Communication module
 
 <br>

@@ -1,8 +1,11 @@
 {
     "langCode": "en",
     "series": "Based on digital contact sensor",
-    "title": "Hi6 Mastering Manual",
+    "title": "${cont_model} Mastering Manual",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Contents",
-    "tocTitleElements": "[ \"h1\", \"h2\"]"
+    "tocTitleElements": "[ \"h1\", \"h2\"]",
+        "variables": {
+        "cont_model": "Hi6"
+    }
 }
