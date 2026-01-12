@@ -1,11 +1,11 @@
 {
     "langCode": "en",
-    "series": "Based on digital contact sensor",
-    "title": "${cont_model} Mastering Manual",
+    "series": "${cont_model} Controller",
+    "title": "Function Manual - Mastering based on digital contact sensor",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Contents",
-    "tocTitleElements": "[ \"h1\", \"h2\"]",
-        "variables": {
-        "cont_model": "Hi6"
-    }
+    "docId": "${cont_model:upper}MASTERING_EN_001",
+    "references": [
+        { "rpath" : "doc-hi6-operation/en-tp630" }
+    ]
 }
