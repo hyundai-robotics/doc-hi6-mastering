@@ -1,7 +1,7 @@
-## 3.2. Error Code for Mastering
+﻿## 3.2. Error Code for Mastering
 ---
 ### 3.2.1 Error Image
-- If an error occurs during mastering operation, an error code is output in ‘Mastering Progress Status’.
+- If an error occurs during mastering operation, an error code is output in 'Mastering Progress Status'.
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
     <div>

@@ -1,4 +1,4 @@
-## 1.1 About Robot Mastering
+﻿## 1.1 About Robot Mastering
 
 - Mastering is a function used to improve robot motion accuracy by compensating for the mechanical zero (home) position of each axis.
 - When the mechanical zero position is defined for the first time, mastering must be performed.

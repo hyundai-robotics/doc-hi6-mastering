@@ -1,4 +1,4 @@
-## 3.1. Environment & process
+﻿## 3.1. Environment & process
 ### 3.1.1 Environment
 {% hint style="warning" %}
 **Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
@@ -24,7 +24,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     (8) Click `OK` when finished.  
     (9) Please remove the sensor.  
     (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+4. After mastering of all axes is completed, move to the updated encoder origin.
 5. Check whether encoder offset is corrected after mastering.  
     
 <br>
@@ -66,7 +66,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 
 <br>
 
-3. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+3. After mastering of all axes is completed, move to the updated encoder origin.
     - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
     - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
 

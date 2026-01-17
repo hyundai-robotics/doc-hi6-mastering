@@ -1,4 +1,4 @@
-## 2.1 Mastering Kit
+﻿## 2.1 Mastering Kit
 ### 2.1.1 Contact sensor components
 - **Sensor & Power adapter** 
 

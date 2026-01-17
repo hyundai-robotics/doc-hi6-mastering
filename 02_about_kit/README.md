@@ -1,4 +1,4 @@
-# 2. System configuration
+﻿# 2. System configuration
 
 - [2.1 Mastering Kit](../02_about_kit/1-kit_description/README.md)
   - 2.1.1 Contact sensor components

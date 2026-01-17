@@ -1,11 +1,11 @@
-## 2.2 Initial setup and Connection
+﻿## 2.2 Initial setup and Connection
 ### 2.2.1. Contact sensor initialization
 **Initialization only needs to be done <u>once for one axis before fixing.</u>**   
 
 Keep in mind
 
 1) After connection, if the sensor's measurement value is a `negative number` as shown in Fig 2-3.a, `mastering cannot proceed`.  
-2) Therefore, please press the ‘preset button’ while ‘holding the sensor’ as shown in Fig 2-3.a.  
+2) Therefore, please press the 'preset button' while 'holding the sensor' as shown in Fig 2-3.a.  
 3) After presetting, check whether a `positive value` is measured `when sensor is pressed`, as shown in Fig 2-3.c.  
 4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
 

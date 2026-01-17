@@ -1,4 +1,4 @@
-## 2.3 Mastering app configuration
+﻿## 2.3 Mastering app configuration
 Once the mastering APP installation is successfully completed, the mastering function can be performed.  
 After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
 Mastering can be performed correctly only when you understand the conditions and contents of the movement.  

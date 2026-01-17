@@ -1,19 +1,13 @@
-﻿# ${cont_model} Mastering Function Manual
+﻿
+[__SOURCE](README.md)
+# ${cont_model} Controller Function Manual - Mastering
 
-{% hint style="warning" %} 
-The information provided in this product manual is the property of HD Hyundai Robotics.
-
-It cannot be reproduced or redistributed in part or whole without written consent from HD Hyundai Robotics, and it cannot be provided to third parties or used for other purposes.
-
-The manual can change without prior notification.
-
-
-**Copyright ⓒ 2023 by HD Hyundai Robotics**
-{% endhint %}# 1 Introduction
+[__SOURCE](01_intro/README.md)
+# 1 Introduction
 
 This manual covers the robot mastering function.  
 This guidebook is predicated on fundamental understanding robot functioning.  
-Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-${cont_model}-tp630/README) for details on setting up and using the ${cont_model} robot controller.
+Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=${cont_model}) for details on setting up and using the ${cont_model} robot controller.
 
 - [1.1 About Robot Mastering](../01_intro/1-about_mastering/README.md)
     - 1.1.1 About Robot Mastering
@@ -25,6 +19,8 @@ Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-oper
     - 1.2.2. Operating mode
     - 1.2.3. Operating concept
     - 1.2.4. Operating description
+
+[__SOURCE](01_intro/1-about_mastering/README.md)
 ## 1.1 About Robot Mastering
 
 - Mastering is a function used to improve robot motion accuracy by compensating for the mechanical zero (home) position of each axis.
@@ -47,6 +43,8 @@ Fig 1.1. a. Starting point(axis distortion status),
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. V-groove detection during mastering
 </div>
+
+[__SOURCE](01_intro/2-about_contact_based_mastering/README.md)
 ## 1.2 Contact sensor-based robot mastering 
 This user manual contains information on the `contact sensor-based` robot mastering function.  
 More accurate corrections are possible by using this sensor.    
@@ -87,9 +85,11 @@ More accurate corrections are possible by using this sensor.
     (8) Click `OK` when finished.  
     (9) Please remove the sensor.  
     (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+4. After mastering of all axes is completed, move to the updated encoder origin.
 5. Check whether encoder offset is corrected after mastering.  
 
+
+[__SOURCE](02_about_kit/README.md)
 # 2. System configuration
 
 - [2.1 Mastering Kit](../02_about_kit/1-kit_description/README.md)
@@ -107,7 +107,9 @@ More accurate corrections are possible by using this sensor.
 
 - [2.3 Mastering app configuration](../02_about_kit/3-com_initialization/README.md)
   - 2.3.1 Install Mastering app
-  - 2.3.2 App setting configuration## 2.1 Mastering Kit
+  - 2.3.2 App setting configuration
+[__SOURCE](02_about_kit/1-kit_description/README.md)
+## 2.1 Mastering Kit
 ### 2.1.1 Contact sensor components
 - **Sensor & Power adapter** 
 
@@ -150,6 +152,8 @@ This package includes a mastering App and a controller setup program.
 
 <br>
 <br>
+
+[__SOURCE](02_about_kit/2-kit_initialization/README.md)
 ## 2.2 Initial setup and Connection
 ### 2.2.1. Contact sensor initialization
 **Initialization only needs to be done <u>once for one axis before fixing.</u>**   
@@ -157,7 +161,7 @@ This package includes a mastering App and a controller setup program.
 Keep in mind
 
 1) After connection, if the sensor's measurement value is a `negative number` as shown in Fig 2-3.a, `mastering cannot proceed`.  
-2) Therefore, please press the ‘preset button’ while ‘holding the sensor’ as shown in Fig 2-3.a.  
+2) Therefore, please press the 'preset button' while 'holding the sensor' as shown in Fig 2-3.a.  
 3) After presetting, check whether a `positive value` is measured `when sensor is pressed`, as shown in Fig 2-3.c.  
 4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
 
@@ -191,6 +195,8 @@ Keep in mind
     <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
     <br>- `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
     </div>
+
+[__SOURCE](02_about_kit/3-com_initialization/README.md)
 ## 2.3 Mastering app configuration
 Once the mastering APP installation is successfully completed, the mastering function can be performed.  
 After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
@@ -242,6 +248,8 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
     1) Enter the preset ip, port. - 
     [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
     2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
+
+[__SOURCE](03_operation/README.md)
 ### 3. Mastering operation
 
 - [3.1. Environment & process](./1-mastering_step/README.md)
@@ -255,7 +263,9 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
 - [3.2. Error Code for Mastering](./2-error/README.md)
   - 3.2.1 Error Image
-  - 3.2.2 Summary of Errors## 3.1. Environment & process
+  - 3.2.2 Summary of Errors
+[__SOURCE](03_operation/1-mastering_step/README.md)
+## 3.1. Environment & process
 ### 3.1.1 Environment
 {% hint style="warning" %}
 **Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
@@ -281,7 +291,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     (8) Click `OK` when finished.  
     (9) Please remove the sensor.  
     (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+4. After mastering of all axes is completed, move to the updated encoder origin.
 5. Check whether encoder offset is corrected after mastering.  
     
 <br>
@@ -323,7 +333,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 
 <br>
 
-3. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+3. After mastering of all axes is completed, move to the updated encoder origin.
     - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
     - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
 
@@ -375,10 +385,12 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
   - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.
   - It is more accurate to display the encoder value in bit units in order to convey these minute variances.
 
+
+[__SOURCE](03_operation/2-error/README.md)
 ## 3.2. Error Code for Mastering
 ---
 ### 3.2.1 Error Image
-- If an error occurs during mastering operation, an error code is output in ‘Mastering Progress Status’.
+- If an error occurs during mastering operation, an error code is output in 'Mastering Progress Status'.
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
     <div>

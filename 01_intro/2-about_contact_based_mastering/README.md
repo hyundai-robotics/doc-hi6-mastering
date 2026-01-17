@@ -1,4 +1,4 @@
-## 1.2 Contact sensor-based robot mastering 
+﻿## 1.2 Contact sensor-based robot mastering 
 This user manual contains information on the `contact sensor-based` robot mastering function.  
 More accurate corrections are possible by using this sensor.    
 
@@ -38,6 +38,6 @@ More accurate corrections are possible by using this sensor.
     (8) Click `OK` when finished.  
     (9) Please remove the sensor.  
     (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. ⭐After mastering of all axes is completed, move to the updated encoder origin.⭐  
+4. After mastering of all axes is completed, move to the updated encoder origin.
 5. Check whether encoder offset is corrected after mastering.  
 
