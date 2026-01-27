@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} 제어기 기능설명서 - 마스터링
+# ${cont_model} 제어기 기능설명서 - 접촉식 센서 기반 마스터링
 
 [__SOURCE](01_intro/README.md)
 # 1. 개요
