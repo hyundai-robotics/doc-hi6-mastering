@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [${cont_model} Controller Function Manual - Mastering](README.md)
+* [${cont_model} Controller Function Manual - Mastering based on digital contact sensor](README.md)
 * [1. Introduction](01_intro/README.md)
   * [1.1 About Robot Mastering](01_intro/1-about_mastering/README.md)
   * [1.2 Contact sensor-based robot mastering](01_intro/2-about_contact_based_mastering/README.md) 

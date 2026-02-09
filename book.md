@@ -1,6 +1,6 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} Controller Function Manual - Mastering
+# ${cont_model} Controller Function Manual - Mastering based on digital contact sensor
 
 [__SOURCE](01_intro/README.md)
 # 1 Introduction
