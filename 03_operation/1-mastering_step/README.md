@@ -1,5 +1,6 @@
 ﻿## 3.1. Environment & process
-### 3.1.1 Environment
+
+#### 3.1.1 Environment
 {% hint style="warning" %}
 **Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
 Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
@@ -10,7 +11,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.2 Operation process - summary
+#### 3.1.2 Operation process - summary
 1. Enter `engineer mode`    
 2. Encoder offset correction - by direct teaching  
 3. Encoder offset correction - by using plugin  
@@ -30,7 +31,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.3 Operation process - Details
+#### 3.1.3 Operation process - Details
 1. Encoder offset correction - by direct teaching  
     1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
     1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
@@ -80,7 +81,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.4 Test Process - Status Bar Log
+#### 3.1.4 Test Process - Status Bar Log
 |Order|Mastering status|Contents|
 |:---:|:---:|:---|
 |(1)|Standby|Initial image when entering the mastering app.|
@@ -95,7 +96,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.5 Results - image
+#### 3.1.5 Results - image
 
 - The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
   - `Left block` : `Pre`-encoder offset value `before mastering`.  
@@ -112,7 +113,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.6 Reference
+#### 3.1.6 Reference
 - The reason of using `bit` for display encoder offset values.
   - It is intuitive to display angle differences when comparing mastery results, however changes of smaller than 0.01 cannot be assessed.
   - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.

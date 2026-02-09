@@ -51,27 +51,27 @@ More accurate corrections are possible by using this sensor.
 
 <br>
 
-### 1.2.1. Mastering equipment
+#### 1.2.1. Mastering equipment
 - **Robot** <br>- where Mastering device will be connected
 - **${cont_model} robot controller** <br>- where Mastering-App will be installed
 - **Mastering kit** <br>- Power + Sensor + Communication module
 
 <br>
 
-### 1.2.2. Operating mode
+#### 1.2.2. Operating mode
 - The operation mode of the robot must be set to `manual mode`.
 - The procedure can only be carried out with the `motor on status` and the `enable switch` turned on.
 
 <br>
 
-### 1.2.3. Operating concept
+#### 1.2.3. Operating concept
 - The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))  
 - After scanning the `V-groove`, a new encoder offset will be set relative to the detected vector of `V-groove`.  
 - Then calculate the `Corrected encoder` value.  
 
 <br>
 
-### 1.2.4. Overall Process  
+#### 1.2.4. Overall Process  
 1. Enter `engineer mode`    
 2. Encoder offset correction - by direct teaching  
 3. Encoder offset correction - by using plugin  
@@ -110,7 +110,8 @@ More accurate corrections are possible by using this sensor.
   - 2.3.2 App setting configuration
 [__SOURCE](02_about_kit/1-kit_description/README.md)
 ## 2.1 Mastering Kit
-### 2.1.1 Contact sensor components
+
+#### 2.1.1 Contact sensor components
 - **Sensor & Power adapter** 
 
     <div>
@@ -136,12 +137,12 @@ This package includes a mastering App and a controller setup program.
 
 <br>
 
-### 2.1.2 Contact sensor connections
+#### 2.1.2 Contact sensor connections
 - Connect the sensor as shown in the photo on the Fig 2-1 b.
 
 <br>
 
-### 2.1.3 Specifications
+#### 2.1.3 Specifications
 - The mastering kit has the interface specifications below.
 
     |feature|detail|
@@ -155,7 +156,8 @@ This package includes a mastering App and a controller setup program.
 
 [__SOURCE](02_about_kit/2-kit_initialization/README.md)
 ## 2.2 Initial setup and Connection
-### 2.2.1. Contact sensor initialization
+
+#### 2.2.1. Contact sensor initialization
 **Initialization only needs to be done <u>once for one axis before fixing.</u>**   
 
 Keep in mind
@@ -179,7 +181,7 @@ Keep in mind
 <br>
 <br>
 
-### 2.2.2. Communication settings for contact sensor
+#### 2.2.2. Communication settings for contact sensor
 - The software bundle includes the mastering setup application. Install the software on a different computer.
 - **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
 - In the case of above, you can set the ip configure by using personal computer.
@@ -198,13 +200,14 @@ Keep in mind
 
 [__SOURCE](02_about_kit/3-com_initialization/README.md)
 ## 2.3 Mastering app configuration
+
 Once the mastering APP installation is successfully completed, the mastering function can be performed.  
 After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
 Mastering can be performed correctly only when you understand the conditions and contents of the movement.  
 
 <br>
 
-### 2.3.1 Install Mastering app
+#### 2.3.1 Install Mastering app
 The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
 
 - `Install location` for ${cont_model} controller  
@@ -214,13 +217,13 @@ The mastering function was developed through ${cont_model} SDK, and this app mus
     2) After an ethernet connection, transfer the source code using FTP transmission.  
     3) After saving the source code to the USB, connect to the TP.  
     4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-- ❗ `Installation precautions` ❗  
+- `Installation precautions`
     1) To use the mastering APP after installation, the controller must be restarted.  
     2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
 
 <br>
 
-### 2.3.2 App setting configuration
+#### 2.3.2 App setting configuration
 - `App location`  
 TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
@@ -250,7 +253,7 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
     2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
 
 [__SOURCE](03_operation/README.md)
-### 3. Mastering operation
+# 3. Mastering operation
 
 - [3.1. Environment & process](./1-mastering_step/README.md)
   - 3.1.1 Environment
@@ -264,9 +267,11 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 - [3.2. Error Code for Mastering](./2-error/README.md)
   - 3.2.1 Error Image
   - 3.2.2 Summary of Errors
+
 [__SOURCE](03_operation/1-mastering_step/README.md)
 ## 3.1. Environment & process
-### 3.1.1 Environment
+
+#### 3.1.1 Environment
 {% hint style="warning" %}
 **Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
 Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
@@ -277,7 +282,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.2 Operation process - summary
+#### 3.1.2 Operation process - summary
 1. Enter `engineer mode`    
 2. Encoder offset correction - by direct teaching  
 3. Encoder offset correction - by using plugin  
@@ -297,7 +302,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.3 Operation process - Details
+#### 3.1.3 Operation process - Details
 1. Encoder offset correction - by direct teaching  
     1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
     1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
@@ -347,7 +352,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.4 Test Process - Status Bar Log
+#### 3.1.4 Test Process - Status Bar Log
 |Order|Mastering status|Contents|
 |:---:|:---:|:---|
 |(1)|Standby|Initial image when entering the mastering app.|
@@ -362,7 +367,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.5 Results - image
+#### 3.1.5 Results - image
 
 - The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
   - `Left block` : `Pre`-encoder offset value `before mastering`.  
@@ -379,7 +384,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.1.6 Reference
+#### 3.1.6 Reference
 - The reason of using `bit` for display encoder offset values.
   - It is intuitive to display angle differences when comparing mastery results, however changes of smaller than 0.01 cannot be assessed.
   - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.
@@ -388,8 +393,8 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 
 [__SOURCE](03_operation/2-error/README.md)
 ## 3.2. Error Code for Mastering
----
-### 3.2.1 Error Image
+
+#### 3.2.1 Error Image
 - If an error occurs during mastering operation, an error code is output in 'Mastering Progress Status'.
 - ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
 
@@ -402,7 +407,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 <br>
 <br>
 
-### 3.2.2 Summary of Errors
+#### 3.2.2 Summary of Errors
 This is a list of errors that can occur while performing mastering operations.  
 
 |Error Code|Contents|Todo List|

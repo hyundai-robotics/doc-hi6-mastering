@@ -1,5 +1,6 @@
 ﻿## 2.2 Initial setup and Connection
-### 2.2.1. Contact sensor initialization
+
+#### 2.2.1. Contact sensor initialization
 **Initialization only needs to be done <u>once for one axis before fixing.</u>**   
 
 Keep in mind
@@ -23,7 +24,7 @@ Keep in mind
 <br>
 <br>
 
-### 2.2.2. Communication settings for contact sensor
+#### 2.2.2. Communication settings for contact sensor
 - The software bundle includes the mastering setup application. Install the software on a different computer.
 - **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
 - In the case of above, you can set the ip configure by using personal computer.

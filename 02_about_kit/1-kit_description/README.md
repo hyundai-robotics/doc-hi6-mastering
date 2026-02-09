@@ -1,5 +1,6 @@
 ﻿## 2.1 Mastering Kit
-### 2.1.1 Contact sensor components
+
+#### 2.1.1 Contact sensor components
 - **Sensor & Power adapter** 
 
     <div>
@@ -25,12 +26,12 @@ This package includes a mastering App and a controller setup program.
 
 <br>
 
-### 2.1.2 Contact sensor connections
+#### 2.1.2 Contact sensor connections
 - Connect the sensor as shown in the photo on the Fig 2-1 b.
 
 <br>
 
-### 2.1.3 Specifications
+#### 2.1.3 Specifications
 - The mastering kit has the interface specifications below.
 
     |feature|detail|

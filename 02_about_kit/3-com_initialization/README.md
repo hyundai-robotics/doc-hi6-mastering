@@ -1,11 +1,12 @@
 ﻿## 2.3 Mastering app configuration
+
 Once the mastering APP installation is successfully completed, the mastering function can be performed.  
 After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
 Mastering can be performed correctly only when you understand the conditions and contents of the movement.  
 
 <br>
 
-### 2.3.1 Install Mastering app
+#### 2.3.1 Install Mastering app
 The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
 
 - `Install location` for ${cont_model} controller  
@@ -15,13 +16,13 @@ The mastering function was developed through ${cont_model} SDK, and this app mus
     2) After an ethernet connection, transfer the source code using FTP transmission.  
     3) After saving the source code to the USB, connect to the TP.  
     4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-- ❗ `Installation precautions` ❗  
+- `Installation precautions`
     1) To use the mastering APP after installation, the controller must be restarted.  
     2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
 
 <br>
 
-### 2.3.2 App setting configuration
+#### 2.3.2 App setting configuration
 - `App location`  
 TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 
