@@ -1,18 +1,18 @@
-﻿# 2. System configuration
+# 2. 系统配置
 
-- [2.1 Mastering Kit](../02_about_kit/1-kit_description/README.md)
-  - 2.1.1 Contact sensor components
-  - 2.1.2 Contact sensor connections
-  - 2.1.3 Specifications
+- [2.1 启动套件](../02_about_kit/1-kit_description/README.md)
+  - 2.1.1 接触传感器组件
+  - 2.1.2 接触传感器连接
+  - 2.1.3 技术规格
 
 <br>
 
-- [2.2 Initial setup and Connection](../02_about_kit/2-kit_initialization/README.md)
-  - 2.2.1 Contact sensor initialization
-  - 2.2.2 Communication settings for contact sensor
+- [2.2 初始设置和连接](../02_about_kit/2-kit_initialization/README.md)
+  - 2.2.1 接触传感器初始化
+  - 2.2.2 接触传感器的通信设置
   
 <br>
 
-- [2.3 Mastering app configuration](../02_about_kit/3-com_initialization/README.md)
-  - 2.3.1 Install Mastering app
-  - 2.3.2 App setting configuration
+- [2.3 启动应用程序配置](../02_about_kit/3-com_initialization/README.md)
+  - 2.3.1 安装启动应用程序
+  - 2.3.2 应用程序设置配置

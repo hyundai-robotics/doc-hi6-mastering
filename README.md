@@ -1,1 +1,1 @@
-﻿# ${cont_model} Controller Function Manual - Mastering based on digital contact sensor
+﻿# ${cont_model} 控制器功能手册 - 基于数字接触传感器的掌握

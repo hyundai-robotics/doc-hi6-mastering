@@ -1,29 +1,29 @@
-﻿## 3.2. Error Code for Mastering
+## 3.2. 错误代码说明
 
-#### 3.2.1 Error Image
-- If an error occurs during mastering operation, an error code is output in 'Mastering Progress Status'.
-- ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
+#### 3.2.1 错误图像
+- 在掌控操作过程中，如果发生错误，'掌控进度状态'将输出错误代码。
+- 例如) `ERROR_TCP_CONNECT`， `ERROR_MOTOR_ON_CHK`
 
     <div>
     <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 30vh; max-width: 40vw">
     <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-    Fig 3.2.1. The example image for error status 
+    图 3.2.1. 错误状态的示例图像 
     </div>
 
 <br>
 <br>
 
-#### 3.2.2 Summary of Errors
-This is a list of errors that can occur while performing mastering operations.  
+#### 3.2.2 错误总结
+这是在执行掌控操作时可能出现的错误列表。  
 
-|Error Code|Contents|Todo List|
+|错误代码|内容|待办事项|
 |:---|:---|:---|
-|`ERROR_MOTOR_ON_CHK`|Try mastering with the motor off.|Perform mastering with the motor on.|
-|`ERROR_MOTOR_OFF_CHK`|Motor off detection when performing mastering.|When performing mastering, do not release the Enable SW until the function ends. Return to the initial position and re-execute mastering.|
-|`ERROR_VAL_THRESHOLD`|`V-groove` was not detected during mastering.|V-home was not detected. After clicking button 1, place the sensor near the `V-groove` and resume mastering.|
-|`ERROR_NO_SENSOR_VALS`|There is no sensor data recorded.|Return to the initial position and re-execute mastering. If repeated problems occur, check the plug-in APP software.|
-|`ERROR_NO_ENC_VALS`|There is no encoder data recorded.|Return to the initial position and re-execute mastering. If repeated problems occur, check the plug-in APP software.|
-|`ERROR_TCP_RES_FAIL`| TCP/IP communication response fail. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_TCP_RES_NULL`| TCP/IP communication response null. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_TCP_CONNECT` | TCP/IP communication connection fail. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_PLAYBACK` | Playback Error. | Please restart the controller. |
+|`ERROR_MOTOR_ON_CHK`|尝试在马达关闭的情况下进行掌控。|在马达开启的情况下执行掌控。|
+|`ERROR_MOTOR_OFF_CHK`|在执行掌控时检测到马达关闭。|在执行掌控时，直到功能结束，请不要释放使能开关。返回初始位置并重新执行掌控。|
+|`ERROR_VAL_THRESHOLD`|在掌控过程中未检测到`V-groove`。|未检测到V-home。点击按钮1后，将传感器放置在`V-groove`附近并恢复掌控。|
+|`ERROR_NO_SENSOR_VALS`|没有记录传感器数据。|返回初始位置并重新执行掌控。如果重复出现问题，请检查插件应用软件。|
+|`ERROR_NO_ENC_VALS`|没有记录编码器数据。|返回初始位置并重新执行掌控。如果重复出现问题，请检查插件应用软件。|
+|`ERROR_TCP_RES_FAIL`| TCP/IP通信响应失败。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_TCP_RES_NULL`| TCP/IP通信响应为null。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_TCP_CONNECT` | TCP/IP通信连接失败。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_PLAYBACK` | 播放错误。 | 请重启控制器。 |

@@ -1,425 +1,408 @@
 ﻿
-[__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
-
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
-
 [__SOURCE](01_intro/README.md)
-# 1 Introduction
+# 1 介绍
 
-This manual covers the robot mastering function.  
-This guidebook is predicated on fundamental understanding robot functioning.  
-Please click the following [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=${cont_model}) for details on setting up and using the ${cont_model} robot controller.
+本手册涵盖了机器人掌握功能。  
+本指南基于对机器人运行的基本理解。  
+请点击以下 [link](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=${cont_model}) 以获取有关设置和使用 ${cont_model} 机器人控制器的详细信息。
 
-- [1.1 About Robot Mastering](../01_intro/1-about_mastering/README.md)
-    - 1.1.1 About Robot Mastering
+- [1.1 关于机器人掌握](../01_intro/1-about_mastering/README.md)
+    - 1.1.1 关于机器人掌握
 
 <br>
 
-- [1.2 Contact sensor-based robot mastering](../01_intro/2-about_contact_based_mastering/README.md)
-    - 1.2.1. Mastering equipment
-    - 1.2.2. Operating mode
-    - 1.2.3. Operating concept
-    - 1.2.4. Operating description
-
+- [1.2 基于传感器的机器人掌握](../01_intro/2-about_contact_based_mastering/README.md)
+    - 1.2.1. 掌握设备
+    - 1.2.2. 操作模式
+    - 1.2.3. 操作概念
+    - 1.2.4. 操作描述
 [__SOURCE](01_intro/1-about_mastering/README.md)
-## 1.1 About Robot Mastering
+## 1.1 关于机器人校正
 
-- Mastering is a function used to improve robot motion accuracy by compensating for the mechanical zero (home) position of each axis.
-- When the mechanical zero position is defined for the first time, mastering must be performed.
+- 校正是通过补偿每个轴的机械零点（原点）位置来提高机器人运动精度的功能。
+- 当首次定义机械零点时，必须执行校正。
 
-- After initial mastering, the mechanical zero position may change due to <br>
-  factors such as axis twisting, replacement of drive components, or mechanical wear.
-- In such cases, mastering must be performed again to restore accurate motion control.
+- 在初始校正后，机械零点可能因 <br>
+  轴扭曲、更换驱动组件或机械磨损等因素而改变。
+- 在这种情况下，必须重新执行校正以恢复准确的运动控制。
 
-- Mastering vs. Calibration
-    - Mastering is the process of establishing the mechanical zero position that serves as the reference for coordinate calculations.
-    - Calibration is the process of correcting positional errors while maintaining the established mechanical zero reference.
-    - Calibration must always be performed after mastering has been completed.
+- 校正与标定
+    - 校正是建立机械零点的位置，作为坐标计算的参考过程。
+    - 标定是在保持已建立的机械零点参考的同时，纠正位置误差的过程。
+    - 在完成校正后，必须始终执行标定。
 
-- A digital contact sensor is used to operate the mastering in this manual.<br>
-  The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
-  The detected V-groove position is corrected to the mechanical origin.<br><div>
+- 本手册使用数字接触传感器进行校正。<br>
+  传感器连接到机器人的每个轴，检测V型槽 <br> 在起始点的基础上，从-1.5度移动到+1.5度。<br>
+  检测到的V型槽位置被修正为机械原点。<br><div>
 <img src="../../_assets/12_mastering_concept_eng.PNG" style="max-width: 60vw"><br>
-Fig 1.1. a. Starting point(axis distortion status), 
+图1.1. a. 起始点（轴扭曲状态），
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-b. V-groove detection during mastering
+b. 在校正期间检测到的V型槽
 </div>
-
 [__SOURCE](01_intro/2-about_contact_based_mastering/README.md)
-## 1.2 Contact sensor-based robot mastering 
-This user manual contains information on the `contact sensor-based` robot mastering function.  
-More accurate corrections are possible by using this sensor.    
+## 1.2 基于接触传感器的机器人标定  
+本用户手册包含有关`基于接触传感器`的机器人标定功能的信息。  
+通过使用该传感器，可以进行更准确的校正。  
 
 <br>
 
-#### 1.2.1. Mastering equipment
-- **Robot** <br>- where Mastering device will be connected
-- **${cont_model} robot controller** <br>- where Mastering-App will be installed
-- **Mastering kit** <br>- Power + Sensor + Communication module
+#### 1.2.1. 标定设备  
+- **机器人** <br>- 标定设备将连接的地方  
+- **${cont_model} 机器人控制器** <br>- 将安装标定应用程序的地方  
+- **标定套件** <br>- 电源 + 传感器 + 通信模块  
 
 <br>
 
-#### 1.2.2. Operating mode
-- The operation mode of the robot must be set to `manual mode`.
-- The procedure can only be carried out with the `motor on status` and the `enable switch` turned on.
+#### 1.2.2. 操作模式  
+- 机器人操作模式必须设置为`手动模式`。  
+- 该程序只能在`电机开启状态`和`启用开关`打开时进行。  
 
 <br>
 
-#### 1.2.3. Operating concept
-- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))  
-- After scanning the `V-groove`, a new encoder offset will be set relative to the detected vector of `V-groove`.  
-- Then calculate the `Corrected encoder` value.  
+#### 1.2.3. 操作概念  
+- 数字接触传感器扫描固定在机器人每个轴上的标定块的`V型槽`以找到更精确的原点。 ([图 1-1](../1-about_mastering/README.md))  
+- 扫描`V型槽`后，将根据检测到的`V型槽`的向量设置新的编码器偏移。  
+- 然后计算`已修正编码器 (Corrected encoder)`值。  
 
 <br>
 
-#### 1.2.4. Overall Process  
-1. Enter `engineer mode`    
-2. Encoder offset correction - by direct teaching  
-3. Encoder offset correction - by using plugin  
-    (1) Enter the mastering plugin.  
-    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
-    (3) Re-entry into the mastering plug-in.   
-    (4) Click `1.Go to the enc offset` button.  
-    (5) Mount the sensor on the joint.    
-    (6) Make sure the end of the sensor is near the `V-groove`.  
-    (7) Click the `2.Start mastering` button.  
-    (8) Click `OK` when finished.  
-    (9) Please remove the sensor.  
-    (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. After mastering of all axes is completed, move to the updated encoder origin.
-5. Check whether encoder offset is corrected after mastering.  
-
-
+#### 1.2.4. 整体流程  
+1. 输入`工程师模式`  
+2. 编码器偏移校正 - 通过直接教学  
+3. 编码器偏移校正 - 通过使用插件  
+    (1) 进入标定插件。  
+    (2) 在[待机模式](../../02_about_kit/3-com_initialization/README.md)下，输入关节编号 > `Shift + OK` > `确认 (OK)`  
+    (3) 再次进入标定插件。  
+    (4) 点击`1.前往编码偏移`按钮。  
+    (5) 将传感器安装在关节上。  
+    (6) 确保传感器的末端靠近`V型槽`。  
+    (7) 点击`2.开始标定`按钮。  
+    (8) 完成时点击`确认 (OK)`。  
+    (9) 请移除传感器。  
+    (10) 如果还有其他需要标定的轴，请从（1）开始再次进行。  
+4. 所有轴的标定完成后，移动到更新的编码器原点。  
+5. 检查标定后编码器偏移是否已校正。  
 [__SOURCE](02_about_kit/README.md)
-# 2. System configuration
+# 2. 系统配置
 
-- [2.1 Mastering Kit](../02_about_kit/1-kit_description/README.md)
-  - 2.1.1 Contact sensor components
-  - 2.1.2 Contact sensor connections
-  - 2.1.3 Specifications
+- [2.1 启动套件](../02_about_kit/1-kit_description/README.md)
+  - 2.1.1 接触传感器组件
+  - 2.1.2 接触传感器连接
+  - 2.1.3 技术规格
 
 <br>
 
-- [2.2 Initial setup and Connection](../02_about_kit/2-kit_initialization/README.md)
-  - 2.2.1 Contact sensor initialization
-  - 2.2.2 Communication settings for contact sensor
+- [2.2 初始设置和连接](../02_about_kit/2-kit_initialization/README.md)
+  - 2.2.1 接触传感器初始化
+  - 2.2.2 接触传感器的通信设置
   
 <br>
 
-- [2.3 Mastering app configuration](../02_about_kit/3-com_initialization/README.md)
-  - 2.3.1 Install Mastering app
-  - 2.3.2 App setting configuration
+- [2.3 启动应用程序配置](../02_about_kit/3-com_initialization/README.md)
+  - 2.3.1 安装启动应用程序
+  - 2.3.2 应用程序设置配置
 [__SOURCE](02_about_kit/1-kit_description/README.md)
-## 2.1 Mastering Kit
+## 2.1 主控工具包
 
-#### 2.1.1 Contact sensor components
-- **Sensor & Power adapter** 
+#### 2.1.1 接触传感器组件
+- **传感器和电源适配器** 
 
     <div>
     <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
     <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
     </div>
-    Fig 2.1.1. a. Contact sensor&nbsp;&nbsp;&nbsp;&nbsp; b. Communication module
+    图 2.1.1. a. 接触传感器&nbsp;&nbsp;&nbsp;&nbsp; b. 通信模块
 <br>
 
 <br>
 
-- **Cable**   
+- **电缆**   
     <div>
     <img src="../../_assets/04_power_adapter.PNG" style="max-height: 30vh; max-width: 35.9vw">
     <img src="../../_assets/05_lan_cable.PNG" style="max-height: 30vh; max-width: 37.02vw"></div>
-    Fig 2.1.2.&nbsp;&nbsp; a. power adapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. ethernet cable
+    图 2.1.2.&nbsp;&nbsp; a. 电源适配器&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 以太网电缆
 <br>
 
 <br>
 
-- **S/W**  
-This package includes a mastering App and a controller setup program.
+- **软件**  
+此包包括一个主控应用程序和一个控制器设置程序。
 
 <br>
 
-#### 2.1.2 Contact sensor connections
-- Connect the sensor as shown in the photo on the Fig 2-1 b.
+#### 2.1.2 接触传感器连接
+- 按照图 2-1 b 中的照片连接传感器。
 
 <br>
 
-#### 2.1.3 Specifications
-- The mastering kit has the interface specifications below.
+#### 2.1.3 规格
+- 主控工具包的接口规格如下。
 
-    |feature|detail|
+    |特征|细节|
     |:----|:----|
-    |`Sensor Type`| `Digital contact` |
-    |`Protocol`| `Ethernet` (TCP/IP) |
-    |`Cycle`| `5 msec` |
+    |`传感器类型 (Sensor Type)`| `Digital contact` |
+    |`协议 (Protocol)`| `Ethernet` (TCP/IP) |
+    |`周期 (Cycle)`| `5 msec` |
 
 <br>
 <br>
-
 [__SOURCE](02_about_kit/2-kit_initialization/README.md)
-## 2.2 Initial setup and Connection
+## 2.2 初始设置和连接
 
-#### 2.2.1. Contact sensor initialization
-**Initialization only needs to be done <u>once for one axis before fixing.</u>**   
+#### 2.2.1. 接触传感器初始化
+**初始化只需在固定前对一个轴<u>进行一次。</u>**   
 
-Keep in mind
+请记住
 
-1) After connection, if the sensor's measurement value is a `negative number` as shown in Fig 2-3.a, `mastering cannot proceed`.  
-2) Therefore, please press the 'preset button' while 'holding the sensor' as shown in Fig 2-3.a.  
-3) After presetting, check whether a `positive value` is measured `when sensor is pressed`, as shown in Fig 2-3.c.  
-4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
+1) 连接后，如果传感器的测量值为图2-3.a所示的`负数`，则`无法进行归零`。  
+2) 因此，请在按图2-3.a所示的情况下，按下“预设按钮”的同时“保持传感器”。  
+3) 预设后，请检查在传感器被按下时，测量到的值是否为`正值`，如图2-3.c所示。  
+4) **在完成每个机器人轴的归零后，需要确保测量值为`正数`。**
 
     <div>
     <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 32.2vw">
     <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 30vh; max-width: 32vw">
     <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 30vw"><br>
-    Fig 2.2.1. a. Negative value when holding the sensor 
+    图 2.2.1. a. 持续传感器时的负值 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    b. when pressing the preset button
+    b. 按下预设按钮时
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    c. Positive value when sensor is pressed
+    c. 传感器被按下时的正值
     </div>
 
 <br>
 <br>
 
-#### 2.2.2. Communication settings for contact sensor
-- The software bundle includes the mastering setup application. Install the software on a different computer.
-- **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
-- In the case of above, you can set the ip configure by using personal computer.
-- Following membership registration, you are able to use this program.
-- After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../1-kit_description/README.md).
+#### 2.2.2. 接触传感器的通信设置
+- 软件包包括归零设置应用程序。请在另一台计算机上安装软件。
+- **<u>如果您使用公司计算机，请注意公司安全政策通常不允许使用“IP搜索”功能。</u>**
+- 在这种情况下，您可以使用个人计算机配置IP设置。
+- 注册成为会员后，您将能够使用该程序。
+- 完成通信设置后，请按照[图2-1 b.通信模块](../1-kit_description/README.md)连接硬件（通讯器、以太网电缆）。
 
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
-    Fig 2.2.2. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
-    <br>- `Network Adaptor` : Network adaptor info for connected computer.
-    <br>- `IP Search Range` : Searching for the connected device's IP address.
-    <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
-    <br>- `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
+    图 2.2.2. [IP配置器](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+    <br>- `网络适配器` : 连接计算机的网络适配器信息。
+    <br>- `IP搜索范围` : 搜索连接设备的IP地址。
+    <br>- `IP地址/Mac地址` : 连接设备的IP地址和MAC地址
+    <br>- `IP设置/重置` : IP设置按钮（编辑）和重置按钮（<u>**仅用于更改IP设置**</u>）
     </div>
-
 [__SOURCE](02_about_kit/3-com_initialization/README.md)
-## 2.3 Mastering app configuration
+## 2.3 主控应用程序配置
 
-Once the mastering APP installation is successfully completed, the mastering function can be performed.  
-After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
-Mastering can be performed correctly only when you understand the conditions and contents of the movement.  
+一旦主控应用程序安装成功完成，就可以执行主控功能。  
+完成多个主控配置设置后，可以通过几个按钮轻松执行主控操作。  
+仅当理解运动的条件和内容时，才能正确执行主控。
 
 <br>
 
-#### 2.3.1 Install Mastering app
-The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
+#### 2.3.1 安装主控应用程序
+主控功能是通过 ${cont_model} SDK 开发的，必须在 ${cont_model} 控制器上安装此应用程序才能使用。
 
-- `Install location` for ${cont_model} controller  
+- `安装位置` 对于 ${cont_model} 控制器  
     - /ata0:2/lib/hi6/apps/mastering
-- `Install method`  
-    1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
-    2) After an ethernet connection, transfer the source code using FTP transmission.  
-    3) After saving the source code to the USB, connect to the TP.  
-    4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-- `Installation precautions`
-    1) To use the mastering APP after installation, the controller must be restarted.  
-    2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
+- `安装方法`  
+    1) 您可以通过联系 HD 现代机器人软件开发团队下载插件。  
+    2) 在以太网连接后，使用 FTP 传输源代码。  
+    3) 将源代码保存到 USB 后，连接到 TP。  
+    4) 然后通过 TP 的 `5: 文件管理` 功能复制并粘贴源代码。
+- `安装注意事项`
+    1) 安装后要使用主控应用程序，控制器必须重新启动。  
+    2) 如果在这样做后仍然看不到主控应用程序，请重新启动 TP。
 
 <br>
 
-#### 2.3.2 App setting configuration
-- `App location`  
-TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
+#### 2.3.2 应用程序设置配置
+- `应用位置`  
+TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `23: 主控 (Mastering)`
 
 <br>
 
-- `Standby mode`
+- `待机模式`
 
     <img src="../../_assets/10_mastering_app_eng.PNG" style="max-width: 60vw"><br>
-    Fig 2.3.1. Mastering app image  
+    图 2.3.1. 主控应用程序图像  
 
-- If you do not see the mastering APP in the application program, just reboot the TP.
+- 如果在应用程序中看不到主控应用程序，请重新启动 TP。
 
     <img src="../../_assets/11_standbymode_eng.PNG" style="max-width: 60vw"><br>
-    Fig 2.3.2. Mastering `standby mode` image  
+    图 2.3.2. 主控 `待机模式` 图像  
 
-    - `IP Address` : Enter the ip address of the mastering communicator.  
-    - `Port Number` : Enter the port number of the mastering communicator.  
-    - `Joint Number` : Enter the number of target joint.  
-    - `Mastering Status` : Display the mastering operation status.  
-    - `Encoder Offset (Before / After)` : Display the encoder offset value (`bit`) of the current axis before and after mastering.  
+    - `IP地址 (IP Address)` : 输入主控通信器的 IP 地址。  
+    - `端口号 (Port Number)` : 输入主控通信器的端口号。  
+    - `关节编号 (Joint Number)` : 输入目标关节的编号。  
+    - `主控状态 (Mastering Status)` : 显示主控操作状态。  
+    - `编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))` : 显示当前轴的编码器偏移值 (`bit`) 在主控之前和之后。  
 
 <br>
 
-- How to save mastering IP and port number settings  
-    1) Enter the preset ip, port. - 
-    [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
-    2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
-
+- 如何保存主控 IP 和端口设置  
+    1) 输入预设的 IP 和端口。 -
+    [2.2.2. 接触传感器的通信设置](../2-kit_initialization/README.md)  
+    2) 通过 `shift` + `确认 (OK)` 将配置保存到 ${cont_model} 控制器。
 [__SOURCE](03_operation/README.md)
-# 3. Mastering operation
+# 3. 操作掌握
 
-- [3.1. Environment & process](./1-mastering_step/README.md)
-  - 3.1.1 Environment
-  - 3.1.2 Operation process - summary
-  - 3.1.3 Operation process - Details
-  - 3.1.4 Results - image
-  - 3.1.5 Reference
+- [3.1. 环境与过程](./1-mastering_step/README.md)
+  - 3.1.1 环境
+  - 3.1.2 操作过程 - 概述
+  - 3.1.3 操作过程 - 详情
+  - 3.1.4 结果 - 图像
+  - 3.1.5 参考
 
 <br>
 
-- [3.2. Error Code for Mastering](./2-error/README.md)
-  - 3.2.1 Error Image
-  - 3.2.2 Summary of Errors
-
+- [3.2. 操作掌握的错误代码](./2-error/README.md)
+  - 3.2.1 错误图像
+  - 3.2.2 错误概要
 [__SOURCE](03_operation/1-mastering_step/README.md)
-## 3.1. Environment & process
+## 3.1. 环境与过程
 
-#### 3.1.1 Environment
+#### 3.1.1 环境
 {% hint style="warning" %}
-**Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
-Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
+**在开始掌握之前，`掌握传感器的尖端`必须靠近`V型槽`。  
+违背此规定可能会导致`传感器尖端损坏`或返回`ERROR_VAL_THRESHOLD`错误。**
 {% endhint %}
-- Operates only in manual mode and motor on.
-- Please holding the enable switch until the operation ends.
+- 仅在手动模式下操作，并且电机开启。
+- 请在操作结束之前保持使能开关。
 
 <br>
 <br>
 
-#### 3.1.2 Operation process - summary
-1. Enter `engineer mode`    
-2. Encoder offset correction - by direct teaching  
-3. Encoder offset correction - by using plugin  
-    (1) Enter the mastering plugin.  
-    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
-    (3) Re-entry into the mastering plug-in.   
-    (4) Click `1.Go to the enc offset` button.  
-    (5) Mount the sensor on the joint.    
-    (6) Make sure the end of the sensor is near the `V-groove`.  
-    (7) Click the `2.Start mastering` button.  
-    (8) Click `OK` when finished.  
-    (9) Please remove the sensor.  
-    (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. After mastering of all axes is completed, move to the updated encoder origin.
-5. Check whether encoder offset is corrected after mastering.  
+#### 3.1.2 操作过程 - 概述
+1. 进入`工程师模式`    
+2. 编码器偏移校正 - 通过直接教学  
+3. 编码器偏移校正 - 通过使用插件  
+    (1) 进入掌握插件。  
+    (2) 在[待机模式](../../02_about_kit/3-com_initialization/README.md)中，输入关节编号 > `Shift + OK` > `确认 (OK)`  
+    (3) 重新进入掌握插件。   
+    (4) 点击`1.进入编码器偏移`按钮。  
+    (5) 将传感器安装在关节上。    
+    (6) 确保传感器的末端靠近`V型槽`。  
+    (7) 点击`2.开始掌握`按钮。  
+    (8) 完成时点击`确认 (OK)`。  
+    (9) 请移除传感器。  
+    (10) 如果还有需要掌握的额外轴，请从(1)重新开始。  
+4. 在所有轴的掌握完成后，移动到更新的编码器原点。
+5. 检查在掌握后编码器偏移是否已校正。  
     
 <br>
 <br>
 
-#### 3.1.3 Operation process - Details
-1. Encoder offset correction - by direct teaching  
-    1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
-    1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
-    - Enter the encoder offset setup page  
-    &rightarrow; `TP` > Enter the `Engineer Mode` (R-Button + 314) > `System` > `3: Robot parameter` > `4: Encoder offset`  
-    - Proceed with encoder offset initialization  
-        (1) When resetting individual joint:  
-        → Click `Corrrected encoder` value of the corresponding joint > Click `Reset one` > `Shift + OK` > `OK`   
-        (2) When resetting all joint:  
-        → Click `Reset all` > `Shift + OK` > `OK`  
+#### 3.1.3 操作过程 - 详细信息
+1. 编码器偏移校正 - 通过直接教学  
+    1-a) 使用教学挂件（TP）挪动机器人对齐附在机器人上的V型槽或刻度条。  
+    1-b) 将编码器偏移重置为可视对齐位置，适用于单个或所有关节。  
+    - 进入编码器偏移设置页面  
+    &rightarrow; `TP` > 进入`工程师模式`（R-按钮 + 314） > `系统 (System)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)`  
+    - 进行编码器偏移初始化  
+        (1) 重置单个关节时：  
+        → 点击相应关节的`校正编码器`值 > 点击`重置一个 (Reset one)` > `Shift + OK` > `确认 (OK)`   
+        (2) 重置所有关节时：  
+        → 点击`重置所有 (Reset all)` > `Shift + OK` > `确认 (OK)`  
 
 <br>
 
-2. Encoder offset correction - by using plugin  
-    (1) After completing the steps in 1, enter the mastering plugin  
-        &rightarrow; `TP` > `system` > `4: Application parameter` > `Mastering`  
-    (2) Enter the joint number in `Joint Number` > Click `Confirm`  
-    (3) Re-enter the mastering plugin to make sure the joint settings are correct.  
-    (4) If it's okay, `motor on` > `enable switch on` > Click `Go to the enc offset`.    
-        &rightarrow; Move to the origin position of the previously set.  
-    (5) Mount the sensor on the joint entered in (2).  
-        <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
-        </div>
-    (6) Make sure the sensor tip is near the V groove.  
-        &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
-    (7) 2. Click the `2. Start Mastering`.    
-    (8) When mastering is complete, click `OK`.  
-    (9) Remove the sensor.  
-    (10) If there are additional joint to mastering, proceed again from (1).  
-
-
-<br>
-
-3. After mastering of all axes is completed, move to the updated encoder origin.
-    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
-    - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
+2. 编码器偏移校正 - 通过使用插件  
+    (1) 在完成步骤1后，进入掌握插件  
+        &rightarrow; `TP` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `掌握`  
+(2) 在 `Joint Number` 中输入关节编号 > 点击 `确认 (Confirm)`  
+(3) 重新输入主控插件以确保关节设置正确。  
+(4) 如果没问题，`电机 开 (motor on)` > `enable switch on` > 点击 `Go to the enc offset`。  
+&rightarrow; 移动到之前设定的原点位置。  
+(5) 在 (2) 中输入的关节上安装传感器。  
+<div>
+<img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
+<img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>图 3.1.1. 主控传感器安装图像（左：渲染图，右：实物图）
+</div>
+(6) 确保传感器尖端靠近 V 槽。  
+&rightarrow; 如果不在 V 槽内，请移除传感器并重复上述步骤 2。  
+(7) 点击 `2. 开始主控 (2. Start Mastering)`。  
+(8) 主控完成后，点击 `确认 (OK)`。  
+(9) 移除传感器。  
+(10) 如果有额外的关节需要主控，请从 (1) 开始再次进行。  
 
 <br>
 
-4. Check whether encoder offset is corrected after mastering.  
-    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset`  
-    - Please check whether the encoder offset value updated through mastering is the same as the `Corrected encoder` value.  
-    - Check whether the `Current encoder` value for each axis is `0x400000`.  
+3. 在所有轴的主控完成后，移动到更新的编码器原点。  
+- `TP` > `系统 (system)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)` > `移动中 (Moving)` > `Shift + OK` > `确认 (OK)`  
+- `已修正编码器 (Corrected encoder)` 已经更新，因此即使机器人移动到原点，其值也不会改变。  
+
+<br>
+
+4. 主控后检查编码器偏移是否已修正。  
+- `TP` > `系统 (system)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)`  
+- 请检查通过主控更新的编码器偏移值是否与 `已修正编码器 (Corrected encoder)` 值相同。  
+- 检查每个轴的 `当前编码器 (Current encoder)` 值是否为 `0x400000`。  
 
 <br>
 <br>
 
-#### 3.1.4 Test Process - Status Bar Log
-|Order|Mastering status|Contents|
+#### 3.1.4 测试过程 - 状态条日志
+|顺序|主控状态|内容|
 |:---:|:---:|:---|
-|(1)|Standby|Initial image when entering the mastering app.|
-|(2)|go to the offset pose...|The state when '`1.Go to the enc offset`' button is pressed.|
-|(3)|reached the offset pose.|Complete message after '`1.Go to the enc offset`' operation.|
-|(4)|Start mastering.|The first state of '`2.Start mastering`' button is pressed.|
-|(5)|move to P1.|The state of moving to p1 direction after '`2.Start mastering`' button is pressed.|
-|(6)|move to P2.|The state of moving to p2 direction after '`2.Start mastering`' button is pressed.|
-|(7)|apply corrected enc offset.|The state of moving to the modified origin after mastering is completed.|
-|(8)|mastering end.|The state of mastering is finished.|
+|(1)|待命|进入主控应用时的初始图像。|
+|(2)|转到偏移位姿...|按下 '`1.Go to the enc offset`' 按钮时的状态。|
+|(3)|已达到偏移位姿。|完成消息，表示 '`1.Go to the enc offset`' 操作后。|
+|(4)|开始主控。|按下 '`2.Start mastering`' 按钮时的第一个状态。|
+|(5)|移动到 P1。|按下 '`2.Start mastering`' 按钮后，向 p1 方向移动的状态。|
+|(6)|移动到 P2。|按下 '`2.Start mastering`' 按钮后，向 p2 方向移动的状态。|
+|(7)|应用修正的编码器偏移。|主控完成后，移动到修正原点的状态。|
+|(8)|主控结束。|主控完成的状态。|
 
 <br>
 <br>
 
-#### 3.1.5 Results - image
-
-- The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
-  - `Left block` : `Pre`-encoder offset value `before mastering`.  
-  - `Right block` : `Post`-encoder offset value `after mastering`.  
+#### 3.1.5 结果 - 图像
+- 编码器偏移值以 `bit(hexa)` 为单位在 `Encoder Offset(Before/After)` 上显示。
+  - `左块` : `前`-编码器偏移值 `在掌握之前`。
+  - `右块` : `后`-编码器偏移值 `在掌握之后`。
 
       <div>
       <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 40vw">
       <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-      Fig 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
+      图 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. 待机模式图像
       &nbsp;&nbsp;&nbsp;&nbsp;
-      b. Mastering complete image
+      b. 完成掌握图像
       </div>
 
 <br>
 <br>
 
-#### 3.1.6 Reference
-- The reason of using `bit` for display encoder offset values.
-  - It is intuitive to display angle differences when comparing mastery results, however changes of smaller than 0.01 cannot be assessed.
-  - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.
-  - It is more accurate to display the encoder value in bit units in order to convey these minute variances.
-
-
+#### 3.1.6 参考
+- 使用 `bit` 显示编码器偏移值的原因。
+  - 在比较掌握结果时显示角度差异是直观的，但小于 0.01 的变化无法评估。
+  - 当前掌握过程将原点移动在 -1.5 到 1.5 度之间。
+  - 为了传达这些微小的差异，以 bit 单位显示编码器值更加准确。
 [__SOURCE](03_operation/2-error/README.md)
-## 3.2. Error Code for Mastering
+## 3.2. 错误代码说明
 
-#### 3.2.1 Error Image
-- If an error occurs during mastering operation, an error code is output in 'Mastering Progress Status'.
-- ex) `ERROR_TCP_CONNECT`, `ERROR_MOTOR_ON_CHK`
+#### 3.2.1 错误图像
+- 在掌控操作过程中，如果发生错误，'掌控进度状态'将输出错误代码。
+- 例如) `ERROR_TCP_CONNECT`， `ERROR_MOTOR_ON_CHK`
 
     <div>
     <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 30vh; max-width: 40vw">
     <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-    Fig 3.2.1. The example image for error status 
+    图 3.2.1. 错误状态的示例图像 
     </div>
 
 <br>
 <br>
 
-#### 3.2.2 Summary of Errors
-This is a list of errors that can occur while performing mastering operations.  
+#### 3.2.2 错误总结
+这是在执行掌控操作时可能出现的错误列表。  
 
-|Error Code|Contents|Todo List|
+|错误代码|内容|待办事项|
 |:---|:---|:---|
-|`ERROR_MOTOR_ON_CHK`|Try mastering with the motor off.|Perform mastering with the motor on.|
-|`ERROR_MOTOR_OFF_CHK`|Motor off detection when performing mastering.|When performing mastering, do not release the Enable SW until the function ends. Return to the initial position and re-execute mastering.|
-|`ERROR_VAL_THRESHOLD`|`V-groove` was not detected during mastering.|V-home was not detected. After clicking button 1, place the sensor near the `V-groove` and resume mastering.|
-|`ERROR_NO_SENSOR_VALS`|There is no sensor data recorded.|Return to the initial position and re-execute mastering. If repeated problems occur, check the plug-in APP software.|
-|`ERROR_NO_ENC_VALS`|There is no encoder data recorded.|Return to the initial position and re-execute mastering. If repeated problems occur, check the plug-in APP software.|
-|`ERROR_TCP_RES_FAIL`| TCP/IP communication response fail. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_TCP_RES_NULL`| TCP/IP communication response null. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_TCP_CONNECT` | TCP/IP communication connection fail. | Check the connection status and setting environment of the contact sensor. |
-|`ERROR_PLAYBACK` | Playback Error. | Please restart the controller. |
+|`ERROR_MOTOR_ON_CHK`|尝试在马达关闭的情况下进行掌控。|在马达开启的情况下执行掌控。|
+|`ERROR_MOTOR_OFF_CHK`|在执行掌控时检测到马达关闭。|在执行掌控时，直到功能结束，请不要释放使能开关。返回初始位置并重新执行掌控。|
+|`ERROR_VAL_THRESHOLD`|在掌控过程中未检测到`V-groove`。|未检测到V-home。点击按钮1后，将传感器放置在`V-groove`附近并恢复掌控。|
+|`ERROR_NO_SENSOR_VALS`|没有记录传感器数据。|返回初始位置并重新执行掌控。如果重复出现问题，请检查插件应用软件。|
+|`ERROR_NO_ENC_VALS`|没有记录编码器数据。|返回初始位置并重新执行掌控。如果重复出现问题，请检查插件应用软件。|
+|`ERROR_TCP_RES_FAIL`| TCP/IP通信响应失败。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_TCP_RES_NULL`| TCP/IP通信响应为null。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_TCP_CONNECT` | TCP/IP通信连接失败。 | 检查接触传感器的连接状态和设置环境。 |
+|`ERROR_PLAYBACK` | 播放错误。 | 请重启控制器。 |

@@ -1,22 +1,22 @@
-﻿## 1.1 About Robot Mastering
+## 1.1 关于机器人校正
 
-- Mastering is a function used to improve robot motion accuracy by compensating for the mechanical zero (home) position of each axis.
-- When the mechanical zero position is defined for the first time, mastering must be performed.
+- 校正是通过补偿每个轴的机械零点（原点）位置来提高机器人运动精度的功能。
+- 当首次定义机械零点时，必须执行校正。
 
-- After initial mastering, the mechanical zero position may change due to <br>
-  factors such as axis twisting, replacement of drive components, or mechanical wear.
-- In such cases, mastering must be performed again to restore accurate motion control.
+- 在初始校正后，机械零点可能因 <br>
+  轴扭曲、更换驱动组件或机械磨损等因素而改变。
+- 在这种情况下，必须重新执行校正以恢复准确的运动控制。
 
-- Mastering vs. Calibration
-    - Mastering is the process of establishing the mechanical zero position that serves as the reference for coordinate calculations.
-    - Calibration is the process of correcting positional errors while maintaining the established mechanical zero reference.
-    - Calibration must always be performed after mastering has been completed.
+- 校正与标定
+    - 校正是建立机械零点的位置，作为坐标计算的参考过程。
+    - 标定是在保持已建立的机械零点参考的同时，纠正位置误差的过程。
+    - 在完成校正后，必须始终执行标定。
 
-- A digital contact sensor is used to operate the mastering in this manual.<br>
-  The sensor is attached to each axis of the robot and detects the V-groove <br> while moving from -1.5 degrees to +1.5 degrees based on the starting point.<br>
-  The detected V-groove position is corrected to the mechanical origin.<br><div>
+- 本手册使用数字接触传感器进行校正。<br>
+  传感器连接到机器人的每个轴，检测V型槽 <br> 在起始点的基础上，从-1.5度移动到+1.5度。<br>
+  检测到的V型槽位置被修正为机械原点。<br><div>
 <img src="../../_assets/12_mastering_concept_eng.PNG" style="max-width: 60vw"><br>
-Fig 1.1. a. Starting point(axis distortion status), 
+图1.1. a. 起始点（轴扭曲状态），
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-b. V-groove detection during mastering
+b. 在校正期间检测到的V型槽
 </div>

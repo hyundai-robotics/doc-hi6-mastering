@@ -1,52 +1,52 @@
-﻿## 2.3 Mastering app configuration
+## 2.3 主控应用程序配置
 
-Once the mastering APP installation is successfully completed, the mastering function can be performed.  
-After finishing several configuration setting for mastering, mastering could be performed easily with few buttons.  
-Mastering can be performed correctly only when you understand the conditions and contents of the movement.  
+一旦主控应用程序安装成功完成，就可以执行主控功能。  
+完成多个主控配置设置后，可以通过几个按钮轻松执行主控操作。  
+仅当理解运动的条件和内容时，才能正确执行主控。
 
 <br>
 
-#### 2.3.1 Install Mastering app
-The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
+#### 2.3.1 安装主控应用程序
+主控功能是通过 ${cont_model} SDK 开发的，必须在 ${cont_model} 控制器上安装此应用程序才能使用。
 
-- `Install location` for ${cont_model} controller  
+- `安装位置` 对于 ${cont_model} 控制器  
     - /ata0:2/lib/hi6/apps/mastering
-- `Install method`  
-    1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
-    2) After an ethernet connection, transfer the source code using FTP transmission.  
-    3) After saving the source code to the USB, connect to the TP.  
-    4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-- `Installation precautions`
-    1) To use the mastering APP after installation, the controller must be restarted.  
-    2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
+- `安装方法`  
+    1) 您可以通过联系 HD 现代机器人软件开发团队下载插件。  
+    2) 在以太网连接后，使用 FTP 传输源代码。  
+    3) 将源代码保存到 USB 后，连接到 TP。  
+    4) 然后通过 TP 的 `5: 文件管理` 功能复制并粘贴源代码。
+- `安装注意事项`
+    1) 安装后要使用主控应用程序，控制器必须重新启动。  
+    2) 如果在这样做后仍然看不到主控应用程序，请重新启动 TP。
 
 <br>
 
-#### 2.3.2 App setting configuration
-- `App location`  
-TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
+#### 2.3.2 应用程序设置配置
+- `应用位置`  
+TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `23: 主控 (Mastering)`
 
 <br>
 
-- `Standby mode`
+- `待机模式`
 
     <img src="../../_assets/10_mastering_app_eng.PNG" style="max-width: 60vw"><br>
-    Fig 2.3.1. Mastering app image  
+    图 2.3.1. 主控应用程序图像  
 
-- If you do not see the mastering APP in the application program, just reboot the TP.
+- 如果在应用程序中看不到主控应用程序，请重新启动 TP。
 
     <img src="../../_assets/11_standbymode_eng.PNG" style="max-width: 60vw"><br>
-    Fig 2.3.2. Mastering `standby mode` image  
+    图 2.3.2. 主控 `待机模式` 图像  
 
-    - `IP Address` : Enter the ip address of the mastering communicator.  
-    - `Port Number` : Enter the port number of the mastering communicator.  
-    - `Joint Number` : Enter the number of target joint.  
-    - `Mastering Status` : Display the mastering operation status.  
-    - `Encoder Offset (Before / After)` : Display the encoder offset value (`bit`) of the current axis before and after mastering.  
+    - `IP地址 (IP Address)` : 输入主控通信器的 IP 地址。  
+    - `端口号 (Port Number)` : 输入主控通信器的端口号。  
+    - `关节编号 (Joint Number)` : 输入目标关节的编号。  
+    - `主控状态 (Mastering Status)` : 显示主控操作状态。  
+    - `编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))` : 显示当前轴的编码器偏移值 (`bit`) 在主控之前和之后。  
 
 <br>
 
-- How to save mastering IP and port number settings  
-    1) Enter the preset ip, port. - 
-    [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
-    2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
+- 如何保存主控 IP 和端口设置  
+    1) 输入预设的 IP 和端口。 -
+    [2.2.2. 接触传感器的通信设置](../2-kit_initialization/README.md)  
+    2) 通过 `shift` + `确认 (OK)` 将配置保存到 ${cont_model} 控制器。

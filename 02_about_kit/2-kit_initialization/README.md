@@ -1,42 +1,42 @@
-﻿## 2.2 Initial setup and Connection
+## 2.2 初始设置和连接
 
-#### 2.2.1. Contact sensor initialization
-**Initialization only needs to be done <u>once for one axis before fixing.</u>**   
+#### 2.2.1. 接触传感器初始化
+**初始化只需在固定前对一个轴<u>进行一次。</u>**   
 
-Keep in mind
+请记住
 
-1) After connection, if the sensor's measurement value is a `negative number` as shown in Fig 2-3.a, `mastering cannot proceed`.  
-2) Therefore, please press the 'preset button' while 'holding the sensor' as shown in Fig 2-3.a.  
-3) After presetting, check whether a `positive value` is measured `when sensor is pressed`, as shown in Fig 2-3.c.  
-4) **After finishing mastering each robot axis, you need to ensure that the measured value is `positive`.**
+1) 连接后，如果传感器的测量值为图2-3.a所示的`负数`，则`无法进行归零`。  
+2) 因此，请在按图2-3.a所示的情况下，按下“预设按钮”的同时“保持传感器”。  
+3) 预设后，请检查在传感器被按下时，测量到的值是否为`正值`，如图2-3.c所示。  
+4) **在完成每个机器人轴的归零后，需要确保测量值为`正数`。**
 
     <div>
     <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 32.2vw">
     <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 30vh; max-width: 32vw">
     <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 30vw"><br>
-    Fig 2.2.1. a. Negative value when holding the sensor 
+    图 2.2.1. a. 持续传感器时的负值 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    b. when pressing the preset button
+    b. 按下预设按钮时
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    c. Positive value when sensor is pressed
+    c. 传感器被按下时的正值
     </div>
 
 <br>
 <br>
 
-#### 2.2.2. Communication settings for contact sensor
-- The software bundle includes the mastering setup application. Install the software on a different computer.
-- **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
-- In the case of above, you can set the ip configure by using personal computer.
-- Following membership registration, you are able to use this program.
-- After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../1-kit_description/README.md).
+#### 2.2.2. 接触传感器的通信设置
+- 软件包包括归零设置应用程序。请在另一台计算机上安装软件。
+- **<u>如果您使用公司计算机，请注意公司安全政策通常不允许使用“IP搜索”功能。</u>**
+- 在这种情况下，您可以使用个人计算机配置IP设置。
+- 注册成为会员后，您将能够使用该程序。
+- 完成通信设置后，请按照[图2-1 b.通信模块](../1-kit_description/README.md)连接硬件（通讯器、以太网电缆）。
 
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
-    Fig 2.2.2. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
-    <br>- `Network Adaptor` : Network adaptor info for connected computer.
-    <br>- `IP Search Range` : Searching for the connected device's IP address.
-    <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
-    <br>- `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
+    图 2.2.2. [IP配置器](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+    <br>- `网络适配器` : 连接计算机的网络适配器信息。
+    <br>- `IP搜索范围` : 搜索连接设备的IP地址。
+    <br>- `IP地址/Mac地址` : 连接设备的IP地址和MAC地址
+    <br>- `IP设置/重置` : IP设置按钮（编辑）和重置按钮（<u>**仅用于更改IP设置**</u>）
     </div>

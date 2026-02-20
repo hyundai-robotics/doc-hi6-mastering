@@ -1,43 +1,42 @@
-﻿## 1.2 Contact sensor-based robot mastering 
-This user manual contains information on the `contact sensor-based` robot mastering function.  
-More accurate corrections are possible by using this sensor.    
+## 1.2 基于接触传感器的机器人标定  
+本用户手册包含有关`基于接触传感器`的机器人标定功能的信息。  
+通过使用该传感器，可以进行更准确的校正。  
 
 <br>
 
-#### 1.2.1. Mastering equipment
-- **Robot** <br>- where Mastering device will be connected
-- **${cont_model} robot controller** <br>- where Mastering-App will be installed
-- **Mastering kit** <br>- Power + Sensor + Communication module
+#### 1.2.1. 标定设备  
+- **机器人** <br>- 标定设备将连接的地方  
+- **${cont_model} 机器人控制器** <br>- 将安装标定应用程序的地方  
+- **标定套件** <br>- 电源 + 传感器 + 通信模块  
 
 <br>
 
-#### 1.2.2. Operating mode
-- The operation mode of the robot must be set to `manual mode`.
-- The procedure can only be carried out with the `motor on status` and the `enable switch` turned on.
+#### 1.2.2. 操作模式  
+- 机器人操作模式必须设置为`手动模式`。  
+- 该程序只能在`电机开启状态`和`启用开关`打开时进行。  
 
 <br>
 
-#### 1.2.3. Operating concept
-- The digital contact sensor scans the `V-groove` of the mastering block mounted to each axis of the robot to locate a more precise origin. ([Fig 1-1](../1-about_mastering/README.md))  
-- After scanning the `V-groove`, a new encoder offset will be set relative to the detected vector of `V-groove`.  
-- Then calculate the `Corrected encoder` value.  
+#### 1.2.3. 操作概念  
+- 数字接触传感器扫描固定在机器人每个轴上的标定块的`V型槽`以找到更精确的原点。 ([图 1-1](../1-about_mastering/README.md))  
+- 扫描`V型槽`后，将根据检测到的`V型槽`的向量设置新的编码器偏移。  
+- 然后计算`已修正编码器 (Corrected encoder)`值。  
 
 <br>
 
-#### 1.2.4. Overall Process  
-1. Enter `engineer mode`    
-2. Encoder offset correction - by direct teaching  
-3. Encoder offset correction - by using plugin  
-    (1) Enter the mastering plugin.  
-    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
-    (3) Re-entry into the mastering plug-in.   
-    (4) Click `1.Go to the enc offset` button.  
-    (5) Mount the sensor on the joint.    
-    (6) Make sure the end of the sensor is near the `V-groove`.  
-    (7) Click the `2.Start mastering` button.  
-    (8) Click `OK` when finished.  
-    (9) Please remove the sensor.  
-    (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. After mastering of all axes is completed, move to the updated encoder origin.
-5. Check whether encoder offset is corrected after mastering.  
-
+#### 1.2.4. 整体流程  
+1. 输入`工程师模式`  
+2. 编码器偏移校正 - 通过直接教学  
+3. 编码器偏移校正 - 通过使用插件  
+    (1) 进入标定插件。  
+    (2) 在[待机模式](../../02_about_kit/3-com_initialization/README.md)下，输入关节编号 > `Shift + OK` > `确认 (OK)`  
+    (3) 再次进入标定插件。  
+    (4) 点击`1.前往编码偏移`按钮。  
+    (5) 将传感器安装在关节上。  
+    (6) 确保传感器的末端靠近`V型槽`。  
+    (7) 点击`2.开始标定`按钮。  
+    (8) 完成时点击`确认 (OK)`。  
+    (9) 请移除传感器。  
+    (10) 如果还有其他需要标定的轴，请从（1）开始再次进行。  
+4. 所有轴的标定完成后，移动到更新的编码器原点。  
+5. 检查标定后编码器偏移是否已校正。  
