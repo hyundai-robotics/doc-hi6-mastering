@@ -1,4 +1,8 @@
 ﻿
+[__SOURCE](0-about-this-manual/precautions.md)
+# 注意事项
+
+{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
 [__SOURCE](01_intro/README.md)
 # 1 介绍
 

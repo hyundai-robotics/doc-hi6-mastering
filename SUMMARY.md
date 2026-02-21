@@ -1,6 +1,7 @@
 ﻿# Table of contents
 
-          * [注意事项](0-about-this-manual/precautions.md)
+[${cont_model} 控制器功能手册 - 基于数字接触传感器的掌握](README.md)
+* [注意事项](0-about-this-manual/precautions.md)
 * [1 介绍](01_intro/README.md)
   * [1.1 关于机器人校正](01_intro/1-about_mastering/README.md)
   * [1.2 基于接触传感器的机器人标定](01_intro/2-about_contact_based_mastering/README.md)
