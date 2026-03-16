@@ -2,7 +2,7 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # 사전 주의사항
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
+{% include file="ko/precautions.md" %}
 
 [__SOURCE](01_intro/README.md)
 # 1. 개요
@@ -201,7 +201,7 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 
 #### 2.3.1 마스터링 플러그인 설치
 - 해당 기능은 ${cont_model} SDK를 통해 개발되었으며, 마스터링 App을 ${cont_model} 제어기에 별도로 설치를 해야 사용할 수 있습니다.
-- `설치 위치` : /ata0:2/lib/hi6/apps/mastering
+- `설치 위치` : /ata0:2/lib/${cont_model}/apps/mastering
 - `설치 방법`
     1) HD현대로보틱스 로봇SW개발팀에 문의하여 마스터링 플러그인을 다운받을 수 있습니다.  
     2) Ethernet 연결 후 FTP 통신 방식을 통해 설치합니다.  
