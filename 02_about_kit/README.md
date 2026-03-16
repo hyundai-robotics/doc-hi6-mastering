@@ -1,4 +1,4 @@
-# 2. 系统配置
+﻿# 2. 系统配置
 
 - [2.1 启动套件](../02_about_kit/1-kit_description/README.md)
   - 2.1.1 接触传感器组件
