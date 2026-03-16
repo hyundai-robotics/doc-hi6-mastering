@@ -47,6 +47,6 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
 <br>
 
 - How to save mastering IP and port number settings  
-    1) Enter the preset ip, port. - 
-    [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
+    1) Enter the preset ip, port.  
+        - [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
     2) Save the configuration through the `shift` + `OK` to the ${cont_model} controller.

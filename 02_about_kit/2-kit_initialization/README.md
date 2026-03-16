@@ -24,19 +24,19 @@ Keep in mind
 <br>
 <br>
 
-#### 2.2.2. Communication settings for contact sensor
-- The software bundle includes the mastering setup application. Install the software on a different computer.
-- **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**
-- In the case of above, you can set the ip configure by using personal computer.
-- Following membership registration, you are able to use this program.
-- After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../1-kit_description/README.md).
+#### 2.2.2. Communication settings for contact sensor  
+- The software bundle includes the mastering setup application. Install the software on a different computer.  
+- **<u>If you utilize a company computer, please note that the 'IP Search' function is generally not permitted by company security policies.</u>**  
+- In the case of above, you can set the ip configure by using personal computer.  
+ - Following membership registration, you are able to use this program.  
+    - After finishing communication setting, please connect the hardwares(communicator, ethernet cable) like [Fig 2-1 b.Communication module](../1-kit_description/README.md).
 
     <div>
     <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
 
     Fig 2.2.2. [IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
-    <br>- `Network Adaptor` : Network adaptor info for connected computer.
-    <br>- `IP Search Range` : Searching for the connected device's IP address.
-    <br>- `IP Address/Mac Address` : IP address and MAC address of the connected device
-    <br>- `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
+    - `Network Adaptor` : Network adaptor info for connected computer.
+    - `IP Search Range` : Searching for the connected device's IP address.
+    - `IP Address/Mac Address` : IP address and MAC address of the connected device
+    - `IP Setting/Reset` : IP settings button (edit) and reset button (<u>**only for changing IP settings**</u>)
     </div>
