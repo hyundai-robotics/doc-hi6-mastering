@@ -9,8 +9,8 @@ Mastering can be performed correctly only when you understand the conditions and
 #### 2.3.1 Install Mastering app
 The mastering function was developed through ${cont_model} SDK, and this app must be installed on the ${cont_model} controller to use it.  
 
-- `Install location` for ${cont_model} controller  
-    - /ata0:2/lib/hi6/apps/mastering
+- `Install location` for hi6 controller  
+    - /ata0:2/lib/hi6/apps/mastering (com version <= V60.32)
 - `Install method`  
     1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
     2) After an ethernet connection, transfer the source code using FTP transmission.  
