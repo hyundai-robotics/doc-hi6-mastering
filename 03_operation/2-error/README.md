@@ -3,10 +3,22 @@
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-    <div>
-    <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-height: 40vh; max-width: 40vw">
-    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-height: 40vh; max-width: 40vw"><br>
-    Fig 3-2. 에러 상태 표시 이미지 </div>
+<table style="width: 100%; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+      <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
+      <div style="margin-top: 8px;"><sub>a. Motor ON 에러 상태</sub></div>
+    </td>
+    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+      <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
+      <div style="margin-top: 8px;"><sub>b. TCP 연결 에러 상태</sub></div>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <b>Fig 3-2. 에러 상태 표시 이미지</b>
+</p>
 
 <br>
 <br>

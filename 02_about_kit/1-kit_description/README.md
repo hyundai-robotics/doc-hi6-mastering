@@ -3,29 +3,22 @@
 #### 2.1.1 접촉식 센서 구성품
 
 - **센서 및 전원 어댑터** 
-    <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 35vh; max-width: 30vw">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 35vh; max-width: 40vw">
-    </div>
-    Fig 2.1-1. 마스터링 센서와 통신 모듈
-    <br>
 
-    <br>
+<div>
+<img src="../../_assets/02_sensor.PNG" style="height: 170px; max-width: 300px">
+<img src="../../_assets/03_communication_module.PNG" style="height: 170px; max-width: 300px">
+</div>
+Fig 2.1-1. 마스터링 센서와 통신 모듈
 
 - **케이블**   
-    <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 35vh; max-width: 30vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 35vh; max-width: 30vw"></div>
-    Fig 2.1-2. 전원 어댑터와 이더넷 케이블
-    <br>
-
-<br>
+<div>
+<img src="../../_assets/04_power_adapter.PNG" style="height: 170px; max-width: 300px">
+<img src="../../_assets/05_lan_cable.PNG" style="height: 170px; max-width: 300px">
+</div>
+Fig 2.1-2. 전원 어댑터와 이더넷 케이블
 
 - **소프트웨어**
-<br>본 패키지에는 마스터링 기능 APP 과 컨트롤러 설정 프로그램이 포함되어있습니다.
-
-<br>
-<br>
+    본 패키지에는 마스터링 기능 APP 과 컨트롤러 설정 프로그램이 포함되어있습니다.
 
 #### 2.1.2 접촉식 센서 연결 및 사양
 - 센서 연결을 Fig2.1-1 의 우측 사진과 같이 연결하면 됩니다.
@@ -36,6 +29,3 @@
     |`센서 타입`| `접촉식` 센서 |
     |`통신 지원`| `Ethernet`(TCP/IP) |
     |`통신 주기`| `5 msec` |
-
-<br>
-<br>

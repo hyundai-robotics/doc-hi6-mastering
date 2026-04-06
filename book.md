@@ -33,7 +33,7 @@
 - 해당 문서는 접촉식 센서를 기반으로 마스터링을 진행합니다. <br>
   센서가 시작점(= 시작위치 - 1.5도 )에서 +3도 방향과 그 역방향으로 움직이면서 V홈을 탐지합니다. <br>
   최종 V홈으로 탐지된 곳이 기계적 원점으로 보정됩니다.<div>
-<img src="../../_assets/12_mastering_concept.PNG" style="max-width: 60vw"><br>
+<img src="../../_assets/12_mastering_concept.PNG" style="max-width: 600px"><br>
 Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중 V홈 탐지(우측)
 </div>
 
@@ -111,29 +111,22 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 #### 2.1.1 접촉식 센서 구성품
 
 - **센서 및 전원 어댑터** 
-    <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 35vh; max-width: 30vw">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 35vh; max-width: 40vw">
-    </div>
-    Fig 2.1-1. 마스터링 센서와 통신 모듈
-    <br>
 
-    <br>
+<div>
+<img src="../../_assets/02_sensor.PNG" style="height: 170px; max-width: 300px">
+<img src="../../_assets/03_communication_module.PNG" style="height: 170px; max-width: 300px">
+</div>
+Fig 2.1-1. 마스터링 센서와 통신 모듈
 
 - **케이블**   
-    <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 35vh; max-width: 30vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 35vh; max-width: 30vw"></div>
-    Fig 2.1-2. 전원 어댑터와 이더넷 케이블
-    <br>
-
-<br>
+<div>
+<img src="../../_assets/04_power_adapter.PNG" style="height: 170px; max-width: 300px">
+<img src="../../_assets/05_lan_cable.PNG" style="height: 170px; max-width: 300px">
+</div>
+Fig 2.1-2. 전원 어댑터와 이더넷 케이블
 
 - **소프트웨어**
-<br>본 패키지에는 마스터링 기능 APP 과 컨트롤러 설정 프로그램이 포함되어있습니다.
-
-<br>
-<br>
+    본 패키지에는 마스터링 기능 APP 과 컨트롤러 설정 프로그램이 포함되어있습니다.
 
 #### 2.1.2 접촉식 센서 연결 및 사양
 - 센서 연결을 Fig2.1-1 의 우측 사진과 같이 연결하면 됩니다.
@@ -145,33 +138,38 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
     |`통신 지원`| `Ethernet`(TCP/IP) |
     |`통신 주기`| `5 msec` |
 
-<br>
-<br>
-
 [__SOURCE](02_about_kit/2-kit_initialization/README.md)
 ## 2.2 센서 초기 설정 및 연결
 
 #### 2.2.1 접촉식 센서 초기화
 - **초기화는 <u>체결 전 하나의 축에 대해서 한번만</u> 진행하면 됩니다.** 
-- !!! 주의 !!! 
-<br> - 체결 후, 센서의 측정값이 Fig 2.2-1.a 처럼 `음수`가 나오면 마스터링 진행이 불가합니다.
-<br> - 따라서, Fig 2.2-1.a 와 같이 `센서를 들고 있는 상태`에서 2.2-1.b 처럼 `프리셋 버튼`을 눌러 주시기 바랍니다.
-<br> - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
-<br> - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
+- 주의 
+    - 체결 후, 센서의 측정값이 Fig 2.2-1.a 처럼 `음수`가 나오면 마스터링 진행이 불가합니다.
+    - 따라서, Fig 2.2-1.a 와 같이 `센서를 들고 있는 상태`에서 2.2-1.b 처럼 `프리셋 버튼`을 눌러 주시기 바랍니다.
+    - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
+    - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
-    <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 30vw">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height:30vh; max-width: 30vw">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 28.1vw"><br>
-    Fig 2.2-1. a. 센서를 들었을 때의 음의 수치 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    b. preset 버튼을 누르는 장면
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    c. 센서를 눌렀을 때 양의 수치
-    </div>
+<table style="width: 100%; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="text-align: center; border: none; width: 33%;">
+      <img src="../../_assets/06_preset.PNG" style="height: 150px;"><br>
+      <sub>a. 센서를 들었을 때의 음의 수치</sub>
+    </td>
+    <td style="text-align: center; border: none; width: 33%;">
+      <img src="../../_assets/09_preset_pressed.PNG" style="height: 150px;"><br>
+      <sub>b. preset 버튼을 누르는 장면</sub>
+    </td>
+    <td style="text-align: center; border: none; width: 33%;">
+      <img src="../../_assets/07_pressed.PNG" style="height: 150px;"><br>
+      <sub>c. 센서를 눌렀을 때 양의 수치</sub>
+    </td>
+  </tr>
+</table>
 
-<br>
-<br>
+<p align="left">
+  <b>Fig 2.2-1. 센서 조작 및 수치 변화 결과</b>
+</p>
+
 
 #### 2.2.2 접촉식 센서 통신 설정
 - 마스터링 컨트롤러의 설정 프로그램은 소프트웨어 패키지에 포함되어 있습니다. 별도의 PC에 해당 프로그램을 설치합니다.
@@ -180,15 +178,13 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 - 해당 프로그램은 회원가입 후 사용하실 수 있습니다.
 - 통신 설정 후 [Fig 2-1의 통신 모듈](../../02_about_kit/1-kit_description/README.md)과 같이 마스터링 통신 모듈과 ${cont_model} 제어기를 이더넷 케이블로 연결합니다.
 
-    <div>
-    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 38vh; max-width: 43vw">
+<img src="../../_assets/08_ip_configuration.PNG" style="height: 400px;">
 
-    Fig 2.2-2. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
-    <br>- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
-    <br>- `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
-    <br>- `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
-    <br>- `IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
-    </div>
+Fig 2.2-2. 마스터링 컨트롤러 설정 프로그램 [DL-EN1 IP configurator](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
+- `Network Adaptor` : 연결 PC의 네트워크 어댑터 정보
+- `IP Search Range` : IP 주소 검색 범위(기 설정 되어있는 IP 주소를 검색)
+- `IP Address/Mac Address` : 기설정된 IP주소과 Mac주소
+- `IP Setting/Reset` : IP 설정 버튼(수정) 및 초기화 버튼 (IP 설정을 바꿀 경우에만 실행)
 
 [__SOURCE](02_about_kit/3-com_initialization/README.md)
 ## 2.3 제어기 설정
@@ -196,8 +192,6 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 동작을 수행하기 전에 마스터링 설정값들이 반영 되어 있어야하고, 실행 버튼들을 통하여 마스터링의 동작을 수행하게 됩니다.  
 동작의 조건과 내용에 대한 이해가 있어야 마스터링을 올바르게 수행할 수 있습니다.  
 
-<br>
-<br>
 
 #### 2.3.1 마스터링 플러그인 설치
 - 해당 기능은 ${cont_model} SDK를 통해 개발되었으며, 마스터링 App을 ${cont_model} 제어기에 별도로 설치를 해야 사용할 수 있습니다.
@@ -210,8 +204,6 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
     - 설치 후 제어기를 재부팅해야 마스터링 APP을 실행 시킬 수 있습니다.  
     - 재부팅 이후 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.  
 
-<br>
-<br>
 
 #### 2.3.2 마스터링 기능 설정
 - `설정 위치`  
@@ -219,24 +211,23 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 
 - `대기 화면` 
     
-    <img src="../../_assets/10_mastering_app.PNG" style="max-width: 60vw"><br>
-    Fig 2.3-1. 마스터링 App 화면
+<img src="../../_assets/10_mastering_app.PNG" style="height:300px">
+
+Fig 2.3-1. 마스터링 App 화면
 
 - 응용프로그램에서 마스터링 APP이 보이지 않을 시, TP 만 재부팅 하십시오.
 
-    <img src="../../_assets/11_standbymode.PNG" style="max-width: 60vw"><br>
-    Fig 2.3-2. 마스터링 대기 화면
+<img src="../../_assets/11_standbymode.PNG" style="height: 300px">
+
+Fig 2.3-2. 마스터링 대기 화면
 
 
-    * `IP 주소` : 마스터링 키트의 IP 주소를 입력합니다.
-    * `포트 번호` : 마스터링 키트의 포트 번호를 입력합니다.
-    * `축 번호` : 마스터링을 수행할 대상 축을 설정합니다.
-    * `마스터링 진행 상태` : 마스터링 수행 시 상태를 표시합니다.
-    * `엔코더 오프셋(이전 / 이후)` : 마스터링 수행 전 후의 현재 축의 엔코더 오프셋 값(`bit`)을 보여줍니다.
-    <br>
+* `IP 주소` : 마스터링 키트의 IP 주소를 입력합니다.
+* `포트 번호` : 마스터링 키트의 포트 번호를 입력합니다.
+* `축 번호` : 마스터링을 수행할 대상 축을 설정합니다.
+* `마스터링 진행 상태` : 마스터링 수행 시 상태를 표시합니다.
+* `엔코더 오프셋(이전 / 이후)` : 마스터링 수행 전 후의 현재 축의 엔코더 오프셋 값(`bit`)을 보여줍니다.
 
-<br>
-<br>
 
 - 마스터링 IP 및 포트 번호 설정 저장 방법
     1) Fig 2-6. 처럼 마스터링 키트의 ip, port, 축 번호를 입력합니다.  
@@ -278,8 +269,6 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 - 동작이 종료될 때까지 반드시 `이네이블 스위치`를 잡아 주어야합니다.
 - 엔코더 오프셋 수치를 확인하거나 보정하는 경우 `엔지니어 모드(R: 314)`가 필요합니다. 
 
-<br>
-<br>
 
 #### 3.1.2 시험 과정 - 요약
 1. `엔지니어 모드(R버튼 + 314)` 진입
@@ -302,14 +291,10 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
     - `보정된 엔코더` 값이 `엔코더 오프셋(이후)` 값과 동일한지 확인  
     - `현재 엔코더` 값이 `0x400000` 인지 확인  
 
-<br>
-<br>
-
 
 #### 3.1.3 시험 과정 - 상세  
 1. `엔지니어 모드(R버튼 + 314)` 진입  
 
-<br>
 
 2. `육안` 상 엔코더 오프셋 보정  
     - `시스템` > `3: 로봇 파라미터` > `4: 엔코더 옵셋` > `로봇 이동`  
@@ -322,7 +307,6 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
             1) 전 축을 조그하여 스케일 바를 육안으로 일치 시킵니다.  
             2) `시스템` > `3: 로봇 파라미터` > `4: 엔코더 옵셋` > `전체 초기화` 클릭 > `shift + 확인` > `확인`  
 
-<br>
 
 3. `마스터링 기반` 엔코더 오프셋 보정  
     (1) `시스템` > `4: 응용 파라미터` > `마스터링` 진입  
@@ -334,8 +318,8 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 24vh; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 24vh; ">
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 200px; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="height: 200px; ">
         <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
         </div>
     (7) `2. 마스터링 시작` 버튼을 클릭합니다.  
@@ -343,22 +327,18 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
     (9) `센서를 탈착`합니다.  
     (10) 추가로 마스터링 해야하는 축이 있을 시 후 (1)부터 재진행합니다.  
 
-<br>
 
 4. 전 축 마스터링 완료 후 갱신된 `보정된 엔코더 원점`으로 이동
     - `시스템` > `3: 로봇 파라미터` > `4: 엔코더 옵셋` > `로봇이동` > `shift + 확인` > `확인`  
     - 마스터링을 통해 V홈 중앙을 기준으로 엔코더 옵셋이 새롭게 설정되어 `보정된 엔코더`값이 갱신된 상태입니다.  
     - 이에 따라 엔코더 옵셋 설정 화면에서 `로봇이동`을 하게되면 새로 갱신된 `보정된 엔코더`의 원점으로 이동하게됩니다.    
     
-<br>
 
 5. 마스터링 후 엔코더 오프셋 보정 여부 확인  
     - `시스템` > `3: 로봇 파라미터` > `4: 엔코더 옵셋` 
     - 축 별 `보정된 엔코더`의 값이 `마스터링 된 후의 엔코더 오프셋` 값인지 확인.  
     - 축 별 현재 엔코더 값이 `0x400000` 값인지 확인.  
 
-<br>
-<br>
 
 #### 3.1.4 시험 과정 - 상태 표시 줄 로그
   
@@ -373,26 +353,29 @@ Fig 1-1. 마스터링 시작 전 V홈 탐지전(좌측), 마스터링 진행 중
 |(7)|수정된 엔코더 오프셋을 적용합니다.|마스터링 완료 후 수정된 원점으로 움직이는 상태|
 |(8)|마스터링이 종료되었습니다.|보정된 엔코더 오프셋이 보정되고 마스터링이 종료된 상태|
 
-<br>
-<br>
 
 #### 3.1.5 시험 결과 - 이미지
 
-<div>
-<img src="../../_assets/13_standby_kor.png" style="max-height: 30vh; max-width: 40vw">
-<img src="../../_assets/14_mastering_end_kor.PNG" style="max-height: 30vh; max-width: 40vw"><br>
-Fig 3.1-2.&nbsp;&nbsp;&nbsp;&nbsp;a.대기 화면(좌측 이미지)
-&nbsp;&nbsp;&nbsp;&nbsp;
-b. 마스터링 종료 화면(우측 이미지)
-</div><br>
+<table style="width: 100%; text-align: center; border-collapse: collapse; border: none;">
+  <tr>
+    <td style="width: 50%; border: none;">
+      <img src="../../_assets/13_standby_kor.png">
+    </td>
+    <td style="width: 50%; border: none;">
+      <img src="../../_assets/14_mastering_end_kor.PNG">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none;">Fig 3.1-2. a. 대기 화면</td>
+    <td style="border: none;">Fig 3.1-2. b. 마스터링 종료 화면</td>
+  </tr>
+</table>
 
 
 `엔코더 오프셋(이전/이후)`에는 엔코더 오프셋 값(`bit`)이 표기됩니다.  
 - `왼쪽` 칸 : `마스터링 이전`의 엔코더 오프셋 수치(보정된 엔코더 값)  
 - `오른쪽` 칸 : `마스터링 이후`의 엔코더 오프셋 수치(보정된 엔코더 값)  
 
-<br>
-<br>
 
 #### 3.1.6 참고
 - 마스터링 결과 값을 엔코더 값으로 보여주는 이유
@@ -407,10 +390,22 @@ b. 마스터링 종료 화면(우측 이미지)
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-    <div>
-    <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-height: 40vh; max-width: 40vw">
-    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-height: 40vh; max-width: 40vw"><br>
-    Fig 3-2. 에러 상태 표시 이미지 </div>
+<table style="width: 100%; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+      <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
+      <div style="margin-top: 8px;"><sub><b>a.</b> Motor ON 에러 상태</sub></div>
+    </td>
+    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+      <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
+      <div style="margin-top: 8px;"><sub><b>b.</b> TCP 연결 에러 상태</sub></div>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <b>Fig 3-2. 에러 상태 표시 이미지</b>
+</p>
 
 <br>
 <br>
