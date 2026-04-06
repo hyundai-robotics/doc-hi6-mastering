@@ -131,12 +131,15 @@ Fig 2.1-2. 전원 어댑터와 이더넷 케이블
 #### 2.1.2 접촉식 센서 연결 및 사양
 - 센서 연결을 Fig2.1-1 의 우측 사진과 같이 연결하면 됩니다.
 - 마스터링 키트는 하기와 같은 인터페이스 사양을 가지고 있습니다.
+    <div style="max-width: fit-content;">
 
     |속성|내용|
     |:----:|:----|
     |`센서 타입`| `접촉식` 센서 |
     |`통신 지원`| `Ethernet`(TCP/IP) |
     |`통신 주기`| `5 msec` |
+
+    </div>
 
 [__SOURCE](02_about_kit/2-kit_initialization/README.md)
 ## 2.2 센서 초기 설정 및 연결
@@ -149,18 +152,18 @@ Fig 2.1-2. 전원 어댑터와 이더넷 케이블
     - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
     - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
-<table style="width: 100%; border-collapse: collapse; border: none;">
+<table style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 33%;">
-      <img src="../../_assets/06_preset.PNG" style="height: 150px;"><br>
+    <td style="text-align: center; border: none;">
+      <img src="../../_assets/06_preset.PNG" style="max-height: 150px; width: auto;"><br>
       <sub>a. 센서를 들었을 때의 음의 수치</sub>
     </td>
-    <td style="text-align: center; border: none; width: 33%;">
-      <img src="../../_assets/09_preset_pressed.PNG" style="height: 150px;"><br>
+    <td style="text-align: center; border: none;">
+      <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 150px; width: auto;"><br>
       <sub>b. preset 버튼을 누르는 장면</sub>
     </td>
-    <td style="text-align: center; border: none; width: 33%;">
-      <img src="../../_assets/07_pressed.PNG" style="height: 150px;"><br>
+    <td style="text-align: center; border: none;">
+      <img src="../../_assets/07_pressed.PNG" style="max-height: 150px; width: auto;"><br>
       <sub>c. 센서를 눌렀을 때 양의 수치</sub>
     </td>
   </tr>
@@ -394,11 +397,11 @@ Fig 2.3-2. 마스터링 대기 화면
   <tr style="border: none;">
     <td style="text-align: center; border: none; width: 50%; padding: 10px;">
       <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub><b>a.</b> Motor ON 에러 상태</sub></div>
+      <div style="margin-top: 8px;"><sub>a. Motor ON 에러 상태</sub></div>
     </td>
     <td style="text-align: center; border: none; width: 50%; padding: 10px;">
       <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub><b>b.</b> TCP 연결 에러 상태</sub></div>
+      <div style="margin-top: 8px;"><sub>b. TCP 연결 에러 상태</sub></div>
     </td>
   </tr>
 </table>
