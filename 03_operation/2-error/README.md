@@ -1,29 +1,22 @@
 ﻿## 3.2. 동작 에러 코드
+
 #### 3.2.1 에러 화면 예시
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
-
-<div style="width: 700px; margin: 0; text-align: left;">
-  <div style="margin-bottom: 30px;">
-    <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 400px; height: auto; display: block; margin: 0;" alt="Motor ON Error">
-    <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
-      <strong>Fig 3-2. a.</strong> Motor ON 에러 상태
+    <div style="width: 700px; margin: 0; text-align: left;">
+      <div style="margin-bottom: 30px;">
+        <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0;" alt="Motor ON Error">
+        <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
+          <strong>Fig 3-2. a.</strong> Motor ON 에러 상태
+        </div>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0;" alt="TCP Connect Error">
+        <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
+          <strong>Fig 3-2. b.</strong> TCP 연결 에러 상태
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div style="margin-bottom: 10px;">
-    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 400px; height: auto; display: block; margin: 0;" alt="TCP Connect Error">
-    <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
-      <strong>Fig 3-2. b.</strong> TCP 연결 에러 상태
-    </div>
-  </div>
-
-  <div style="margin-top: 5px; font-size: 1em;">
-    <b>Fig 3-2. 에러 상태 표시 이미지</b>
-  </div>
-</div>
-
-<br>
 
 #### 3.2.2 에러 관련
 - 마스터링 완료 후 엔코더 값이 `이후`칸에 표시 않으면 `확인`버튼을 눌러 재진입바랍니다.  
@@ -38,8 +31,6 @@
     - 키트 ip 세팅은 [2.2.2 접촉식 센서 통신 설정](../../02_about_kit/2-kit_initialization/README.md)를 참조해서 진행할 수 있습니다.  
 
     </div>
-
-<br>
 
 - 다음은 마스터링 수행 도중 발생 가능한 에러 리스트입니다.  
     <div style="width:fit-content;">
