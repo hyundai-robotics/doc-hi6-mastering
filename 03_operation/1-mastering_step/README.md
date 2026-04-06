@@ -9,7 +9,6 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 - Please holding the enable switch until the operation ends.
 
 <br>
-<br>
 
 #### 3.1.2 Operation process - summary
 1. Enter `engineer mode`    
@@ -29,12 +28,11 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 5. Check whether encoder offset is corrected after mastering.  
     
 <br>
-<br>
 
 #### 3.1.3 Operation process - Details
 1. Encoder offset correction - by direct teaching  
-    1-a) Use the teach pendant (TP) to jog the robot to align the V-groove or scale bar attached to the robot.  
-    1-b) Resets the encoder offset to a visually aligned position for individual or all joint.  
+    1-a) Jog robot to align V-groove/scale bar (via TP, Teaching Pendant).  
+    1-b) Reset encoder offsets for individual or all joints at the aligned position.  
     - Enter the encoder offset setup page  
     &rightarrow; `TP` > Enter the `Engineer Mode` (R-Button + 314) > `System` > `3: Robot parameter` > `4: Encoder offset`  
     - Proceed with encoder offset initialization  
@@ -42,8 +40,6 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
         → Click `Corrrected encoder` value of the corresponding joint > Click `Reset one` > `Shift + OK` > `OK`   
         (2) When resetting all joint:  
         → Click `Reset all` > `Shift + OK` > `OK`  
-
-<br>
 
 2. Encoder offset correction - by using plugin  
     (1) After completing the steps in 1, enter the mastering plugin  
@@ -53,9 +49,22 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     (4) If it's okay, `motor on` > `enable switch on` > Click `Go to the enc offset`.    
         &rightarrow; Move to the origin position of the previously set.  
     (5) Mount the sensor on the joint entered in (2).  
-        <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
-        <img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
+        <div style="width: 630px;">
+          <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+            <tr>
+              <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 5px 0 0;">
+                <img src="../../_assets/00_mastering_Vdent_render.png" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Render image">
+              </td>
+              <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0 0 5px;">
+                <img src="../../_assets/01_mastering_real_picture.png" style="width: 100%; height: 200px; object-fit: cover; display: block;" alt="Real image">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="border: none; padding-top: 8px; font-size: 0.9em; white-space: nowrap;">
+                Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
+              </td>
+            </tr>
+          </table>
         </div>
     (6) Make sure the sensor tip is near the V groove.  
         &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
@@ -64,14 +73,9 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     (9) Remove the sensor.  
     (10) If there are additional joint to mastering, proceed again from (1).  
 
-
-<br>
-
 3. After mastering of all axes is completed, move to the updated encoder origin.
     - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
     - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
-
-<br>
 
 4. Check whether encoder offset is corrected after mastering.  
     - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset`  
@@ -79,9 +83,11 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
     - Check whether the `Current encoder` value for each axis is `0x400000`.  
 
 <br>
-<br>
 
 #### 3.1.4 Test Process - Status Bar Log
+
+<div style="width:fit-content;">
+
 |Order|Mastering status|Contents|
 |:---:|:---:|:---|
 |(1)|Standby|Initial image when entering the mastering app.|
@@ -93,7 +99,8 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 |(7)|apply corrected enc offset.|The state of moving to the modified origin after mastering is completed.|
 |(8)|mastering end.|The state of mastering is finished.|
 
-<br>
+</div>
+
 <br>
 
 #### 3.1.5 Results - image
@@ -101,17 +108,30 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 - The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
   - `Left block` : `Pre`-encoder offset value `before mastering`.  
   - `Right block` : `Post`-encoder offset value `after mastering`.  
-
-      <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 40vw">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-      Fig 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. Standby mode image
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      b. Mastering complete image
-      </div>
-
-<br>
-<br>
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 500px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/13_standby_eng.png" style="width: 100%; height: auto; display: block;" alt="Standby mode">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 20px 0; font-size: 0.9em;">
+            Fig 3.1.2. a. Standby mode image
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/14_mastering_end_eng.png" style="width: 100%; height: auto; display: block;" alt="Mastering complete">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 10px 0; font-size: 0.9em;">
+            Fig 3.1.2. b. Mastering complete image
+          </td>
+        </tr>
+      </table>
+    </div>
 
 #### 3.1.6 Reference
 - The reason of using `bit` for display encoder offset values.
