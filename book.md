@@ -398,20 +398,22 @@ Fig 2.3-2. 마스터링 대기 화면
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-<div style="width: 700px; margin: 0 auto; text-align: left;">
-  <div style="margin-bottom: 35px; display: inline-block;">
-    <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="Motor ON Error">
-    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
-      Fig 3-2. a. Motor ON 에러 상태
+<div style="width: 700px; margin: 0; text-align: left;">
+  <div style="margin-bottom: 30px;">
+    <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 400px; height: auto; display: block; margin: 0;" alt="Motor ON Error">
+    <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
+      <strong>Fig 3-2. a.</strong> Motor ON 에러 상태
     </div>
   </div>
-  <div style="margin-bottom: 15px; display: inline-block;">
-    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="TCP Connect Error">
-    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
-      Fig 3-2. b. TCP 연결 에러 상태
+
+  <div style="margin-bottom: 10px;">
+    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 400px; height: auto; display: block; margin: 0;" alt="TCP Connect Error">
+    <div style="margin-top: 8px; font-size: 0.9em; line-height: 1.4;">
+      <strong>Fig 3-2. b.</strong> TCP 연결 에러 상태
     </div>
   </div>
-  <div style="margin-top: -2px; margin-left: 20px; font-size: 1em;">
+
+  <div style="margin-top: 5px; font-size: 1em;">
     <b>Fig 3-2. 에러 상태 표시 이미지</b>
   </div>
 </div>

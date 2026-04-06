@@ -101,17 +101,18 @@
 
 #### 3.1.5 시험 결과 - 이미지
 
-<div style="width: 700px; margin: 0 auto; text-align: left;">
-  <div style="margin-bottom: 40px; display: inline-block;">
-    <img src="../../_assets/13_standby_kor.png" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Standby Screen">
-    <div style="margin-top: 10px; font-size: 0.9em; margin-left: 20px; line-height: 1.4;">
-      Fig 3.1-2. a. 대기 화면
+<div style="width: 700px; margin: 0; text-align: left;">
+  <div style="margin-bottom: 40px;">
+    <img src="../../_assets/13_standby_kor.png" style="width: 500px; height: auto; display: block; margin: 0;" alt="Standby Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; line-height: 1.4;">
+      <strong>Fig 3.1-2. a.</strong> 대기 화면
     </div>
   </div>
-  <div style="margin-bottom: 20px; display: inline-block;">
-    <img src="../../_assets/14_mastering_end_kor.PNG" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Mastering End Screen">
-    <div style="margin-top: 10px; font-size: 0.9em; line-height: 1.4; margin-left: 20px">
-      Fig 3.1-2. b. 마스터링 종료 화면
+
+  <div style="margin-bottom: 20px;">
+    <img src="../../_assets/14_mastering_end_kor.PNG" style="width: 500px; height: auto; display: block; margin: 0;" alt="Mastering End Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; line-height: 1.4;">
+      <strong>Fig 3.1-2. b.</strong> 마스터링 종료 화면
     </div>
   </div>
 </div>
