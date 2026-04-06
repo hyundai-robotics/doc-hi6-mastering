@@ -29,20 +29,47 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 <br>
 
 - `待机模式`
-
-    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-width: 60vw"><br>
-    图 2.3.1. 主控应用程序图像  
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; vertical-align: bottom; padding: 0;">
+            <img src="../../_assets/10_mastering_app_eng.PNG" style="width: 100%; height: auto; display: block;" alt="Mastering app">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
+            图 2.3.1. 主控应用程序图像
+          </td>
+        </tr>
+      </table>
+    </div>
 
 - 如果在应用程序中看不到主控应用程序，请重新启动 TP。
-
-    <img src="../../_assets/11_standbymode_eng.PNG" style="max-width: 60vw"><br>
-    图 2.3.2. 主控 `待机模式` 图像  
-
-    - `IP地址 (IP Address)` : 输入主控通信器的 IP 地址。  
-    - `端口号 (Port Number)` : 输入主控通信器的端口号。  
-    - `关节编号 (Joint Number)` : 输入目标关节的编号。  
-    - `主控状态 (Mastering Status)` : 显示主控操作状态。  
-    - `编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))` : 显示当前轴的编码器偏移值 (`bit`) 在主控之前和之后。  
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/11_standbymode_eng.PNG" style="width: 100%; height: auto; display: block;" alt="Mastering standby mode">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
+            图 2.3.2. 主控 <code>待机模式</code> 图像
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 15px; font-size: 0.9em; line-height: 1.6; word-break: keep-all;">
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
+              <li><code>IP地址 (IP Address)</code> : 输入主控通信器的 IP 地址。</li>
+              <li><code>端口号 (Port Number)</code> : 输入主控通信器的端口号。</li>
+              <li><code>关节编号 (Joint Number)</code> : 输入目标关节的编号。</li>
+              <li><code>主控状态 (Mastering Status)</code> : 显示主控操作状态。</li>
+              <li><code>编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))</code> : 显示当前轴的编码器偏移值 (<code>bit</code>) 在主控之前和之后。</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
 
 <br>
 

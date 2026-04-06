@@ -9,7 +9,6 @@
 - 请在操作结束之前保持使能开关。
 
 <br>
-<br>
 
 #### 3.1.2 操作过程 - 概述
 1. 进入`工程师模式`    
@@ -29,7 +28,6 @@
 5. 检查在掌握后编码器偏移是否已校正。  
     
 <br>
-<br>
 
 #### 3.1.3 操作过程 - 详细信息
 1. 编码器偏移校正 - 通过直接教学  
@@ -45,24 +43,45 @@
 
 <br>
 
+<br>
+
+<br>
+
 2. 编码器偏移校正 - 通过使用插件  
-    (1) 在完成步骤1后，进入掌握插件  
-        &rightarrow; `TP` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `掌握`  
-(2) 在 `Joint Number` 中输入关节编号 > 点击 `确认 (Confirm)`  
-(3) 重新输入主控插件以确保关节设置正确。  
-(4) 如果没问题，`电机 开 (motor on)` > `enable switch on` > 点击 `Go to the enc offset`。  
-&rightarrow; 移动到之前设定的原点位置。  
-(5) 在 (2) 中输入的关节上安装传感器。  
-<div>
-<img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
-<img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>图 3.1.1. 主控传感器安装图像（左：渲染图，右：实物图）
-</div>
-(6) 确保传感器尖端靠近 V 槽。  
-&rightarrow; 如果不在 V 槽内，请移除传感器并重复上述步骤 2。  
-(7) 点击 `2. 开始主控 (2. Start Mastering)`。  
-(8) 主控完成后，点击 `确认 (OK)`。  
-(9) 移除传感器。  
-(10) 如果有额外的关节需要主控，请从 (1) 开始再次进行。  
+    <div style="width: 630px; margin-left: 0; padding-left: 0; line-height: 1.6; word-break: keep-all;">
+      (1) 在完成步骤1后，进入掌握插件  
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; <code>TP</code> > <code>系统 (system)</code> > <code>4: 应用参数</code> > <code>掌握</code>  <br>
+      (2) 在 <code>Joint Number</code> 中输入关节编号 > 点击 <code>确认 (Confirm)</code>  <br>
+      (3) 重新输入主控插件以确保关节设置正确。  <br>
+      (4) 如果没问题，<code>电机 开 (motor on)</code> > <code>enable switch on</code> > 点击 <code>Go to the enc offset</code>。  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; 移动到之前设定的原点位置。  <br>
+      (5) 在 (2) 中输入的关节上安装传感器。  
+
+      <div style="margin: 10px 0;">
+        <table style="border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+          <tr>
+            <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 5px 0 0;">
+              <img src="../../_assets/00_mastering_Vdent_render.png" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+            </td>
+            <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0 0 5px;">
+              <img src="../../_assets/01_mastering_real_picture.png" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border: none; padding-top: 8px; font-size: 0.9em;">
+              <strong>图 3.1.1.</strong> 主控传感器安装图像（左：渲染图，右：实物图）
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      (6) 确保传感器尖端靠近 V 槽。  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; 如果不在 V 槽内，请移除传感器并重复上述步骤 2。  <br>
+      (7) 点击 <code>2. 开始主控 (2. Start Mastering)</code>。  <br>
+      (8) 主控完成后，点击 <code>确认 (OK)</code>。  <br>
+      (9) 移除传感器。  <br>
+      (10) 若有其他关节需主控，请从 (1) 重复进行。
+    </div>
 
 <br>
 
@@ -81,6 +100,9 @@
 <br>
 
 #### 3.1.4 测试过程 - 状态条日志
+
+<div style="width:fit-content;">
+
 |顺序|主控状态|内容|
 |:---:|:---:|:---|
 |(1)|待命|进入主控应用时的初始图像。|
@@ -92,6 +114,8 @@
 |(7)|应用修正的编码器偏移。|主控完成后，移动到修正原点的状态。|
 |(8)|主控结束。|主控完成的状态。|
 
+</div>
+
 <br>
 <br>
 
@@ -99,16 +123,31 @@
 - 编码器偏移值以 `bit(hexa)` 为单位在 `Encoder Offset(Before/After)` 上显示。
   - `左块` : `前`-编码器偏移值 `在掌握之前`。
   - `右块` : `后`-编码器偏移值 `在掌握之后`。
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 500px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/13_standby_eng.png" style="width: 100%; height: auto; display: block;" alt="Standby mode">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 20px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.1.2. a.</strong> 待机模式图像 (Standby mode image)
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/14_mastering_end_eng.png" style="width: 100%; height: auto; display: block;" alt="Mastering complete">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 10px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.1.2. b.</strong> 完成掌握图像 (Mastering complete image)
+          </td>
+        </tr>
+      </table>
+    </div>
 
-      <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 40vw">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-      图 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. 待机模式图像
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      b. 完成掌握图像
-      </div>
-
-<br>
 <br>
 
 #### 3.1.6 参考

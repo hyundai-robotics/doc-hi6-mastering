@@ -38,11 +38,13 @@
 - 本手册使用数字接触传感器进行校正。<br>
   传感器连接到机器人的每个轴，检测V型槽 <br> 在起始点的基础上，从-1.5度移动到+1.5度。<br>
   检测到的V型槽位置被修正为机械原点。<br><div>
-<img src="../../_assets/12_mastering_concept_eng.PNG" style="max-width: 60vw"><br>
+
+<img src="../../_assets/12_mastering_concept_eng.PNG" style="width: 630px"><br>
 图1.1. a. 起始点（轴扭曲状态），
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. 在校正期间检测到的V型槽
 </div>
+
 [__SOURCE](01_intro/2-about_contact_based_mastering/README.md)
 ## 1.2 基于接触传感器的机器人标定  
 本用户手册包含有关`基于接触传感器`的机器人标定功能的信息。  
@@ -110,22 +112,49 @@ b. 在校正期间检测到的V型槽
 
 #### 2.1.1 接触传感器组件
 - **传感器和电源适配器** 
-
-    <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/02_sensor.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Contact sensor">
+          </td>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/03_communication_module.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Communication module">
+          </td>
+        </tr>
+        <tr style="font-size: 0.9em; white-space: nowrap;">
+          <td style="border: none; padding-top: 8px;">
+            图 2.1.1. a. 接触传感器
+          </td>
+          <td style="border: none; padding-top: 8px; padding-left: 5px;">
+            b. 通信模块
+          </td>
+        </tr>
+      </table>
     </div>
-    图 2.1.1. a. 接触传感器&nbsp;&nbsp;&nbsp;&nbsp; b. 通信模块
-<br>
-
 <br>
 
 - **电缆**   
-    <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 30vh; max-width: 35.9vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 30vh; max-width: 37.02vw"></div>
-    图 2.1.2.&nbsp;&nbsp; a. 电源适配器&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 以太网电缆
-<br>
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/04_power_adapter.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Power adapter">
+          </td>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/05_lan_cable.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Ethernet cable">
+          </td>
+        </tr>
+        <tr style="font-size: 0.9em; white-space: nowrap;">
+          <td style="border: none; padding-top: 8px;">
+            图 2.1.2.   a. 电源适配器
+          </td>
+          <td style="border: none; padding-top: 8px; padding-left: 5px;">
+            b. 以太网电缆
+          </td>
+        </tr>
+      </table>
+    </div>
 
 <br>
 
@@ -141,6 +170,7 @@ b. 在校正期间检测到的V型槽
 
 #### 2.1.3 规格
 - 主控工具包的接口规格如下。
+    <div style="width:fit-content;">
 
     |特征|细节|
     |:----|:----|
@@ -148,8 +178,11 @@ b. 在校正期间检测到的V型槽
     |`协议 (Protocol)`| `Ethernet` (TCP/IP) |
     |`周期 (Cycle)`| `5 msec` |
 
+    </div>
+
 <br>
 <br>
+
 [__SOURCE](02_about_kit/2-kit_initialization/README.md)
 ## 2.2 初始设置和连接
 
@@ -163,18 +196,33 @@ b. 在校正期间检测到的V型槽
 3) 预设后，请检查在传感器被按下时，测量到的值是否为`正值`，如图2-3.c所示。  
 4) **在完成每个机器人轴的归零后，需要确保测量值为`正数`。**
 
-    <div>
-    <img src="../../_assets/06_preset.PNG" style="max-height: 30vh; max-width: 32.2vw">
-    <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 30vh; max-width: 32vw">
-    <img src="../../_assets/07_pressed.PNG" style="max-height: 30vh; max-width: 30vw"><br>
-    图 2.2.1. a. 持续传感器时的负值 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    b. 按下预设按钮时
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    c. 传感器被按下时的正值
-    </div>
+<div style="width: 630px;">
+  <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+    <tr>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px 0 0;">
+        <img src="../../_assets/06_preset.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;" alt="Negative value">
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px;">
+        <img src="../../_assets/09_preset_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;" alt="Preset button">
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 0 0 5px;">
+        <img src="../../_assets/07_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;" alt="Positive value">
+      </td>
+    </tr>
+    <tr style="font-size: 0.85em; line-height: 1.3;">
+      <td style="border: none; padding-top: 10px; vertical-align: top; word-break: keep-all; padding-right: 5px;">
+        图 2.2.1. a. 持续传感器时的负值 
+      </td>
+      <td style="border: none; padding-top: 10px; vertical-align: top; word-break: keep-all; padding-left: 5px;">
+        b. 按下预设按钮时
+      </td>
+      <td style="border: none; padding-top: 10px; vertical-align: top; word-break: keep-all; padding-left: 5px;">
+        c. 传感器被按下时的正值
+      </td>
+    </tr>
+  </table>
+</div>
 
-<br>
 <br>
 
 #### 2.2.2. 接触传感器的通信设置  
@@ -183,15 +231,29 @@ b. 在校正期间检测到的V型槽
 - 在这种情况下，您可以使用个人计算机配置IP设置。  
  - 注册成为会员后，您将能够使用该程序。  
     - 完成通信设置后，请按照[图2-1 b.通信模块](../1-kit_description/README.md)连接硬件（通讯器、以太网电缆）。  
-
-    <div>
-    <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 35vw">
-
-    图 2.2.2. [IP配置器](https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB)
-    - `网络适配器` : 连接计算机的网络适配器信息。
-    - `IP搜索范围` : 搜索连接设备的IP地址。
-    - `IP地址/Mac地址` : 连接设备的IP地址和MAC地址
-    - `IP设置/重置` : IP设置按钮（编辑）和重置按钮（<u>**仅用于更改IP设置**</u>）
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; vertical-align: bottom; padding: 0;">
+            <img src="../../_assets/08_ip_configuration.PNG" style="max-height: 30vh; max-width: 100%; display: block;" alt="IP configuration">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
+            图 2.2.2. <a href="https://www.keyence.co.kr/download/download/confirmation/?dlAssetId=AS_135945&dlSeriesId=&dlModelId=&dlLangId=&dlLangType=en-GB" target="_blank">IP配置器</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; line-height: 1.5; word-break: keep-all;">
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
+              <li><code>网络适配器</code> : 连接计算机的网络适配器信息。</li>
+              <li><code>IP搜索范围</code> : 搜索连接设备的IP地址。</li>
+              <li><code>IP地址/Mac地址</code> : 连接设备的IP地址和MAC地址。</li>
+              <li><code>IP设置/重置</code> : IP设置按钮（编辑）和重置按钮（<u><b>仅用于更改IP设置</b></u>）。</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
     </div>
 
 [__SOURCE](02_about_kit/3-com_initialization/README.md)
@@ -226,20 +288,47 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 <br>
 
 - `待机模式`
-
-    <img src="../../_assets/10_mastering_app_eng.PNG" style="max-width: 60vw"><br>
-    图 2.3.1. 主控应用程序图像  
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; vertical-align: bottom; padding: 0;">
+            <img src="../../_assets/10_mastering_app_eng.PNG" style="width: 100%; height: auto; display: block;" alt="Mastering app">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
+            图 2.3.1. 主控应用程序图像
+          </td>
+        </tr>
+      </table>
+    </div>
 
 - 如果在应用程序中看不到主控应用程序，请重新启动 TP。
-
-    <img src="../../_assets/11_standbymode_eng.PNG" style="max-width: 60vw"><br>
-    图 2.3.2. 主控 `待机模式` 图像  
-
-    - `IP地址 (IP Address)` : 输入主控通信器的 IP 地址。  
-    - `端口号 (Port Number)` : 输入主控通信器的端口号。  
-    - `关节编号 (Joint Number)` : 输入目标关节的编号。  
-    - `主控状态 (Mastering Status)` : 显示主控操作状态。  
-    - `编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))` : 显示当前轴的编码器偏移值 (`bit`) 在主控之前和之后。  
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/11_standbymode_eng.PNG" style="width: 100%; height: auto; display: block;" alt="Mastering standby mode">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
+            图 2.3.2. 主控 <code>待机模式</code> 图像
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding-top: 15px; font-size: 0.9em; line-height: 1.6; word-break: keep-all;">
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
+              <li><code>IP地址 (IP Address)</code> : 输入主控通信器的 IP 地址。</li>
+              <li><code>端口号 (Port Number)</code> : 输入主控通信器的端口号。</li>
+              <li><code>关节编号 (Joint Number)</code> : 输入目标关节的编号。</li>
+              <li><code>主控状态 (Mastering Status)</code> : 显示主控操作状态。</li>
+              <li><code>编码器偏移 (之前 / 之后) (Encoder Offset (Before / After))</code> : 显示当前轴的编码器偏移值 (<code>bit</code>) 在主控之前和之后。</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
 
 <br>
 
@@ -247,6 +336,7 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
     1) 输入预设的 IP 和端口。 -
     [2.2.2. 接触传感器的通信设置](../2-kit_initialization/README.md)  
     2) 通过 `shift` + `确认 (OK)` 将配置保存到 ${cont_model} 控制器。
+
 [__SOURCE](03_operation/README.md)
 # 3. 操作掌握
 
@@ -274,7 +364,6 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 - 请在操作结束之前保持使能开关。
 
 <br>
-<br>
 
 #### 3.1.2 操作过程 - 概述
 1. 进入`工程师模式`    
@@ -294,7 +383,6 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 5. 检查在掌握后编码器偏移是否已校正。  
     
 <br>
-<br>
 
 #### 3.1.3 操作过程 - 详细信息
 1. 编码器偏移校正 - 通过直接教学  
@@ -310,24 +398,45 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 
 <br>
 
+<br>
+
+<br>
+
 2. 编码器偏移校正 - 通过使用插件  
-    (1) 在完成步骤1后，进入掌握插件  
-        &rightarrow; `TP` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `掌握`  
-(2) 在 `Joint Number` 中输入关节编号 > 点击 `确认 (Confirm)`  
-(3) 重新输入主控插件以确保关节设置正确。  
-(4) 如果没问题，`电机 开 (motor on)` > `enable switch on` > 点击 `Go to the enc offset`。  
-&rightarrow; 移动到之前设定的原点位置。  
-(5) 在 (2) 中输入的关节上安装传感器。  
-<div>
-<img src="../../_assets/00_mastering_Vdent_render.png" style="max-height: 30vh; max-width: 35vw">
-<img src="../../_assets/01_mastering_real_picture.png" style="max-height: 30vh; max-width: 32.3vw"><br>图 3.1.1. 主控传感器安装图像（左：渲染图，右：实物图）
-</div>
-(6) 确保传感器尖端靠近 V 槽。  
-&rightarrow; 如果不在 V 槽内，请移除传感器并重复上述步骤 2。  
-(7) 点击 `2. 开始主控 (2. Start Mastering)`。  
-(8) 主控完成后，点击 `确认 (OK)`。  
-(9) 移除传感器。  
-(10) 如果有额外的关节需要主控，请从 (1) 开始再次进行。  
+    <div style="width: 630px; margin-left: 0; padding-left: 0; line-height: 1.6; word-break: keep-all;">
+      (1) 在完成步骤1后，进入掌握插件  
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; <code>TP</code> > <code>系统 (system)</code> > <code>4: 应用参数</code> > <code>掌握</code>  <br>
+      (2) 在 <code>Joint Number</code> 中输入关节编号 > 点击 <code>确认 (Confirm)</code>  <br>
+      (3) 重新输入主控插件以确保关节设置正确。  <br>
+      (4) 如果没问题，<code>电机 开 (motor on)</code> > <code>enable switch on</code> > 点击 <code>Go to the enc offset</code>。  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; 移动到之前设定的原点位置。  <br>
+      (5) 在 (2) 中输入的关节上安装传感器。  
+
+      <div style="margin: 10px 0;">
+        <table style="border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+          <tr>
+            <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 5px 0 0;">
+              <img src="../../_assets/00_mastering_Vdent_render.png" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+            </td>
+            <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0 0 5px;">
+              <img src="../../_assets/01_mastering_real_picture.png" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border: none; padding-top: 8px; font-size: 0.9em;">
+              <strong>图 3.1.1.</strong> 主控传感器安装图像（左：渲染图，右：实物图）
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      (6) 确保传感器尖端靠近 V 槽。  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&rightarrow; 如果不在 V 槽内，请移除传感器并重复上述步骤 2。  <br>
+      (7) 点击 <code>2. 开始主控 (2. Start Mastering)</code>。  <br>
+      (8) 主控完成后，点击 <code>确认 (OK)</code>。  <br>
+      (9) 移除传感器。  <br>
+      (10) 若有其他关节需主控，请从 (1) 重复进行。
+    </div>
 
 <br>
 
@@ -346,6 +455,9 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 <br>
 
 #### 3.1.4 测试过程 - 状态条日志
+
+<div style="width:fit-content;">
+
 |顺序|主控状态|内容|
 |:---:|:---:|:---|
 |(1)|待命|进入主控应用时的初始图像。|
@@ -357,6 +469,8 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 |(7)|应用修正的编码器偏移。|主控完成后，移动到修正原点的状态。|
 |(8)|主控结束。|主控完成的状态。|
 
+</div>
+
 <br>
 <br>
 
@@ -364,16 +478,31 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 - 编码器偏移值以 `bit(hexa)` 为单位在 `Encoder Offset(Before/After)` 上显示。
   - `左块` : `前`-编码器偏移值 `在掌握之前`。
   - `右块` : `后`-编码器偏移值 `在掌握之后`。
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 500px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/13_standby_eng.png" style="width: 100%; height: auto; display: block;" alt="Standby mode">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 20px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.1.2. a.</strong> 待机模式图像 (Standby mode image)
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/14_mastering_end_eng.png" style="width: 100%; height: auto; display: block;" alt="Mastering complete">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 10px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.1.2. b.</strong> 完成掌握图像 (Mastering complete image)
+          </td>
+        </tr>
+      </table>
+    </div>
 
-      <div>
-      <img src="../../_assets/13_standby_eng.png" style="max-height: 30vh; max-width: 40vw">
-      <img src="../../_assets/14_mastering_end_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-      图 3.1.2.&nbsp;&nbsp;&nbsp;&nbsp;a. 待机模式图像
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      b. 完成掌握图像
-      </div>
-
-<br>
 <br>
 
 #### 3.1.6 参考
@@ -381,24 +510,44 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
   - 在比较掌握结果时显示角度差异是直观的，但小于 0.01 的变化无法评估。
   - 当前掌握过程将原点移动在 -1.5 到 1.5 度之间。
   - 为了传达这些微小的差异，以 bit 单位显示编码器值更加准确。
+
 [__SOURCE](03_operation/2-error/README.md)
 ## 3.2. 错误代码说明
 
 #### 3.2.1 错误图像
 - 在掌控操作过程中，如果发生错误，'掌控进度状态'将输出错误代码。
 - 例如) `ERROR_TCP_CONNECT`， `ERROR_MOTOR_ON_CHK`
-
-    <div>
-    <img src="../../_assets/15_err_motor_on_eng.png" style="max-height: 30vh; max-width: 40vw">
-    <img src="../../_assets/16_err_tcp_connect_eng.png" style="max-height: 30vh; max-width: 40vw"><br>
-    图 3.2.1. 错误状态的示例图像 
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 500px; table-layout: fixed;">
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/15_err_motor_on_eng.png" style="width: 100%; height: auto; display: block;" alt="Error: Motor ON">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 25px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.2.1. a.</strong> 错误状态示例：主控时电机必须保持开启 (Motor ON)
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 0;">
+            <img src="../../_assets/16_err_tcp_connect_eng.png" style="width: 100%; height: auto; display: block;" alt="Error: TCP Connection">
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none; padding: 8px 0 10px 0; font-size: 0.9em; line-height: 1.4;">
+            <strong>图 3.2.1. b.</strong> 错误状态示例：传感器 TCP 连接失败
+          </td>
+        </tr>
+      </table>
     </div>
 
-<br>
 <br>
 
 #### 3.2.2 错误总结
 这是在执行掌控操作时可能出现的错误列表。  
+
+<div style="width:fit-content;">
 
 |错误代码|内容|待办事项|
 |:---|:---|:---|
@@ -411,3 +560,5 @@ TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` >
 |`ERROR_TCP_RES_NULL`| TCP/IP通信响应为null。 | 检查接触传感器的连接状态和设置环境。 |
 |`ERROR_TCP_CONNECT` | TCP/IP通信连接失败。 | 检查接触传感器的连接状态和设置环境。 |
 |`ERROR_PLAYBACK` | 播放错误。 | 请重启控制器。 |
+
+</div>

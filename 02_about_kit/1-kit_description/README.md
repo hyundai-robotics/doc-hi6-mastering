@@ -2,22 +2,49 @@
 
 #### 2.1.1 接触传感器组件
 - **传感器和电源适配器** 
-
-    <div>
-    <img src="../../_assets/02_sensor.PNG" style="max-height: 23vh;max-width: 16vw">
-    <img src="../../_assets/03_communication_module.PNG" style="max-height: 23vh; max-width: 25vw">
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/02_sensor.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Contact sensor">
+          </td>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/03_communication_module.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Communication module">
+          </td>
+        </tr>
+        <tr style="font-size: 0.9em; white-space: nowrap;">
+          <td style="border: none; padding-top: 8px;">
+            图 2.1.1. a. 接触传感器
+          </td>
+          <td style="border: none; padding-top: 8px; padding-left: 5px;">
+            b. 通信模块
+          </td>
+        </tr>
+      </table>
     </div>
-    图 2.1.1. a. 接触传感器&nbsp;&nbsp;&nbsp;&nbsp; b. 通信模块
-<br>
-
 <br>
 
 - **电缆**   
-    <div>
-    <img src="../../_assets/04_power_adapter.PNG" style="max-height: 30vh; max-width: 35.9vw">
-    <img src="../../_assets/05_lan_cable.PNG" style="max-height: 30vh; max-width: 37.02vw"></div>
-    图 2.1.2.&nbsp;&nbsp; a. 电源适配器&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 以太网电缆
-<br>
+    <div style="width: 630px;">
+      <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
+        <tr>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/04_power_adapter.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Power adapter">
+          </td>
+          <td style="width: 315px; border: none; vertical-align: bottom; padding: 0 0;">
+            <img src="../../_assets/05_lan_cable.PNG" style="width: 100%; height: 200px; object-fit: contain; display: block;" alt="Ethernet cable">
+          </td>
+        </tr>
+        <tr style="font-size: 0.9em; white-space: nowrap;">
+          <td style="border: none; padding-top: 8px;">
+            图 2.1.2.   a. 电源适配器
+          </td>
+          <td style="border: none; padding-top: 8px; padding-left: 5px;">
+            b. 以太网电缆
+          </td>
+        </tr>
+      </table>
+    </div>
 
 <br>
 
@@ -33,12 +60,15 @@
 
 #### 2.1.3 规格
 - 主控工具包的接口规格如下。
+    <div style="width:fit-content;">
 
     |特征|细节|
     |:----|:----|
     |`传感器类型 (Sensor Type)`| `Digital contact` |
     |`协议 (Protocol)`| `Ethernet` (TCP/IP) |
     |`周期 (Cycle)`| `5 msec` |
+
+    </div>
 
 <br>
 <br>

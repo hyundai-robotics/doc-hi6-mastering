@@ -15,7 +15,8 @@
 - 本手册使用数字接触传感器进行校正。<br>
   传感器连接到机器人的每个轴，检测V型槽 <br> 在起始点的基础上，从-1.5度移动到+1.5度。<br>
   检测到的V型槽位置被修正为机械原点。<br><div>
-<img src="../../_assets/12_mastering_concept_eng.PNG" style="max-width: 60vw"><br>
+
+<img src="../../_assets/12_mastering_concept_eng.PNG" style="width: 630px"><br>
 图1.1. a. 起始点（轴扭曲状态），
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 b. 在校正期间检测到的V型槽
