@@ -8,26 +8,29 @@
     - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
     - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
-<table style="border-collapse: collapse; border: none; margin-left: 30px; width: auto;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; padding-right: 15px;">
-      <img src="../../_assets/06_preset.PNG" style="height: 150px; width: auto;"><br>
-      <sub>a. 센서를 들었을 때의 음의 수치</sub>
-    </td>
-    <td style="text-align: center; border: none; padding-right: 15px;">
-      <img src="../../_assets/09_preset_pressed.PNG" style="height: 150px; width: auto;"><br>
-      <sub>b. preset 버튼을 누르는 장면</sub>
-    </td>
-    <td style="text-align: center; border: none;">
-      <img src="../../_assets/07_pressed.PNG" style="height: 150px; width: auto;"><br>
-      <sub>c. 센서를 눌렀을 때 양의 수치</sub>
-    </td>
-  </tr>
-</table>
-
-<p align="left" style="margin-left: 40px">
-  <b>Fig 2.2-1. 센서 조작 및 수치 변화 결과</b>
-</p>
+<div style="width: 660px;">
+  <table style="margin-left: 0; border: none; border-collapse: collapse; width: 660px; table-layout: fixed;">
+    <tr>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px 0 0; text-align: center;">
+        <img src="../../_assets/06_preset.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">a. 센서를 들었을 때의 음의 수치</div>
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px; text-align: center;">
+        <img src="../../_assets/09_preset_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">b. preset 버튼을 누르는 장면</div>
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 0 0 5px; text-align: center;">
+        <img src="../../_assets/07_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">c. 센서를 눌렀을 때 양의 수치</div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="border: none; padding-top: 4px; font-size: 0.95em; text-align: center;">
+        Fig 2.2-1. 센서 조작 및 수치 변화 결과
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 #### 2.2.2 접촉식 센서 통신 설정

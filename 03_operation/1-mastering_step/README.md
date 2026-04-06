@@ -58,8 +58,8 @@
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 180px; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="height: 180px; ">
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 200px; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="height: 200px; ">
         <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)</br>
         </div>
 
@@ -83,7 +83,7 @@
 
 #### 3.1.4 시험 과정 - 상태 표시 줄 로그
   
-<div style="max-height:fit-content;">
+<div style="width:fit-content;">
 
 |순서|진행 상태 표시|내용|
 |:---:|:---|:---|
@@ -101,19 +101,20 @@
 
 #### 3.1.5 시험 결과 - 이미지
 
-<table style="width: 630px; border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 50%;">
-      <img src="../../_assets/13_standby_kor.png" style="max-width: 100%; height: 210px;">
-      <div style="margin-top: 8px;"><sub>Fig 3.1-2. a. 대기 화면</sub></div>
-    </td>
-    <td style="text-align: center; border: none; width: 50%;">
-      <img src="../../_assets/14_mastering_end_kor.PNG" style="max-width: 100%; height: 210px;">
-      <div style="margin-top: 8px;"><sub>Fig 3.1-2. b. 마스터링 종료 화면</sub></div>
-    </td>
-  </tr>
-</table>
-<div style="clear: both;"></div>
+<div style="width: 700px; margin: 0 auto; text-align: left;">
+  <div style="margin-bottom: 40px; display: inline-block;">
+    <img src="../../_assets/13_standby_kor.png" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Standby Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; margin-left: 20px; line-height: 1.4;">
+      Fig 3.1-2. a. 대기 화면
+    </div>
+  </div>
+  <div style="margin-bottom: 20px; display: inline-block;">
+    <img src="../../_assets/14_mastering_end_kor.PNG" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Mastering End Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; line-height: 1.4; margin-left: 20px">
+      Fig 3.1-2. b. 마스터링 종료 화면
+    </div>
+  </div>
+</div>
 
 
 `엔코더 오프셋(이전/이후)`에는 엔코더 오프셋 값(`bit`)이 표기됩니다.  
@@ -122,8 +123,6 @@
 
 
 #### 3.1.6 참고
-- 마스터링 결과 값을 엔코더 값으로 보여주는 이유
-  - 마스터링 결과 비교시, 각도 차이를 보여주는 것이 직관적이나, 0.01 이하의 변화는 TP 상에서 보여주지 않습니다. 
-  - 현재 마스터링 과정은 첫 원점에서 -1.5도를 시작점으로 +3도를 도착점으로 미세하게 움직입니다.
-  - 이러한 미세 차이를 표현하기 위해서는 bit 단위로 엔코더 수치를 보여주는 것이 정확합니다.
-
+- 마스터링 결과값을 각도가 아닌 엔코더(bit) 단위로 표시하는 이유
+  - 미세 변화 식별: 각도 단위는 0.01° 이하의 미세한 변화를 표시하지 못합니다.
+  - 정밀도 확보: 마스터링은 -1.5° ~ +1.5° 사이의 초정밀 구간에서 수행되므로, 이를 정확히 표현하기 위해 더 세밀한 bit 단위를 사용합니다.

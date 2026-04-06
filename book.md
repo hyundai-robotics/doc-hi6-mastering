@@ -152,26 +152,29 @@ Fig 2.1-2. 전원 어댑터와 이더넷 케이블
     - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
     - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
-<table style="border-collapse: collapse; border: none; margin-left: 30px; width: auto;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; padding-right: 15px;">
-      <img src="../../_assets/06_preset.PNG" style="height: 150px; width: auto;"><br>
-      <sub>a. 센서를 들었을 때의 음의 수치</sub>
-    </td>
-    <td style="text-align: center; border: none; padding-right: 15px;">
-      <img src="../../_assets/09_preset_pressed.PNG" style="height: 150px; width: auto;"><br>
-      <sub>b. preset 버튼을 누르는 장면</sub>
-    </td>
-    <td style="text-align: center; border: none;">
-      <img src="../../_assets/07_pressed.PNG" style="height: 150px; width: auto;"><br>
-      <sub>c. 센서를 눌렀을 때 양의 수치</sub>
-    </td>
-  </tr>
-</table>
-
-<p align="left" style="margin-left: 40px">
-  <b>Fig 2.2-1. 센서 조작 및 수치 변화 결과</b>
-</p>
+<div style="width: 660px;">
+  <table style="margin-left: 0; border: none; border-collapse: collapse; width: 660px; table-layout: fixed;">
+    <tr>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px 0 0; text-align: center;">
+        <img src="../../_assets/06_preset.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">a. 센서를 들었을 때의 음의 수치</div>
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 5px; text-align: center;">
+        <img src="../../_assets/09_preset_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">b. preset 버튼을 누르는 장면</div>
+      </td>
+      <td style="width: 210px; border: none; vertical-align: bottom; padding: 0 0 0 5px; text-align: center;">
+        <img src="../../_assets/07_pressed.PNG" style="width: 100%; height: 160px; object-fit: cover; display: block;">
+        <div style="font-size: 0.8em; margin-top: 5px; color: #555;">c. 센서를 눌렀을 때 양의 수치</div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="border: none; padding-top: 4px; font-size: 0.95em; text-align: center;">
+        Fig 2.2-1. 센서 조작 및 수치 변화 결과
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 #### 2.2.2 접촉식 센서 통신 설정
@@ -320,8 +323,8 @@ Fig 2.3-2. 마스터링 대기 화면
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 180px; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="height: 180px; ">
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 200px; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="height: 200px; ">
         <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)</br>
         </div>
 
@@ -345,7 +348,7 @@ Fig 2.3-2. 마스터링 대기 화면
 
 #### 3.1.4 시험 과정 - 상태 표시 줄 로그
   
-<div style="max-height:fit-content;">
+<div style="width:fit-content;">
 
 |순서|진행 상태 표시|내용|
 |:---:|:---|:---|
@@ -363,19 +366,20 @@ Fig 2.3-2. 마스터링 대기 화면
 
 #### 3.1.5 시험 결과 - 이미지
 
-<table style="width: 630px; border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 50%;">
-      <img src="../../_assets/13_standby_kor.png" style="max-width: 100%; height: 210px;">
-      <div style="margin-top: 8px;"><sub>Fig 3.1-2. a. 대기 화면</sub></div>
-    </td>
-    <td style="text-align: center; border: none; width: 50%;">
-      <img src="../../_assets/14_mastering_end_kor.PNG" style="max-width: 100%; height: 210px;">
-      <div style="margin-top: 8px;"><sub>Fig 3.1-2. b. 마스터링 종료 화면</sub></div>
-    </td>
-  </tr>
-</table>
-<div style="clear: both;"></div>
+<div style="width: 700px; margin: 0 auto; text-align: left;">
+  <div style="margin-bottom: 40px; display: inline-block;">
+    <img src="../../_assets/13_standby_kor.png" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Standby Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; margin-left: 20px; line-height: 1.4;">
+      Fig 3.1-2. a. 대기 화면
+    </div>
+  </div>
+  <div style="margin-bottom: 20px; display: inline-block;">
+    <img src="../../_assets/14_mastering_end_kor.PNG" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="Mastering End Screen">
+    <div style="margin-top: 10px; font-size: 0.9em; line-height: 1.4; margin-left: 20px">
+      Fig 3.1-2. b. 마스터링 종료 화면
+    </div>
+  </div>
+</div>
 
 
 `엔코더 오프셋(이전/이후)`에는 엔코더 오프셋 값(`bit`)이 표기됩니다.  
@@ -384,11 +388,9 @@ Fig 2.3-2. 마스터링 대기 화면
 
 
 #### 3.1.6 참고
-- 마스터링 결과 값을 엔코더 값으로 보여주는 이유
-  - 마스터링 결과 비교시, 각도 차이를 보여주는 것이 직관적이나, 0.01 이하의 변화는 TP 상에서 보여주지 않습니다. 
-  - 현재 마스터링 과정은 첫 원점에서 -1.5도를 시작점으로 +3도를 도착점으로 미세하게 움직입니다.
-  - 이러한 미세 차이를 표현하기 위해서는 bit 단위로 엔코더 수치를 보여주는 것이 정확합니다.
-
+- 마스터링 결과값을 각도가 아닌 엔코더(bit) 단위로 표시하는 이유
+  - 미세 변화 식별: 각도 단위는 0.01° 이하의 미세한 변화를 표시하지 못합니다.
+  - 정밀도 확보: 마스터링은 -1.5° ~ +1.5° 사이의 초정밀 구간에서 수행되므로, 이를 정확히 표현하기 위해 더 세밀한 bit 단위를 사용합니다.
 
 [__SOURCE](03_operation/2-error/README.md)
 ## 3.2. 동작 에러 코드
@@ -396,41 +398,44 @@ Fig 2.3-2. 마스터링 대기 화면
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-<table style="width: 630px; border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 50%">
-      <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub>a. Motor ON 에러 상태</sub></div>
-    </td>
-    <td style="text-align: center; border: none; width: 50%">
-      <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub>b. TCP 연결 에러 상태</sub></div>
-    </td>
-  </tr>
-</table>
+<div style="width: 700px; margin: 0 auto; text-align: left;">
+  <div style="margin-bottom: 35px; display: inline-block;">
+    <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="Motor ON Error">
+    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
+      Fig 3-2. a. Motor ON 에러 상태
+    </div>
+  </div>
+  <div style="margin-bottom: 15px; display: inline-block;">
+    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="TCP Connect Error">
+    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
+      Fig 3-2. b. TCP 연결 에러 상태
+    </div>
+  </div>
+  <div style="margin-top: -2px; margin-left: 20px; font-size: 1em;">
+    <b>Fig 3-2. 에러 상태 표시 이미지</b>
+  </div>
+</div>
 
-<p align="center">
-  <b>Fig 3-2. 에러 상태 표시 이미지</b>
-</p>
-
-<br>
 <br>
 
 #### 3.2.2 에러 관련
-- 마스터링 완료 후 엔코더 값이 `이후`칸에 표시 안되는 경우, `확인`버튼을 눌러 나갔다가 다시 들어오시기 바랍니다.  
-- 지속적으로 `ERROR_TCP_CONNECT` 가 뜨는 경우, 제어기에 연결된 이더넷이 제대로 연결되었는지 확인하시기 바랍니다.  
-    - ex) 제어기 조립 시, 이더넷 포트를 바꾼 상태로 연결되면, IP 주소의 서브넷 포트(3번째 포트)가 1이 아닌 값일 수 있습니다.
+- 마스터링 완료 후 엔코더 값이 `이후`칸에 표시 않으면 `확인`버튼을 눌러 재진입바랍니다.  
+- 지속적으로 `ERROR_TCP_CONNECT` 가 뜨는 경우, 이더넷이 연결을 재확인바랍니다.  
+    <div style="width:fit-content;">
     
-        |제어기 예상 IP|오조립으로 인한 실제 제어기 IP|마스터링 키트에 설정된 IP|비고|
-        |:---|:---|:---|:---|
-        |192.168.1.150|192.168.3.150|192.168.1.71|실제 제어기는 3대역대, 키트는 1대역대 이므로 통신 불가|  
-        - 실제 현장에서 마스터링에 연결된 이더넷 케이블로 제어기 ping test를 통해 문제를 확인한 경우였습니다.  
-        - 이 같은 경우, 제어기 조립을 다시 하거나, TP 의 네트워크 설정을 재설정 하거나, 마스터링 키트 IP 세팅을 3대역 폭으로 맞추면 해결할 수 있습니다.  
-        - 키트 ip 세팅은 [2.2.2 접촉식 센서 통신 설정](../../02_about_kit/2-kit_initialization/README.md)를 참조해서 진행할 수 있습니다.  
+    |제어기 예상 IP|오조립으로 인한 실제 제어기 IP|마스터링 키트에 설정된 IP|비고|
+    |:---|:---|:---|:---|
+    |192.168.1.150|192.168.3.150|192.168.1.71|실제 제어기는 3대역대, 키트는 1대역대 이므로 통신 불가|  
+    - 실제 현장에서 발생했던 케이스입니다.  
+    - 해당 경우, 제어기 조립을 다시 하거나, TP 의 네트워크 설정을 재설정 하거나, 마스터링 키트 IP 세팅을 3대역 폭으로 맞추면 해결할 수 있습니다.  
+    - 키트 ip 세팅은 [2.2.2 접촉식 센서 통신 설정](../../02_about_kit/2-kit_initialization/README.md)를 참조해서 진행할 수 있습니다.  
+
+    </div>
 
 <br>
 
 - 다음은 마스터링 수행 도중 발생 가능한 에러 리스트입니다.  
+    <div style="width:fit-content;">
 
     |에러코드|내용|조치 사항|
     |:---|:---|:---|
@@ -444,3 +449,4 @@ Fig 2.3-2. 마스터링 대기 화면
     |`ERROR_TCP_CONNECT` | TCP/IP 통신 Open 에러 | 접촉식 센서의 연결 상태 및 설정 환경을 확인하세요. |
     |`ERROR_PLAYBACK` | Playback 실행 에러 | 제어기 재기동을 진행해주세요. |
 
+    </div>

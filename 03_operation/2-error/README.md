@@ -3,41 +3,44 @@
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-<table style="width: 630px; border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 50%">
-      <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub>a. Motor ON 에러 상태</sub></div>
-    </td>
-    <td style="text-align: center; border: none; width: 50%">
-      <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
-      <div style="margin-top: 8px;"><sub>b. TCP 연결 에러 상태</sub></div>
-    </td>
-  </tr>
-</table>
+<div style="width: 700px; margin: 0 auto; text-align: left;">
+  <div style="margin-bottom: 35px; display: inline-block;">
+    <img src="../../_assets/15_err_motor_on_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="Motor ON Error">
+    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
+      Fig 3-2. a. Motor ON 에러 상태
+    </div>
+  </div>
+  <div style="margin-bottom: 15px; display: inline-block;">
+    <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="width: 450px; height: auto; display: block; margin: 0 auto;" alt="TCP Connect Error">
+    <div style="margin-left: 20px; font-size: 0.9em; line-height: 1.4;">
+      Fig 3-2. b. TCP 연결 에러 상태
+    </div>
+  </div>
+  <div style="margin-top: -2px; margin-left: 20px; font-size: 1em;">
+    <b>Fig 3-2. 에러 상태 표시 이미지</b>
+  </div>
+</div>
 
-<p align="center">
-  <b>Fig 3-2. 에러 상태 표시 이미지</b>
-</p>
-
-<br>
 <br>
 
 #### 3.2.2 에러 관련
-- 마스터링 완료 후 엔코더 값이 `이후`칸에 표시 안되는 경우, `확인`버튼을 눌러 나갔다가 다시 들어오시기 바랍니다.  
-- 지속적으로 `ERROR_TCP_CONNECT` 가 뜨는 경우, 제어기에 연결된 이더넷이 제대로 연결되었는지 확인하시기 바랍니다.  
-    - ex) 제어기 조립 시, 이더넷 포트를 바꾼 상태로 연결되면, IP 주소의 서브넷 포트(3번째 포트)가 1이 아닌 값일 수 있습니다.
+- 마스터링 완료 후 엔코더 값이 `이후`칸에 표시 않으면 `확인`버튼을 눌러 재진입바랍니다.  
+- 지속적으로 `ERROR_TCP_CONNECT` 가 뜨는 경우, 이더넷이 연결을 재확인바랍니다.  
+    <div style="width:fit-content;">
     
-        |제어기 예상 IP|오조립으로 인한 실제 제어기 IP|마스터링 키트에 설정된 IP|비고|
-        |:---|:---|:---|:---|
-        |192.168.1.150|192.168.3.150|192.168.1.71|실제 제어기는 3대역대, 키트는 1대역대 이므로 통신 불가|  
-        - 실제 현장에서 마스터링에 연결된 이더넷 케이블로 제어기 ping test를 통해 문제를 확인한 경우였습니다.  
-        - 이 같은 경우, 제어기 조립을 다시 하거나, TP 의 네트워크 설정을 재설정 하거나, 마스터링 키트 IP 세팅을 3대역 폭으로 맞추면 해결할 수 있습니다.  
-        - 키트 ip 세팅은 [2.2.2 접촉식 센서 통신 설정](../../02_about_kit/2-kit_initialization/README.md)를 참조해서 진행할 수 있습니다.  
+    |제어기 예상 IP|오조립으로 인한 실제 제어기 IP|마스터링 키트에 설정된 IP|비고|
+    |:---|:---|:---|:---|
+    |192.168.1.150|192.168.3.150|192.168.1.71|실제 제어기는 3대역대, 키트는 1대역대 이므로 통신 불가|  
+    - 실제 현장에서 발생했던 케이스입니다.  
+    - 해당 경우, 제어기 조립을 다시 하거나, TP 의 네트워크 설정을 재설정 하거나, 마스터링 키트 IP 세팅을 3대역 폭으로 맞추면 해결할 수 있습니다.  
+    - 키트 ip 세팅은 [2.2.2 접촉식 센서 통신 설정](../../02_about_kit/2-kit_initialization/README.md)를 참조해서 진행할 수 있습니다.  
+
+    </div>
 
 <br>
 
 - 다음은 마스터링 수행 도중 발생 가능한 에러 리스트입니다.  
+    <div style="width:fit-content;">
 
     |에러코드|내용|조치 사항|
     |:---|:---|:---|
@@ -51,3 +54,4 @@
     |`ERROR_TCP_CONNECT` | TCP/IP 통신 Open 에러 | 접촉식 센서의 연결 상태 및 설정 환경을 확인하세요. |
     |`ERROR_PLAYBACK` | Playback 실행 에러 | 제어기 재기동을 진행해주세요. |
 
+    </div>
