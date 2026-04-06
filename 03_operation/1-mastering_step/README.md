@@ -32,7 +32,6 @@
     - `보정된 엔코더` 값이 `엔코더 오프셋(이후)` 값과 동일한지 확인  
     - `현재 엔코더` 값이 `0x400000` 인지 확인  
 
-
 #### 3.1.3 시험 과정 - 상세  
 1. `엔지니어 모드(R버튼 + 314)` 진입  
 
@@ -59,10 +58,11 @@
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 200px; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="height: 200px; ">
-        <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 180px; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="height: 180px; ">
+        <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)</br>
         </div>
+
     (7) `2. 마스터링 시작` 버튼을 클릭합니다.  
     (8) 마스터링 완료 시 `확인` 클릭합니다.    
     (9) `센서를 탈착`합니다.  
@@ -83,6 +83,8 @@
 
 #### 3.1.4 시험 과정 - 상태 표시 줄 로그
   
+<div style="max-height:fit-content;">
+
 |순서|진행 상태 표시|내용|
 |:---:|:---|:---|
 |(1)|대기중|처음 app을 실행시켰을 때의 화면|
@@ -94,23 +96,24 @@
 |(7)|수정된 엔코더 오프셋을 적용합니다.|마스터링 완료 후 수정된 원점으로 움직이는 상태|
 |(8)|마스터링이 종료되었습니다.|보정된 엔코더 오프셋이 보정되고 마스터링이 종료된 상태|
 
+</div>
+
 
 #### 3.1.5 시험 결과 - 이미지
 
-<table style="width: 100%; text-align: center; border-collapse: collapse; border: none;">
-  <tr>
-    <td style="width: 50%; border: none;">
-      <img src="../../_assets/13_standby_kor.png">
+<table style="width: 630px; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="text-align: center; border: none; width: 50%;">
+      <img src="../../_assets/13_standby_kor.png" style="max-width: 100%; height: 210px;">
+      <div style="margin-top: 8px;"><sub>Fig 3.1-2. a. 대기 화면</sub></div>
     </td>
-    <td style="width: 50%; border: none;">
-      <img src="../../_assets/14_mastering_end_kor.PNG">
+    <td style="text-align: center; border: none; width: 50%;">
+      <img src="../../_assets/14_mastering_end_kor.PNG" style="max-width: 100%; height: 210px;">
+      <div style="margin-top: 8px;"><sub>Fig 3.1-2. b. 마스터링 종료 화면</sub></div>
     </td>
-  </tr>
-  <tr>
-    <td style="border: none;">Fig 3.1-2. a. 대기 화면</td>
-    <td style="border: none;">Fig 3.1-2. b. 마스터링 종료 화면</td>
   </tr>
 </table>
+<div style="clear: both;"></div>
 
 
 `엔코더 오프셋(이전/이후)`에는 엔코더 오프셋 값(`bit`)이 표기됩니다.  

@@ -152,24 +152,24 @@ Fig 2.1-2. 전원 어댑터와 이더넷 케이블
     - 프리셋 이 후, 센서에 압력이 가해졌을 때 Fig 2.2-1.c 처럼 양수 값이 측정되는지 확인합니다.
     - **축을 바꿔 체결할 때마다, 측정 되는 수치가 양수인지 반드시 확인 해야합니다.**
 
-<table style="border-collapse: collapse; border: none;">
+<table style="border-collapse: collapse; border: none; margin-left: 30px; width: auto;">
   <tr style="border: none;">
-    <td style="text-align: center; border: none;">
-      <img src="../../_assets/06_preset.PNG" style="max-height: 150px; width: auto;"><br>
+    <td style="text-align: center; border: none; padding-right: 15px;">
+      <img src="../../_assets/06_preset.PNG" style="height: 150px; width: auto;"><br>
       <sub>a. 센서를 들었을 때의 음의 수치</sub>
     </td>
-    <td style="text-align: center; border: none;">
-      <img src="../../_assets/09_preset_pressed.PNG" style="max-height: 150px; width: auto;"><br>
+    <td style="text-align: center; border: none; padding-right: 15px;">
+      <img src="../../_assets/09_preset_pressed.PNG" style="height: 150px; width: auto;"><br>
       <sub>b. preset 버튼을 누르는 장면</sub>
     </td>
     <td style="text-align: center; border: none;">
-      <img src="../../_assets/07_pressed.PNG" style="max-height: 150px; width: auto;"><br>
+      <img src="../../_assets/07_pressed.PNG" style="height: 150px; width: auto;"><br>
       <sub>c. 센서를 눌렀을 때 양의 수치</sub>
     </td>
   </tr>
 </table>
 
-<p align="left">
+<p align="left" style="margin-left: 40px">
   <b>Fig 2.2-1. 센서 조작 및 수치 변화 결과</b>
 </p>
 
@@ -294,7 +294,6 @@ Fig 2.3-2. 마스터링 대기 화면
     - `보정된 엔코더` 값이 `엔코더 오프셋(이후)` 값과 동일한지 확인  
     - `현재 엔코더` 값이 `0x400000` 인지 확인  
 
-
 #### 3.1.3 시험 과정 - 상세  
 1. `엔지니어 모드(R버튼 + 314)` 진입  
 
@@ -321,10 +320,11 @@ Fig 2.3-2. 마스터링 대기 화면
     (6) 센서 팁이 V홈 근처에 위치했는지 확인합니다.    
         &rightarrow; V홈에 위치하지 않는 경우, 센서 탈착 후 상기 2. 과정 재진행합니다.  
         <div>
-        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 200px; ">
-        <img src="../../_assets/01_mastering_real_picture.png" style="height: 200px; ">
-        <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)
+        <img src="../../_assets/00_mastering_Vdent_render.png" style="height: 180px; ">
+        <img src="../../_assets/01_mastering_real_picture.png" style="height: 180px; ">
+        <br>Fig 3.1-1. 마스터링 키트 장착 예시 (좌측: 렌더 이미지, 우측: 실제 체결 이미지)</br>
         </div>
+
     (7) `2. 마스터링 시작` 버튼을 클릭합니다.  
     (8) 마스터링 완료 시 `확인` 클릭합니다.    
     (9) `센서를 탈착`합니다.  
@@ -345,6 +345,8 @@ Fig 2.3-2. 마스터링 대기 화면
 
 #### 3.1.4 시험 과정 - 상태 표시 줄 로그
   
+<div style="max-height:fit-content;">
+
 |순서|진행 상태 표시|내용|
 |:---:|:---|:---|
 |(1)|대기중|처음 app을 실행시켰을 때의 화면|
@@ -356,23 +358,24 @@ Fig 2.3-2. 마스터링 대기 화면
 |(7)|수정된 엔코더 오프셋을 적용합니다.|마스터링 완료 후 수정된 원점으로 움직이는 상태|
 |(8)|마스터링이 종료되었습니다.|보정된 엔코더 오프셋이 보정되고 마스터링이 종료된 상태|
 
+</div>
+
 
 #### 3.1.5 시험 결과 - 이미지
 
-<table style="width: 100%; text-align: center; border-collapse: collapse; border: none;">
-  <tr>
-    <td style="width: 50%; border: none;">
-      <img src="../../_assets/13_standby_kor.png">
+<table style="width: 630px; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="text-align: center; border: none; width: 50%;">
+      <img src="../../_assets/13_standby_kor.png" style="max-width: 100%; height: 210px;">
+      <div style="margin-top: 8px;"><sub>Fig 3.1-2. a. 대기 화면</sub></div>
     </td>
-    <td style="width: 50%; border: none;">
-      <img src="../../_assets/14_mastering_end_kor.PNG">
+    <td style="text-align: center; border: none; width: 50%;">
+      <img src="../../_assets/14_mastering_end_kor.PNG" style="max-width: 100%; height: 210px;">
+      <div style="margin-top: 8px;"><sub>Fig 3.1-2. b. 마스터링 종료 화면</sub></div>
     </td>
-  </tr>
-  <tr>
-    <td style="border: none;">Fig 3.1-2. a. 대기 화면</td>
-    <td style="border: none;">Fig 3.1-2. b. 마스터링 종료 화면</td>
   </tr>
 </table>
+<div style="clear: both;"></div>
 
 
 `엔코더 오프셋(이전/이후)`에는 엔코더 오프셋 값(`bit`)이 표기됩니다.  
@@ -393,13 +396,13 @@ Fig 2.3-2. 마스터링 대기 화면
 - 마스터링 수행 도중 에러 발생 시, `마스터링 진행 상태`에서 에러코드가 출력됩니다.
 - ex) `ERROR_TCP_CONNECT`에러, `ERROR_MOTOR_ON_CHK`에러
 
-<table style="width: 100%; border-collapse: collapse; border: none;">
+<table style="width: 630px; border-collapse: collapse; border: none;">
   <tr style="border: none;">
-    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+    <td style="text-align: center; border: none; width: 50%">
       <img src="../../_assets/15_err_motor_on_kor.PNG" style="max-width: 100%; height: auto;">
       <div style="margin-top: 8px;"><sub>a. Motor ON 에러 상태</sub></div>
     </td>
-    <td style="text-align: center; border: none; width: 50%; padding: 10px;">
+    <td style="text-align: center; border: none; width: 50%">
       <img src="../../_assets/16_err_tcp_connect_kor.PNG" style="max-width: 100%; height: auto;">
       <div style="margin-top: 8px;"><sub>b. TCP 연결 에러 상태</sub></div>
     </td>
