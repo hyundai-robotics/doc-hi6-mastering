@@ -1,6 +1,8 @@
 ﻿# Table of contents
 
-* [사전 주의사항](0-about-this-manual/precautions.md)
+* [이 설명서에 대하여](0-about-this-manual/README.md)
+  * [사전 주의사항](0-about-this-manual/precautions.md)
+  * [안전 주의 사항](0-about-this-manual/safety-notice.md)
 * [1. 개요](01_intro/README.md)
   * [1.1 로봇 마스터링 기능이란?](01_intro/1-about_mastering/README.md)
   * [1.2 접촉식 센서 기반 로봇 마스터링 기능](01_intro/2-about_contact_based_mastering/README.md)
