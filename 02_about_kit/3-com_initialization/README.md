@@ -1,28 +1,28 @@
-﻿## 2.3 Mastering app configuration
+## 2.3 掌握应用程序配置
 
-Once the mastering APP installation is successfully completed, the mastering function can be performed. 
-Mastering can be performed correctly only when you understand the conditions and contents of the movement.
+一旦成功完成掌握 APP 的安装，就可以执行掌握功能。 
+只有在理解运动的条件和内容后，才能正确执行掌握。
 
-#### 2.3.1 Install Mastering app
-The mastering function was developed through ${cont_model} SDK and must be installed on the controller.
+#### 2.3.1 安装掌握应用程序
+掌握功能是通过 ${cont_model} SDK 开发的，必须安装在控制器上。
 
-- `Install location` for hi6 controller  
+- `安装位置` 对于 hi6 控制器  
     - /ata0:2/lib/hi6/apps/mastering (com version <= V60.32)
-- `Install method`  
-    1) You can download the plugin by contacting the HD Hyundai Robot SW development team.  
-    2) After an ethernet connection, transfer the source code using FTP transmission.  
-    3) After saving the source code to the USB, connect to the TP.  
-    4) Then copy and paste the source code utilizing TP's `5: File Management` function.
-- `Installation precautions`
-    1) To use the mastering APP after installation, the controller must be restarted.  
-    2) Reboot the TP if you still don't see the mastering APP in the application program after doing so.
+- `安装方法`  
+    1) 您可以通过联系 HD Hyundai Robot SW 开发团队下载插件。  
+    2) 在以太网连接后，使用 FTP 传输源代码。  
+    3) 将源代码保存到 USB 后，连接到 TP。  
+    4) 然后利用 TP 的 `5: 文件管理` 功能复制并粘贴源代码。
+- `安装注意事项`
+    1) 在安装后，要使用掌握 APP，控制器必须重启。  
+    2) 如果在执行此操作后仍然在应用程序中未看到掌握 APP，请重启 TP。
 
-#### 2.3.2 App setting configuration
-- `App location`  
-TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
+#### 2.3.2 应用程序设置配置
+- `应用程序位置`  
+TP : `home` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `23: 掌握`
 
 <div style="width: 630px;">
-  <p>- <code>Standby mode</code></p>
+  <p>- <code>待机模式</code></p>
   <table style="margin-left: 0; border: none; border-collapse: collapse; width: 530px; table-layout: fixed;">
     <tr>
       <td style="border: none; vertical-align: bottom; padding: 0;">
@@ -31,12 +31,12 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
     </tr>
     <tr>
       <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
-        Fig 2.3.1. Mastering app image
+        图 2.3.1. 掌握应用程序图像
       </td>
     </tr>
   </table>
 
-  <div style="margin: 8px 0 2px 0;">- If you do not see the APP, just reboot the TP.</div>
+  <div style="margin: 8px 0 2px 0;">- 如果看不到 APP，只需重启 TP。</div>
 
   <table style="margin-left: 0; border: none; border-collapse: collapse; width: 530px; table-layout: fixed;">
     <tr>
@@ -46,23 +46,23 @@ TP : `home` > `system` > `4: Application parameter` > `23: Mastering`
     </tr>
     <tr>
       <td style="border: none; padding-top: 10px; font-size: 0.9em; font-weight: bold;">
-        Fig 2.3.2. Mastering <code>standby mode</code> image
+        图 2.3.2. 掌握 <code>待机模式</code> 图像
       </td>
     </tr>
     <tr>
       <td style="border: none; padding-top: 15px; font-size: 0.9em; line-height: 1.6;">
         <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
-          <li><code>IP Address</code> : Enter the ip address of the mastering communicator.</li>
-          <li><code>Port Number</code> : Enter the port number of the mastering communicator.</li>
-          <li><code>Joint Number</code> : Enter the number of target joint.</li>
-          <li><code>Mastering Status</code> : Display the mastering operation status.</li>
-          <li><code>Encoder Offset (Before / After)</code> : Display the encoder offset value (<code>bit</code>) of the current axis before and after mastering.</li>
+          <li><code>IP 地址</code> : 输入掌握通信器的 IP 地址。</li>
+          <li><code>端口号</code> : 输入掌握通信器的端口号。</li>
+          <li><code>关节号</code> : 输入目标关节的数量。</li>
+          <li><code>掌握状态</code> : 显示掌握操作状态。</li>
+          <li><code>编码器偏移量（之前 / 之后）</code> : 显示当前轴在掌握之前和之后的编码器偏移量值（<code>bit</code>）。</li>
         </ul>
       </td>
     </tr>
   </table>
 </div>
 
-How to save mastering IP and port number settings  
-    1. Enter the preset ip, port. - [2.2.2. Communication settings for contact sensor](../2-kit_initialization/README.md)  
-    2. Save the configuration through the `shift` + `OK` to the ${cont_model} controller.
+如何保存掌握 IP 和端口号设置  
+    1. 输入预设的 ip，端口。 - [2.2.2. 接触传感器的通信设置](../2-kit_initialization/README.md)  
+    2. 通过 `shift` + `确定 (OK)` 保存配置到 ${cont_model} 控制器。

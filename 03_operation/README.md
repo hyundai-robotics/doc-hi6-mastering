@@ -1,14 +1,14 @@
-﻿# 3. Mastering operation
+# 3. 掌握操作
 
-- [3.1. Environment & process](./1-mastering_step/README.md)
-  - 3.1.1 Environment
-  - 3.1.2 Operation process - summary
-  - 3.1.3 Operation process - Details
-  - 3.1.4 Results - image
-  - 3.1.5 Reference
+- [3.1. 环境与过程](./1-mastering_step/README.md)
+  - 3.1.1 环境
+  - 3.1.2 操作过程 - 概要
+  - 3.1.3 操作过程 - 详细
+  - 3.1.4 结果 - 图像
+  - 3.1.5 参考
 
 <br>
 
-- [3.2. Error Code for Mastering](./2-error/README.md)
-  - 3.2.1 Error Image
-  - 3.2.2 Summary of Errors
+- [3.2. 掌握的错误代码](./2-error/README.md)
+  - 3.2.1 错误图像
+  - 3.2.2 错误摘要

@@ -1,54 +1,54 @@
-﻿## 3.1. Environment & process
+## 3.1. Environment & process
 
 #### 3.1.1 Environment
 {% hint style="warning" %}
-**Before starting mastering, `the tip of the mastering sensor` must be nearby `V-groove`.  
-Violation of this may result in `damage to the sensor tip` or return an `ERROR_VAL_THRESHOLD` error.**
+**在开始精确操作之前，`精确传感器的尖端` 必须靠近 `V-槽`。  
+违反此规定可能导致 `传感器尖端损坏` 或返回 `ERROR_VAL_THRESHOLD` 错误。**
 {% endhint %}
-- Operates only in manual mode and motor on.
-- Please holding the enable switch until the operation ends.
+- 仅在手动模式和电动机开启时操作。
+- 请保持开启开关，直到操作结束。
 
 <br>
 
 #### 3.1.2 Operation process - summary
-1. Enter `engineer mode`    
-2. Encoder offset correction - by direct teaching  
-3. Encoder offset correction - by using plugin  
-    (1) Enter the mastering plugin.  
-    (2) In [standby mode](../../02_about_kit/3-com_initialization/README.md), enter the joint number > `Shift + OK` > `OK`  
-    (3) Re-entry into the mastering plug-in.   
-    (4) Click `1.Go to the enc offset` button.  
-    (5) Mount the sensor on the joint.    
-    (6) Make sure the end of the sensor is near the `V-groove`.  
-    (7) Click the `2.Start mastering` button.  
-    (8) Click `OK` when finished.  
-    (9) Please remove the sensor.  
-    (10) If there are additional axes that need to be mastered, proceed again from (1).  
-4. After mastering of all axes is completed, move to the updated encoder origin.
-5. Check whether encoder offset is corrected after mastering.  
-    
+1. 进入 `engineer mode`    
+2. 编码器偏移校正 - 通过直接教学  
+3. 编码器偏移校正 - 通过使用插件  
+    (1) 进入精确插件。  
+    (2) 在 [standby mode](../../02_about_kit/3-com_initialization/README.md) 中，输入关节编号 > `Shift + OK` > `确定 (OK)`  
+    (3) 重新进入精确插件。   
+    (4) 点击 `1.Go to the enc offset` 按钮。  
+    (5) 将传感器安装在关节上。    
+    (6) 确保传感器的末端靠近 `V-槽`。  
+    (7) 点击 `2.Start mastering` 按钮。  
+    (8) 完成后点击 `确定 (OK)`。  
+    (9) 请移走传感器。  
+    (10) 如果还有其他轴需要校正，请从 (1) 再次开始。  
+4. 所有轴的精确操作完成后，移动到更新的编码器原点。
+5. 校正后检查编码器偏移是否正确。  
+
 <br>
 
 #### 3.1.3 Operation process - Details
-1. Encoder offset correction - by direct teaching  
-    1-a) Jog robot to align V-groove/scale bar (via TP, Teaching Pendant).  
-    1-b) Reset encoder offsets for individual or all joints at the aligned position.  
-    - Enter the encoder offset setup page  
-    &rightarrow; `TP` > Enter the `Engineer Mode` (R-Button + 314) > `System` > `3: Robot parameter` > `4: Encoder offset`  
-    - Proceed with encoder offset initialization  
-        (1) When resetting individual joint:  
-        → Click `Corrrected encoder` value of the corresponding joint > Click `Reset one` > `Shift + OK` > `OK`   
-        (2) When resetting all joint:  
-        → Click `Reset all` > `Shift + OK` > `OK`  
+1. 编码器偏移校正 - 通过直接教学  
+    1-a) 控制机器人使其对准 V-槽/刻度条（通过 TP, Teaching Pendant）。  
+    1-b) 在对准位置重置各个或所有关节的编码器偏移。  
+    - 进入编码器偏移设置页面  
+    &rightarrow; `TP` > 进入 `Engineer Mode` (R-Button + 314) > `系统 (System)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)`  
+    - 进行编码器偏移初始化  
+        (1) 重置各个关节时：  
+        → 点击相应关节的 `Corrrected encoder` 值 > 点击 `应用 (Reset one)` > `Shift + OK` > `确定 (OK)`   
+        (2) 重置所有关节时：  
+        → 点击 `重置全部 (Reset all)` > `Shift + OK` > `确定 (OK)`  
 
-2. Encoder offset correction - by using plugin  
-    (1) After completing the steps in 1, enter the mastering plugin  
-        &rightarrow; `TP` > `system` > `4: Application parameter` > `Mastering`  
-    (2) Enter the joint number in `Joint Number` > Click `Confirm`  
-    (3) Re-enter the mastering plugin to make sure the joint settings are correct.  
-    (4) If it's okay, `motor on` > `enable switch on` > Click `Go to the enc offset`.    
-        &rightarrow; Move to the origin position of the previously set.  
-    (5) Mount the sensor on the joint entered in (2).  
+2. 编码器偏移校正 - 通过使用插件  
+    (1) 在完成步骤 1 后，进入精确插件  
+        &rightarrow; `TP` > `系统 (system)` > `4: 应用参数 (4: Application parameter)` > `Mastering`  
+    (2) 在 `Joint Number` 中输入关节编号 > 点击 `Confirm`  
+    (3) 重新进入精确插件以确保关节设置正确。  
+    (4) 如果没问题，` (motor on)` > `enable switch on` > 点击 `Go to the enc offset`。    
+        &rightarrow; 移动到之前设置的原点位置。  
+    (5) 将传感器安装在步骤 (2) 中输入的关节上。  
         <div style="width: 630px;">
           <table style="margin-left: 0; border: none; border-collapse: collapse; width: 630px; table-layout: fixed;">
             <tr>
@@ -61,26 +61,26 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
             </tr>
             <tr>
               <td colspan="2" style="border: none; padding-top: 8px; font-size: 0.9em; white-space: nowrap;">
-                Fig 3.1.1. Mastering sensor installation image (left: render image, right: real image)
+                图 3.1.1. 精确传感器安装图（左：渲染图，右：真实图）
               </td>
             </tr>
           </table>
         </div>
-    (6) Make sure the sensor tip is near the V groove.  
-        &rightarrow; If it is not located in the V groove, remove the sensor and repeat step 2 above.  
-    (7) 2. Click the `2. Start Mastering`.    
-    (8) When mastering is complete, click `OK`.  
-    (9) Remove the sensor.  
-    (10) If there are additional joint to mastering, proceed again from (1).  
+    (6) 确保传感器尖端靠近 V 槽。  
+        &rightarrow; 如果不在 V 槽内，请移走传感器并重复上述步骤 2。  
+    (7) 2. 点击 `2. Start Mastering`。    
+    (8) 当精确操作完成时，点击 `确定 (OK)`。  
+    (9) 移走传感器。  
+    (10) 如果有其他关节需要精确操作，请从 (1) 再次开始。  
 
-3. After mastering of all axes is completed, move to the updated encoder origin.
-    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset` > `Moving` > `Shift + OK` > `OK`  
-    - The `Corrected encoder` has already been updated, so its value will not change even if the robot moves to the origin.  
+3. 所有轴的精确操作完成后，移动到更新的编码器原点。
+    - `TP` > `系统 (system)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)` > `机器人移动 (Moving)` > `Shift + OK` > `确定 (OK)`  
+    - `校正后编码器 (Corrected encoder)` 已被更新，因此即使机器人移动到原点，其值也不会改变。  
 
-4. Check whether encoder offset is corrected after mastering.  
-    - `TP` > `system` > `3: Robot parameter` > `4: Encoder offset`  
-    - Please check whether the encoder offset value updated through mastering is the same as the `Corrected encoder` value.  
-    - Check whether the `Current encoder` value for each axis is `0x400000`.  
+4. 校正后检查编码器偏移是否正确。  
+    - `TP` > `系统 (system)` > `3: 机器人参数 (3: Robot parameter)` > `4: 编码器偏移 (4: Encoder offset)`  
+    - 请检查通过精确操作更新的编码器偏移值是否与 `校正后编码器 (Corrected encoder)` 的值相同。  
+    - 检查每个轴的 `当前编码器 (Current encoder)` 值是否为 `0x400000`。  
 
 <br>
 
@@ -90,14 +90,14 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 
 |Order|Mastering status|Contents|
 |:---:|:---:|:---|
-|(1)|Standby|Initial image when entering the mastering app.|
-|(2)|go to the offset pose...|The state when '`1.Go to the enc offset`' button is pressed.|
-|(3)|reached the offset pose.|Complete message after '`1.Go to the enc offset`' operation.|
-|(4)|Start mastering.|The first state of '`2.Start mastering`' button is pressed.|
-|(5)|move to P1.|The state of moving to p1 direction after '`2.Start mastering`' button is pressed.|
-|(6)|move to P2.|The state of moving to p2 direction after '`2.Start mastering`' button is pressed.|
-|(7)|apply corrected enc offset.|The state of moving to the modified origin after mastering is completed.|
-|(8)|mastering end.|The state of mastering is finished.|
+|(1)|Standby|进入精确应用时的初始图像。|
+|(2)|go to the offset pose...|按下 '`1.Go to the enc offset`' 按钮时的状态。|
+|(3)|reached the offset pose.|完成 '`1.Go to the enc offset`' 操作后的消息。|
+|(4)|Start mastering.|按下 '`2.Start mastering`' 按钮时的初始状态。|
+|(5)|move to P1.|按下 '`2.Start mastering`' 按钮后向 p1 方向移动的状态。|
+|(6)|move to P2.|按下 '`2.Start mastering`' 按钮后向 p2 方向移动的状态。|
+|(7)|apply corrected enc offset.|精确操作完成后移动到修改后的原点的状态。|
+|(8)|mastering end.|精确操作结束的状态。|
 
 </div>
 
@@ -105,9 +105,9 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
 
 #### 3.1.5 Results - image
 
-- The encoder offset value is displayed on the `Encoder Offset(Before/After)` by the unit of `bit(hexa)`.
-  - `Left block` : `Pre`-encoder offset value `before mastering`.  
-  - `Right block` : `Post`-encoder offset value `after mastering`.  
+- 编码器偏移值以 `bit(hexa)` 为单位显示在 `Encoder Offset(Before/After)` 上。
+  - `左块` : `Pre`-编码器偏移值 `在精确操作之前`。  
+  - `右块` : `Post`-编码器偏移值 `在精确操作之后`。  
     <div style="width: 630px;">
       <table style="margin-left: 0; border: none; border-collapse: collapse; width: 500px; table-layout: fixed;">
         <tr>
@@ -117,7 +117,7 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
         </tr>
         <tr>
           <td style="border: none; padding: 8px 0 20px 0; font-size: 0.9em;">
-            Fig 3.1.2. a. Standby mode image
+            图 3.1.2. a. 待命模式图像
           </td>
         </tr>
         <tr>
@@ -127,15 +127,14 @@ Violation of this may result in `damage to the sensor tip` or return an `ERROR_V
         </tr>
         <tr>
           <td style="border: none; padding: 8px 0 10px 0; font-size: 0.9em;">
-            Fig 3.1.2. b. Mastering complete image
+            图 3.1.2. b. 精确操作完成图像
           </td>
         </tr>
       </table>
     </div>
 
 #### 3.1.6 Reference
-- The reason of using `bit` for display encoder offset values.
-  - It is intuitive to display angle differences when comparing mastery results, however changes of smaller than 0.01 cannot be assessed.
-  - The current mastering process shifts the origin by between -1.5 and 1.5 degrees.
-  - It is more accurate to display the encoder value in bit units in order to convey these minute variances.
-
+- 使用 `bit` 显示编码器偏移值的原因。
+  - 在比较精确结果时，直观地显示角度差异，但变化小于 0.01 的情况无法评估。
+  - 当前精确操作过程使原点偏移在 -1.5 到 1.5 度之间。
+  - 为了传达这些细微差异，以 bit 单位显示编码器值更为准确。

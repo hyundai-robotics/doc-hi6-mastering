@@ -1,4 +1,4 @@
-﻿## 2.1 Mastering Kit
+## 2.1 Mastering Kit
 
 #### 2.1.1 Contact sensor components
 - **Sensor & Power adapter** 
@@ -13,10 +13,10 @@
       </tr>
       <tr style="white-space: nowrap; font-size: 0.9em;">
         <td style="border: none; padding-top: 5px;">
-          Fig 2.1.1.&nbsp;&nbsp;a. Contact sensor
+          Fig 2.1.1.&nbsp;&nbsp;a. 接触传感器
         </td>
         <td style="border: none; padding-top: 5px;">
-          b. Communication module
+          b. 通信模块
         </td>
       </tr>
     </table>
@@ -33,28 +33,28 @@
       </tr>
       <tr style="white-space: nowrap; font-size: 0.9em;">
         <td style="border: none; padding-top: 5px;">
-          Fig 2.1.2.&nbsp;&nbsp;a. power adapter
+          Fig 2.1.2.&nbsp;&nbsp;a. 电源适配器
         </td>
         <td style="border: none; padding-top: 5px;">
-          b. ethernet cable
+          b. 以太网电缆
         </td>
       </tr>
     </table>
 
 - **S/W**  
-This package includes a mastering App and a controller setup program.
+此包中包含一个掌握应用程序和一个控制器设置程序。
 
 #### 2.1.2 Contact sensor connections
-- Connect the sensor as shown in the photo on the Fig 2-1 b.
+- 按照 Fig 2-1 b 中的照片连接传感器。
 
 #### 2.1.3 Specifications
-- The mastering kit has the interface specifications below.
+- 掌握工具包具有以下接口规格。
     <div style="width: fit-content;">
 
     |feature|detail|
     |:----|:----|
-    |`Sensor Type`| `Digital contact` |
-    |`Protocol`| `Ethernet` (TCP/IP) |
+    |`传感器类型 (Sensor Type)`| `Digital contact` |
+    |`协议 (Protocol)`| `Ethernet` (TCP/IP) |
     |`Cycle`| `5 msec` |
 
     </div>
